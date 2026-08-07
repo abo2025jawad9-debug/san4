@@ -27,7 +27,7 @@ API_SECRET = cfg.secret
 TELEGRAM_TOKEN = cfg.telegram_token
 TELEGRAM_CHAT_ID = cfg.telegram_chat_id
 
-SYMBOL = "AAVEUSDT"
+SYMBOL = "CRCLXUSDT"
 BUY_AMOUNT_USD = 14.3
 TAKER_FEE_PERCENT = 0.001
 MIN_PROFIT_USD = 0.05  
