@@ -256,7 +256,7 @@ def get_usdt_balance():
         res = client.get_wallet_balance(accountType="UNIFIED", coin="USDT")
         balance = float(res['result']['list'][0]['coin'][0]['walletBalance'])
         return balance
-    except Exception e:
+    except Exception as e:
         try:
             res = client.get_wallet_balance(accountType="SPOT", coin="USDT")
             balance = float(res['result']['list'][0]['coin'][0]['walletBalance'])
