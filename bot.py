@@ -364,10 +364,9 @@ def execute_sell(symbol, qty):
 
 # ================= منطق التداول الرئيسي =================
 
-def count_open_positions(history, symbol):
-    """تحسب عدد الصفقات التي لم يتم بيعها بعد الخاصة بعملة معينة"""
-    return sum(1 for op in history.values() if isinstance(op, dict) and op.get('status') == "معلقة - جاري الانتظار" and op.get('symbol') == symbol)
-
+def count_open_positions(history, symbol=None):
+    """تحسب إجمالي الصفقات المفتوحة لجميع العملات في المنصة"""
+    return sum(1 for op in history.values() if isinstance(op, dict) and op.get('status') == "معلقة - جاري الانتظار")
 def get_open_positions(history, symbol):
     """تسترجع قائمة الصفقات المعلقة (المفتوحة) الخاصة بعملة معينة"""
     return {op_id: op for op_id, op in history.items() 
