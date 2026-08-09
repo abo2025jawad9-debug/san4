@@ -29,7 +29,7 @@ TELEGRAM_TOKEN = cfg.telegram_token
 TELEGRAM_CHAT_ID = cfg.telegram_chat_id
 
 # [التحديث الجديد]: قائمة العملات التي سيتداول عليها البوت (يمكنك إضافة أو حذف أي عملة)
-SYMBOLS = ["AAVEUSDT", "SOLUSDT", "HYPEUSDT","CRCLXUSDT","BTCUSDT"]
+SYMBOLS = ["AAVEUSDT", "SOLUSDT", "HYPEUSDT","CRCLXUSDT","BTCUSDT","ETHUSDT","BICOUSDT","WLDUSDT","INJ","ENA"]
 
 BUY_AMOUNT_USD = 14.3         # قيمة كل صفقة شراء بالدولار
 TAKER_FEE_PERCENT = 0.001     # نسبة رسوم المنصة للطلبات المباشرة (Taker Fee)، عادة تكون 0.1%
