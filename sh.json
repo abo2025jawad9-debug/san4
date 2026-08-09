@@ -2,7 +2,7 @@
     "buy_d140513b": {
         "symbol": "BTCUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-08",
         "time": "21:50:26.315641",
         "buy_time": "2026-08-08T21:50:26.315641",
@@ -14,7 +14,16 @@
         "buy_cost": 14.2431,
         "total_cost": 14.2716,
         "break_even_price": 65167.07,
-        "min_sell_price": 65250.00,
-        "sell_details": {}
+        "min_sell_price": 65250.0,
+        "sell_details": {
+            "sell_id": "sell_7d75e2d8",
+            "sell_price": 65251.5,
+            "received_usd": 14.2248,
+            "sell_fee_usd": 0.0142,
+            "profit_usd": -0.0467,
+            "profit_percent": -0.328,
+            "sell_date": "2026-08-09",
+            "sell_time": "22:01:20.593011"
+        }
     }
 }
