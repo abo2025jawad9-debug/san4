@@ -68,7 +68,7 @@
         "buy_cost": 14.2825,
         "total_cost": 14.2825,
         "break_even_price": 0.21,
-        "min_sell_price": 0.21,
+        "min_sell_price": 0.20883,
         "sell_details": {}
     }
 }
