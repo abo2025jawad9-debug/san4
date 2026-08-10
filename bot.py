@@ -494,7 +494,7 @@ def try_sell_all(history, current_price, symbol):
             order, received, sell_fee, sell_price = execute_sell(symbol, qty)
 
             if order:
-                actual_profit = received - buy_cost - buy_fee - sell_fee
+                actual_profit = received - buy_cost - sell_fee
                 sold_any = True
 
                 history[op_id]['status'] = "تم البيع"
