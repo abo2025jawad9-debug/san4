@@ -137,7 +137,7 @@
     "buy_0a353daf": {
         "symbol": "LITUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-10",
         "time": "10:19:56.838075",
         "buy_time": "2026-08-10T10:19:56.838075",
@@ -150,6 +150,15 @@
         "total_cost": 14.2966,
         "break_even_price": 2.28837,
         "min_sell_price": 2.29066,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_2ee2aa72",
+            "sell_price": 2.29,
+            "received_usd": 14.3237,
+            "sell_fee_usd": 0.0143,
+            "profit_usd": 0.0128,
+            "profit_percent": 0.09,
+            "sell_date": "2026-08-10",
+            "sell_time": "10:21:38.777604"
+        }
     }
 }
