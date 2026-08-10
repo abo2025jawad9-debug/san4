@@ -29,7 +29,7 @@
     "buy_0fecf00a": {
         "symbol": "HYPEUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-09",
         "time": "22:36:28.664248",
         "buy_time": "2026-08-09T22:36:28.664248",
@@ -42,6 +42,15 @@
         "total_cost": 14.2989,
         "break_even_price": 54.37,
         "min_sell_price": 54.42,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_5bbbc891",
+            "sell_price": 54.47,
+            "received_usd": 14.2711,
+            "sell_fee_usd": 0.0143,
+            "profit_usd": -0.0278,
+            "profit_percent": -0.195,
+            "sell_date": "2026-08-10",
+            "sell_time": "01:52:11.063995"
+        }
     }
 }
