@@ -435,15 +435,15 @@ def create_buy_operation(symbol):
         "date": now.date().isoformat(),
         "time": now.time().isoformat(),
         "buy_time": now.isoformat(),
-        "buy_price": round(actual_price, 2),
+        "buy_price": round(actual_price, 5),
         "qty": round(qty, 8),
         "sellable_qty": round(sellable_qty, 8),
         "buy_amount_usd": BUY_AMOUNT_USD,
         "buy_fee_usd": round(fee, 4),
         "buy_cost": round(calc['buy_cost'], 4),
         "total_cost": round(calc['total_cost'], 4),
-        "break_even_price": round(calc['break_even_price'], 2),
-        "min_sell_price": round(calc['min_sell_price'], 2),
+        "break_even_price": round(calc['break_even_price'], 5),
+        "min_sell_price": round(calc['min_sell_price'], 5),
         "sell_details": {}
     }
 
@@ -457,10 +457,10 @@ def create_buy_operation(symbol):
     msg = (
         f"✅ <b>تَمَّ الشِّرَاءُ بنجاح! ({symbol})</b>\n"
         f"المعرف: {op_id}\n"
-        f"السعر: {actual_price:.2f}\n"
-        f"سعر التعادل: {calc['break_even_price']:.2f}\n"
-        f"سعر البيع المطلوب (مضاف إليه {TAKE_PROFIT_PCT}%): {calc['min_sell_price']:.2f}\n"
-        f"💳 <b>الرصيد المتاح:</b> {balance:.2f} USDT"
+        f"السعر: {actual_price:.5f}\n"
+        f"سعر التعادل: {calc['break_even_price']:.5f}\n"
+        f"سعر البيع المطلوب (مضاف إليه {TAKE_PROFIT_PCT}%): {calc['min_sell_price']:.5f}\n"
+        f"💳 <b>الرصيد المتاح:</b> {balance:.5f} USDT"
     )
     send_telegram_message(msg)
 
