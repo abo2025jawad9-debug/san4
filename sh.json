@@ -83,7 +83,7 @@
     "buy_670fbb90": {
         "symbol": "LTCUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-10",
         "time": "03:54:12.666297",
         "buy_time": "2026-08-10T03:54:12.666297",
@@ -96,6 +96,15 @@
         "total_cost": 14.2997,
         "break_even_price": 45.45086,
         "min_sell_price": 45.49631,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_518efb2b",
+            "sell_price": 45.49,
+            "received_usd": 14.3262,
+            "sell_fee_usd": 0.0143,
+            "profit_usd": 0.0121,
+            "profit_percent": 0.085,
+            "sell_date": "2026-08-10",
+            "sell_time": "05:54:13.529523"
+        }
     }
 }
