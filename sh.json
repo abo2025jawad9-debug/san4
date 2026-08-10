@@ -187,5 +187,23 @@
             "sell_date": "2026-08-10",
             "sell_time": "13:29:36.536308"
         }
+    },
+    "buy_ce200979": {
+        "symbol": "BNBUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-10",
+        "time": "13:30:10.192368",
+        "buy_time": "2026-08-10T13:30:10.192368",
+        "buy_price": 601.7,
+        "qty": 0.0237,
+        "sellable_qty": 0.0236763,
+        "buy_amount_usd": 14.3,
+        "buy_fee_usd": 0.0143,
+        "buy_cost": 14.2603,
+        "total_cost": 14.2603,
+        "break_even_price": 602.90521,
+        "min_sell_price": 603.50811,
+        "sell_details": {}
     }
 }
