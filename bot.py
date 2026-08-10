@@ -215,23 +215,26 @@ def git_commit_and_push():
 
 def calculate_sell_thresholds(buy_price, qty, buy_fee_usd):
     """
-    تحسب تكلفة الشراء، والرسوم المقدرة، وسعر التعادل (صفر ربح/خسارة)، 
-    وتحسب سعر البيع المطلوب لتحقيق نسبة الربح المستهدفة المحددة في المتغير TAKE_PROFIT_PCT
+    تحسب تكلفة الشراء، والرسوم المقدرة، وسعر التعادل الحقيقي الذي يغطي 
+    نقص الكمية بسبب الرسوم، وتحسب سعر البيع المطلوب لتحقيق نسبة الربح المستهدفة.
     """
     buy_cost = buy_price * qty
-    estimated_sell_fee = buy_cost * TAKER_FEE_PERCENT
-    total_fees = buy_fee_usd + estimated_sell_fee
-    total_cost = buy_cost + total_fees
     
-    break_even = total_cost / qty
+    # حساب الكمية الصافية التقريبية بعد خصم رسوم المنصة في الشراء
+    sellable_qty = qty * (1 - TAKER_FEE_PERCENT)
+    
+    # سعر التعادل الحقيقي: التكلفة الإجمالية مقسومة على الكمية الصافية مخصوماً منها رسوم البيع المستقبلية
+    break_even = buy_cost / (sellable_qty * (1 - TAKER_FEE_PERCENT))
+    
+    # السعر المطلوب لتحقيق الربح الصافي
     min_profit_price = break_even * (1 + (TAKE_PROFIT_PCT / 100))
 
     return {
         "buy_cost": buy_cost,
         "buy_fee_usd": buy_fee_usd,
-        "estimated_sell_fee": estimated_sell_fee,
-        "total_fees": total_fees,
-        "total_cost": total_cost,
+        "estimated_sell_fee": buy_cost * TAKER_FEE_PERCENT, # تقديري
+        "total_fees": buy_fee_usd + (buy_cost * TAKER_FEE_PERCENT),
+        "total_cost": buy_cost, 
         "break_even_price": break_even,
         "min_sell_price": min_profit_price
     }
