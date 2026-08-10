@@ -160,5 +160,23 @@
             "sell_date": "2026-08-10",
             "sell_time": "10:21:38.777604"
         }
+    },
+    "buy_f11d9f4a": {
+        "symbol": "CRCLXUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-10",
+        "time": "12:50:42.080629",
+        "buy_time": "2026-08-10T12:50:42.080629",
+        "buy_price": 66.99,
+        "qty": 0.213,
+        "sellable_qty": 0.212574,
+        "buy_amount_usd": 14.3,
+        "buy_fee_usd": 0.0285,
+        "buy_cost": 14.2689,
+        "total_cost": 14.2689,
+        "break_even_price": 67.12418,
+        "min_sell_price": 67.19131,
+        "sell_details": {}
     }
 }
