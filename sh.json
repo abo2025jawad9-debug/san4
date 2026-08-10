@@ -106,5 +106,23 @@
             "sell_date": "2026-08-10",
             "sell_time": "05:54:13.529523"
         }
+    },
+    "buy_6cf2642c": {
+        "symbol": "LITUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-10",
+        "time": "07:57:16.158535",
+        "buy_time": "2026-08-10T07:57:16.158535",
+        "buy_price": 2.2914,
+        "qty": 6.24,
+        "sellable_qty": 6.23376,
+        "buy_amount_usd": 14.3,
+        "buy_fee_usd": 0.0143,
+        "buy_cost": 14.2983,
+        "total_cost": 14.2983,
+        "break_even_price": 2.29599,
+        "min_sell_price": 2.29829,
+        "sell_details": {}
     }
 }
