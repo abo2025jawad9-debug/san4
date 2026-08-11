@@ -349,5 +349,23 @@
             "sell_date": "2026-08-11",
             "sell_time": "12:33:10.891511"
         }
+    },
+    "buy_70efd36b": {
+        "symbol": "ADAUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-11",
+        "time": "12:46:37.418609",
+        "buy_time": "2026-08-11T12:46:37.418609",
+        "buy_price": 0.187,
+        "qty": 77.0,
+        "sellable_qty": 76.923,
+        "buy_amount_usd": 14.4,
+        "buy_fee_usd": 0.0144,
+        "buy_cost": 14.399,
+        "total_cost": 14.399,
+        "break_even_price": 0.18737,
+        "min_sell_price": 0.18756,
+        "sell_details": {}
     }
 }
