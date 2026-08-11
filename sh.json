@@ -403,5 +403,23 @@
             "sell_date": "2026-08-11",
             "sell_time": "16:06:46.210902"
         }
+    },
+    "buy_2c60d625": {
+        "symbol": "BTCUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-11",
+        "time": "16:45:58.013896",
+        "buy_time": "2026-08-11T16:45:58.013896",
+        "buy_price": 63477.7,
+        "qty": 0.00023,
+        "sellable_qty": 0.00022977,
+        "buy_amount_usd": 14.6,
+        "buy_fee_usd": 0.0146,
+        "buy_cost": 14.5999,
+        "total_cost": 14.5999,
+        "break_even_price": 63604.84609,
+        "min_sell_price": 63668.45093,
+        "sell_details": {}
     }
 }
