@@ -586,14 +586,28 @@ def main():
         try:
             history = load_history()
             
-            # [تحديث] المرور على كل عملة في القائمة وتطبيق استراتيجية التداول عليها بالدور
+            # --- أخذ اللقطة اللحظية للسوق بالكامل بطلب واحد ---
+            all_tickers = get_all_tickers_data()
+            if all_tickers is None:
+                print("[LOOP] فَشَلٌ فِي جَلْبِ لَقْطَةِ السُّوقِ، سَنُحَاوِلُ مَرَّةً أُخْرَى...")
+                time.sleep(2)
+                continue
+            
+            # المرور على كل عملة في القائمة وقراءة سعرها من الذاكرة (بدون أي طلبات إنترنت إضافية)
             for symbol in SYMBOLS:
                 print(f"\n┌───[ جَارِي فَحْصُ {symbol} ]─────────────────────┐")
                 
-                current_price, low_24h = get_market_data(symbol)
-                if current_price is None or low_24h is None:
-                    print("│ [LOOP] فَشَلٌ فِي جَلْبِ السِّعْرِ، جَارِي التَّخَطِّي لِلْعَمَلَةِ التَّالِيَةِ...")
+                if symbol not in all_tickers:
+                    print(f"│ [LOOP] العَمَلَةُ {symbol} غَيْرُ مَوْجُودَةٍ فِي بَيَانَاتِ المَنَصَّةِ، جَارِي التَّخَطِّي...")
                     continue
+                
+                # قراءة الأسعار لحظياً من الذاكرة
+                current_price = all_tickers[symbol]['lastPrice']
+                low_24h = all_tickers[symbol]['lowPrice24h']
+                print("│ [PRICE] السِّعْرُ الحَالِيُّ المَقْرُوءُ: %.5f | قَاعُ 24 سَاعَة: %.5f" % (current_price, low_24h))
+
+                # === (باقي الكود الخاص بك داخل الحلقة يبقى كما هو دون أي تغيير) ===
+                open_count = count_open_positions(history) # تم استخدام التعديل السابق لجميع العملات
 
                 open_count = count_open_positions(history, symbol)
                 
