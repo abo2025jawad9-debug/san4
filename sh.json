@@ -214,5 +214,23 @@
             "sell_date": "2026-08-11",
             "sell_time": "08:10:11.249886"
         }
+    },
+    "buy_80e75471": {
+        "symbol": "DATAUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-11",
+        "time": "08:10:21.271623",
+        "buy_time": "2026-08-11T08:10:21.271623",
+        "buy_price": 0.2057,
+        "qty": 70.0,
+        "sellable_qty": 69.93,
+        "buy_amount_usd": 14.4,
+        "buy_fee_usd": 0.0144,
+        "buy_cost": 14.399,
+        "total_cost": 14.399,
+        "break_even_price": 0.20611,
+        "min_sell_price": 0.20632,
+        "sell_details": {}
     }
 }
