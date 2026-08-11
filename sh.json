@@ -268,5 +268,23 @@
             "sell_date": "2026-08-11",
             "sell_time": "08:22:47.250842"
         }
+    },
+    "buy_27873f4f": {
+        "symbol": "XRPUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-11",
+        "time": "08:32:50.215323",
+        "buy_time": "2026-08-11T08:32:50.215323",
+        "buy_price": 1.0029,
+        "qty": 14.35,
+        "sellable_qty": 14.33565,
+        "buy_amount_usd": 14.4,
+        "buy_fee_usd": 0.0144,
+        "buy_cost": 14.3916,
+        "total_cost": 14.3916,
+        "break_even_price": 1.00491,
+        "min_sell_price": 1.00591,
+        "sell_details": {}
     }
 }
