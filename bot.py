@@ -548,6 +548,25 @@ def can_rebuy(history, current_price, symbol):
     return True
 
 # ================= الدالة الرئيسية =================
+def get_all_tickers_data():
+    """تقوم بجلب أسعار جميع العملات في السوق بطلب واحد فقط (لقطة شاشة لحظية)"""
+    try:
+        # طلب واحد فقط بدون تحديد اسم العملة
+        res = client.get_tickers(category="spot")
+        tickers_dict = {}
+        
+        # ترتيب البيانات في الذاكرة لتسريع البحث
+        for item in res['result']['list']:
+            symbol = item['symbol']
+            tickers_dict[symbol] = {
+                'lastPrice': float(item['lastPrice']),
+                'lowPrice24h': float(item['lowPrice24h'])
+            }
+        print("[PRICE] تَمَّ جَلْبُ لَقْطَةِ السُّوقِ لِـ %d عَمَلَةٍ بِنَجَاحٍ (طَلَبٌ وَاحِدٌ)." % len(tickers_dict))
+        return tickers_dict
+    except Exception as e:
+        print("[PRICE] فَشَلٌ فِي جَلْبِ البَيَانَاتِ الجَمَاعِيَّةِ: %s" % e)
+        return None
 
 def main():
     """الدالة الرئيسية التي تقوم ببدء تشغيل الحلقة (Loop) والمرور على جميع العملات المحددة تباعاً لتنفيذ المنطق"""
