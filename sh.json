@@ -241,5 +241,23 @@
             "sell_date": "2026-08-11",
             "sell_time": "08:13:01.783080"
         }
+    },
+    "buy_1a2cb416": {
+        "symbol": "WLDUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-11",
+        "time": "08:14:22.063493",
+        "buy_time": "2026-08-11T08:14:22.063493",
+        "buy_price": 0.3303,
+        "qty": 43.59,
+        "sellable_qty": 43.54641,
+        "buy_amount_usd": 14.4,
+        "buy_fee_usd": 0.0144,
+        "buy_cost": 14.3978,
+        "total_cost": 14.3978,
+        "break_even_price": 0.33096,
+        "min_sell_price": 0.33129,
+        "sell_details": {}
     }
 }
