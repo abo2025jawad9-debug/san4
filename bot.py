@@ -644,7 +644,7 @@ def main():
                 if low_24h == 0: 
                     continue
                 volatility_pct = ((high_24h - low_24h) / low_24h) * 100
-                if volatility_pct < 4.0:
+                if volatility_pct < 5.0:
                     continue
                 # ─────────────────────────────────────
 
