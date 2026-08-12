@@ -603,6 +603,55 @@ def calculate_rsi(prices, period=14):
     rs = avg_gain / avg_loss
     rsi = 100 - (100 / (1 + rs))
     return round(rsi, 2)
+def is_safe_to_buy_rsi(symbol):
+    """
+    تتأكد من أن العملة في منطقة تشبع بيعي وأن الشمعة الحالية بدأت بالانعكاس للصعود.
+    """
+    try:
+        # جلب شموع 15 دقيقة (آخر 30 شمعة تكفي لحساب مؤشر 14 بدقة)
+        res = client.get_kline(
+            category="spot",
+            symbol=symbol,
+            interval="15", 
+            limit=30
+        )
+        
+        klines = res.get('result', {}).get('list', [])
+        if not klines or len(klines) < 15:
+            return False
+            
+        # منصة Bybit تعيد الشموع من الأحدث للأقدم، ومؤشر RSI يحتاج الترتيب من الأقدم للأحدث
+        klines.reverse()
+        
+        close_prices = []
+        for k in klines:
+            close_prices.append(float(k[4])) # الفهرس 4 هو سعر الإغلاق في Bybit
+            
+        # جلب سعر الافتتاح والإغلاق للشمعة الحالية (الأخيرة) للتحقق من الانعكاس
+        current_open = float(klines[-1][1])  # الفهرس 1 هو سعر الافتتاح
+        current_close = float(klines[-1][4]) # الفهرس 4 هو سعر الإغلاق
+        
+        # حساب قيمة RSI
+        rsi_value = calculate_rsi(close_prices, period=14)
+        
+        # الشروط: 
+        # 1. المؤشر تحت 40 (تشبع بيعي)
+        # 2. الشمعة الحالية خضراء (السعر الحالي أعلى من افتتاح الشمعة)
+        is_oversold = rsi_value <= 40.0
+        is_green_candle = current_close > current_open
+        
+        if is_oversold and is_green_candle:
+            print(f"│ [مُؤَشِّرُ RSI] {symbol} أَعْطَى إِشَارَةَ ارْتِدَادٍ آَمِنَةٍ! (RSI: {rsi_value}) 🟢")
+            return True
+        else:
+            # يمكنك تفعيل السطر التالي إذا أردت رؤية سبب رفض الشراء في موجه الأوامر
+            # print(f"│ [مُؤَشِّرُ RSI] الرَّفْضُ: {symbol} لا تَزَالُ تَهْبِطُ (RSI: {rsi_value}) 🔴")
+            return False
+            
+    except Exception as e:
+        print(f"│ [خَطَأٌ] فَشَلَ التَّحَقُّقُ مِنْ مُؤَشِّرِ RSI لِعُمْلَةِ {symbol}: {e}")
+        return False
+
 
 def check_recent_high_target(symbol, current_price):
     """
