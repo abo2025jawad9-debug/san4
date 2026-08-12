@@ -571,8 +571,8 @@ def get_all_tickers_data():
     except Exception as e:
         print(f"[PRICE] فَشَلٌ فِي جَلْبِ البَيَانَاتِ الجَمَاعِيَّةِ: {e}")
         return None
-
-     def check_recent_high_target(symbol, current_price):
+        
+def check_recent_high_target(symbol, current_price):
     """
     تجلب شموع آخر 4 ساعات وتتأكد ما إذا كانت العملة قد وصلت للسعر المستهدف مؤخراً
     """
