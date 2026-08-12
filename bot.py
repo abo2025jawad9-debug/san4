@@ -572,7 +572,7 @@ def get_all_tickers_data():
         print(f"[PRICE] فَشَلٌ فِي جَلْبِ البَيَانَاتِ الجَمَاعِيَّةِ: {e}")
         return None
 
-def check_recent_high_target(symbol, current_price):
+     def check_recent_high_target(symbol, current_price):
     """
     تجلب شموع آخر 4 ساعات وتتأكد ما إذا كانت العملة قد وصلت للسعر المستهدف مؤخراً
     """
@@ -597,18 +597,17 @@ def check_recent_high_target(symbol, current_price):
             return False, target_price, recent_highest
             
     except Exception as e:
-        print(f"[KLINE] خَطَأ فِي جَلْبِ الشُّمُوعِ لِعَمَلَةِ {symbol}: {e}")
+        print(f"│ [KLINE] خَطَأ فِي جَلْبِ الشُّمُوعِ لِعَمَلَةِ {symbol}: {e}")
         return False, 0, 0
 
 
-
 def main():
-    """الدالة الرئيسية التي تقوم ببدء تشغيل الحلقة (Loop) والمرور على جميع العملات المحددة تباعاً لتنفيذ المنطق"""
+    """الدالة الرئيسية التي تقوم ببدء تشغيل الماسح الذكي للسوق لتنفيذ المنطق"""
     if not API_KEY or not API_SECRET:
         print("[ERROR] لَا تُوجَدُ مَفَاتِيحُ API!")
         return
 
-    print("[START] بَدْءُ تَشْغِيلِ البُوتِ...")
+    print("[START] بَدْءُ تَشْغِيلِ البُوتِ (الْمَاسِحُ الذَّكِيُّ لِلسُّوقِ)...")
     init_client_with_retries()
 
     start_time = time.time()
@@ -627,21 +626,30 @@ def main():
                 time.sleep(2)
                 continue
             
-            # المرور على كل عملة في القائمة وقراءة سعرها من الذاكرة (بدون أي طلبات إنترنت إضافية)
-            for symbol in SYMBOLS:
-                print(f"\n┌───[ جَارِي فَحْصُ {symbol} ]─────────────────────┐")
+            # المرور على كل عملات السوق المتاحة في الذاكرة 
+            for symbol, data in all_tickers.items():
                 
-                if symbol not in all_tickers:
-                    print(f"│ [LOOP] العَمَلَةُ {symbol} غَيْرُ مَوْجُودَةٍ فِي بَيَانَاتِ المَنَصَّةِ، جَارِي التَّخَطِّي...")
+                # تجاهل أي عملة لا تنتهي بـ USDT
+                if not symbol.endswith("USDT"):
                     continue
-                
-                # قراءة الأسعار لحظياً من الذاكرة
-                current_price = all_tickers[symbol]['lastPrice']
-                low_24h = all_tickers[symbol]['lowPrice24h']
-                print("│ [PRICE] السِّعْرُ الحَالِيُّ المَقْرُوءُ: %.5f | قَاعُ 24 سَاعَة: %.5f" % (current_price, low_24h))
 
-                # === (باقي الكود الخاص بك داخل الحلقة يبقى كما هو دون أي تغيير) ===
-                open_count = count_open_positions(history) # تم استخدام التعديل السابق لجميع العملات
+                current_price = data['lastPrice']
+                low_24h = data['lowPrice24h']
+                high_24h = data['highPrice24h']
+                volume_24h = data['turnover24h']
+
+                # ───[ فلترة العملات الميتة والخاملة ]───
+                if volume_24h < 2000000:
+                    continue 
+                if low_24h == 0: 
+                    continue
+                volatility_pct = ((high_24h - low_24h) / low_24h) * 100
+                if volatility_pct < 4.0:
+                    continue
+                # ─────────────────────────────────────
+
+                print(f"\n┌───[ جَارِي فَحْصُ {symbol} (حَيَوِيَّة: {volatility_pct:.1f}%) ]─────────────────────┐")
+                print("│ [PRICE] السِّعْرُ الحَالِيُّ: %.5f | قَاعُ 24 سَاعَة: %.5f | السِّيُولَة: %.0f$" % (current_price, low_24h, volume_24h))
 
                 open_count = count_open_positions(history, symbol)
                 
@@ -655,13 +663,11 @@ def main():
                 else:
                     print("│ [النَّتِيجَةُ] لَمْ يَبِعْ → فَحْصُ إِعَادَةِ الشِّرَاءِ...")
                     
-                    # الفحص الآن للحد الأقصى لكل عملة بناءً على MAX_OPEN_POSITIONS
                     if open_count < MAX_OPEN_POSITIONS:
-                        
                         limit_buy_target = low_24h * (1 + (BUY_NEAR_24H_LOW_PCT / 100))
                         is_price_in_buy_zone = (current_price <= limit_buy_target)
                         
-                        print("│ [إِسْتِرَاتِيجِيَّة] هَدَفُ الشِّرَاءِ المُعَلَّقِ: <= %.2f (السِّعْرُ الحَالِيُّ: %.2f)" % (limit_buy_target, current_price))
+                        print("│ [إِسْتِرَاتِيجِيَّة] هَدَفُ الشِّرَاءِ المُعَلَّقِ: <= %.5f (السِّعْرُ الحَالِيُّ: %.5f)" % (limit_buy_target, current_price))
 
                         last_sell_time = get_last_sell_time(history, symbol)
                         wait_sell_ok = True
@@ -674,25 +680,29 @@ def main():
                                 wait_sell_ok = False
                         
                         if wait_sell_ok:
+                            wants_to_buy = False
+                            buy_message = ""
+
+                            # تحديد هل استوفت العملة شروط الشراء الخاصة بك؟
                             if open_count == 0:
                                 abs_last_buy_price = get_absolute_last_buy_price(history, symbol)
                                 if abs_last_buy_price is None:
                                     if is_price_in_buy_zone:
-                                        print("│ [شِرَاءٌ] السِّعْرُ هَبَطَ لِمِنْطَقَةِ القَاعِ! جَارِي التَّنْفِيذُ فَوْراً...")
-                                        create_buy_operation(symbol)
+                                        wants_to_buy = True
+                                        buy_message = "│ [شِرَاءٌ] السِّعْرُ هَبَطَ لِمِنْطَقَةِ القَاعِ! جَارِي التَّنْفِيذُ فَوْراً..."
                                     else:
                                         print("│ [تَجَاوُزٌ] السِّعْرُ مُرْتَفِعٌ. نَنْتَظِرُ هُبُوطَهُ لِمِنْطَقَةِ الشِّرَاءِ الآمِنَةِ.")
                                 else:
                                     if elapsed_since_sell >= 60.0:
                                         if is_price_in_buy_zone:
-                                            print("│ [شِرَاءٌ] مَرَّتْ سَاعَةٌ كَامِلَةٌ وَالسِّعْرُ فِي القَاعِ. جَارِي الشِّرَاءُ...")
-                                            create_buy_operation(symbol)
+                                            wants_to_buy = True
+                                            buy_message = "│ [شِرَاءٌ] مَرَّتْ سَاعَةٌ كَامِلَةٌ وَالسِّعْرُ فِي القَاعِ. جَارِي الشِّرَاءُ..."
                                         else:
                                             print("│ [تَجَاوُزٌ] مَرَّتْ سَاعَةٌ لَكِنَّ السِّعْرَ لَمْ يَصِلْ لِلْقَاعِ بَعْدُ.")
                                     elif current_price <= abs_last_buy_price:
                                         if is_price_in_buy_zone:
-                                            print("│ [شِرَاءٌ] السِّعْرُ أَقَلُّ مِنْ آخِرِ شِرَاءٍ وَفِي قَاعِ 24 سَاعَة. جَارِي الشِّرَاءُ...")
-                                            create_buy_operation(symbol)
+                                            wants_to_buy = True
+                                            buy_message = "│ [شِرَاءٌ] السِّعْرُ أَقَلُّ مِنْ آخِرِ شِرَاءٍ وَفِي قَاعِ 24 سَاعَة. جَارِي الشِّرَاءُ..."
                                         else:
                                             print("│ [تَجَاوُزٌ] السِّعْرُ أَقَلُّ مِنْ آخِرِ شِرَاءٍ، لَكِنَّهُ لَيْسَ فِي القَاعِ الْمَطْلُوبِ.")
                                     else:
@@ -700,12 +710,23 @@ def main():
                                         print("│ [تَجَاوُزٌ] نَنْتَظِرُ اِنْخِفَاضَهُ أَوْ مُرُورَ (%.1f) دَقِيقَة..." % minutes_left)
                             elif can_rebuy(history, current_price, symbol):
                                 if is_price_in_buy_zone:
-                                    print("│ [شِرَاءٌ] يَشْتَرِي! الشُّرُوطُ مُطَابِقَةٌ لِإِعَادَةِ الشِّرَاءِ فِي القَاعِ...")
-                                    create_buy_operation(symbol)
+                                    wants_to_buy = True
+                                    buy_message = "│ [شِرَاءٌ] يَشْتَرِي! الشُّرُوطُ مُطَابِقَةٌ لِإِعَادَةِ الشِّرَاءِ فِي القَاعِ..."
                                 else:
                                      print("│ [تَجَاوُزٌ] شُرُوطُ إِعَادَةِ الشِّرَاءِ تَحَقَّقَتْ، لَكِنَّ السِّعْرَ لَيْسَ فِي القَاعِ.")
                             else:
                                 print("│ [تَجَاوُزٌ] شُرُوطُ الشِّرَاءِ التَّقْلِيدِيَّةِ لَمْ تَتَحَقَّقْ بَعْدُ.")
+
+                            # ───[ الفحص النهائي للشموع قبل التنفيذ ]───
+                            if wants_to_buy:
+                                passed_recent_high, target, recent_high = check_recent_high_target(symbol, current_price)
+                                if passed_recent_high:
+                                    print("│ [BUY-CHECK] مُمْتَاز! العَمَلَة حَقَّقَت %.5f مُؤَخَّراً، وَهِي قَادِرَة عَلَى العَوْدَة لِهَدَفِنَا %.5f" % (recent_high, target))
+                                    print(buy_message)
+                                    create_buy_operation(symbol)
+                                else:
+                                    print("│ [SKIP] تَمَّ التَّجَاهُل: العَمَلَة فِي هُبُوطٍ مُسْتَمِرٍّ، لَمْ تَصِلْ لِهَدَفِ %.5f فِي آخِرِ 4 سَاعَات." % target)
+                            # ──────────────────────────────────────────
                     else:
                         print("│ [تَحْذِيرٌ] تَمَّ بُلُوغُ الحَدِّ الأَقْصَى لِلصَّفَقَاتِ لِهَذِهِ العَمَلَةِ (%d)." % MAX_OPEN_POSITIONS)
 
@@ -724,4 +745,4 @@ def main():
     print("[END] تَمَّ الاِنْتِهَاءُ مِنَ الدَّوْرَةِ زَمَنِيًّا!")
 
 if __name__ == "__main__":
-    main()
+    main()                                   
