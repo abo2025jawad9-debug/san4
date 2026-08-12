@@ -675,8 +675,8 @@ def main():
                         
                         if last_sell_time:
                             elapsed_since_sell = (datetime.utcnow() - last_sell_time).total_seconds() / 60
-                            if elapsed_since_sell < 10.0:
-                                print("│ [تَجَاوُزٌ] اِنْتِظَارُ 10 دَقَائِقَ بَعْدَ البَيْعِ. (مَرَّتْ %.1f دَقِيقَة)" % elapsed_since_sell)
+                            if elapsed_since_sell < 1.0:
+                                print("│ [تَجَاوُزٌ] اِنْتِظَارُ 1 دَقَائِقَ بَعْدَ البَيْعِ. (مَرَّتْ %.1f دَقِيقَة)" % elapsed_since_sell)
                                 wait_sell_ok = False
                         
                         if wait_sell_ok:
@@ -693,12 +693,12 @@ def main():
                                     else:
                                         print("│ [تَجَاوُزٌ] السِّعْرُ مُرْتَفِعٌ. نَنْتَظِرُ هُبُوطَهُ لِمِنْطَقَةِ الشِّرَاءِ الآمِنَةِ.")
                                 else:
-                                    if elapsed_since_sell >= 60.0:
+                                    if elapsed_since_sell >= 1.0:
                                         if is_price_in_buy_zone:
                                             wants_to_buy = True
                                             buy_message = "│ [شِرَاءٌ] مَرَّتْ سَاعَةٌ كَامِلَةٌ وَالسِّعْرُ فِي القَاعِ. جَارِي الشِّرَاءُ..."
                                         else:
-                                            print("│ [تَجَاوُزٌ] مَرَّتْ سَاعَةٌ لَكِنَّ السِّعْرَ لَمْ يَصِلْ لِلْقَاعِ بَعْدُ.")
+                                            print("│ [تَجَاوُزٌ] مَرَّتْ دقيقه لَكِنَّ السِّعْرَ لَمْ يَصِلْ لِلْقَاعِ بَعْدُ.")
                                     elif current_price <= abs_last_buy_price:
                                         if is_price_in_buy_zone:
                                             wants_to_buy = True
