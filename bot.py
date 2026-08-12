@@ -572,6 +572,36 @@ def get_all_tickers_data():
         print(f"[PRICE] فَشَلٌ فِي جَلْبِ البَيَانَاتِ الجَمَاعِيَّةِ: {e}")
         return None
 
+def check_recent_high_target(symbol, current_price):
+    """
+    تجلب شموع آخر 4 ساعات وتتأكد ما إذا كانت العملة قد وصلت للسعر المستهدف مؤخراً
+    """
+    try:
+        # نحتاج ارتفاع بنسبة 0.3% تقريباً لتغطية (رسوم الشراء + رسوم البيع + ربح 0.1%)
+        required_jump_pct = (TAKER_FEE_PERCENT * 2) + (TAKE_PROFIT_PCT / 100) 
+        target_price = current_price * (1 + required_jump_pct)
+        
+        # جلب شموع فريم الساعة (60 دقيقة) لآخر 4 ساعات
+        res = client.get_kline(category="spot", symbol=symbol, interval="60", limit=4)
+        
+        recent_highest = 0
+        for kline in res['result']['list']:
+            high_price = float(kline[2]) # kline[2] هو أعلى سعر في الشمعة
+            if high_price > recent_highest:
+                recent_highest = high_price
+                
+        # هل أعلى سعر في آخر 4 ساعات أكبر من السعر الذي نحتاجه الآن؟
+        if recent_highest >= target_price:
+            return True, target_price, recent_highest
+        else:
+            return False, target_price, recent_highest
+            
+    except Exception as e:
+        print(f"[KLINE] خَطَأ فِي جَلْبِ الشُّمُوعِ لِعَمَلَةِ {symbol}: {e}")
+        return False, 0, 0
+
+
+
 def main():
     """الدالة الرئيسية التي تقوم ببدء تشغيل الحلقة (Loop) والمرور على جميع العملات المحددة تباعاً لتنفيذ المنطق"""
     if not API_KEY or not API_SECRET:
