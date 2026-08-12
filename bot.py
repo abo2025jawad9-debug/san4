@@ -551,21 +551,25 @@ def can_rebuy(history, current_price, symbol):
 def get_all_tickers_data():
     """تقوم بجلب أسعار جميع العملات في السوق بطلب واحد فقط (لقطة شاشة لحظية)"""
     try:
-        # طلب واحد فقط بدون تحديد اسم العملة
         res = client.get_tickers(category="spot")
         tickers_dict = {}
         
-        # ترتيب البيانات في الذاكرة لتسريع البحث
         for item in res['result']['list']:
             symbol = item['symbol']
+            # نتجاهل أي عملة لا تنتهي بـ USDT لتنظيف البحث
+            if not symbol.endswith("USDT"):
+                continue
+                
             tickers_dict[symbol] = {
                 'lastPrice': float(item['lastPrice']),
-                'lowPrice24h': float(item['lowPrice24h'])
+                'lowPrice24h': float(item['lowPrice24h']),
+                'highPrice24h': float(item['highPrice24h']), # جلب أعلى سعر
+                'turnover24h': float(item['turnover24h'])    # جلب حجم التداول بالدولار
             }
-        print("[PRICE] تَمَّ جَلْبُ لَقْطَةِ السُّوقِ لِـ %d عَمَلَةٍ بِنَجَاحٍ (طَلَبٌ وَاحِدٌ)." % len(tickers_dict))
+        print(f"[PRICE] تَمَّ جَلْبُ لَقْطَةِ السُّوقِ لِـ {len(tickers_dict)} عَمَلَةٍ USDT بِنَجَاحٍ.")
         return tickers_dict
     except Exception as e:
-        print("[PRICE] فَشَلٌ فِي جَلْبِ البَيَانَاتِ الجَمَاعِيَّةِ: %s" % e)
+        print(f"[PRICE] فَشَلٌ فِي جَلْبِ البَيَانَاتِ الجَمَاعِيَّةِ: {e}")
         return None
 
 def main():
