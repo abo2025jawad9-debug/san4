@@ -457,5 +457,23 @@
             "sell_date": "2026-08-12",
             "sell_time": "01:48:54.567287"
         }
+    },
+    "buy_ba0b810a": {
+        "symbol": "LITUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-12",
+        "time": "02:01:09.591114",
+        "buy_time": "2026-08-12T02:01:09.591114",
+        "buy_price": 2.375,
+        "qty": 6.18,
+        "sellable_qty": 6.17382,
+        "buy_amount_usd": 14.7,
+        "buy_fee_usd": 0.0147,
+        "buy_cost": 14.6775,
+        "total_cost": 14.6775,
+        "break_even_price": 2.37976,
+        "min_sell_price": 2.38214,
+        "sell_details": {}
     }
 }
