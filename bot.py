@@ -663,7 +663,7 @@ def check_recent_high_target(symbol, current_price):
         target_price = current_price * (1 + required_jump_pct)
         
         # جلب شموع فريم الساعة (60 دقيقة) لآخر 4 ساعات
-        res = client.get_kline(category="spot", symbol=symbol, interval="60", limit=4)
+        res = client.get_kline(category="spot", symbol=symbol, interval="60", limit=6)
         
         recent_highest = 0
         for kline in res['result']['list']:
