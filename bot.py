@@ -723,7 +723,7 @@ def main():
                 volume_24h = data['turnover24h']
 
                 # ───[ فلترة العملات الميتة والخاملة ]───
-                if volume_24h < 2000000:
+                if volume_24h < 1000000:
                     continue 
                 if low_24h == 0: 
                     continue
