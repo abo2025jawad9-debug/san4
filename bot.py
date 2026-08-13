@@ -37,7 +37,7 @@ TAKER_FEE_PERCENT = 0.001     # نسبة رسوم المنصة للطلبات ا
 # ================= إعدادات الاستراتيجية المئوية =================
 TAKE_PROFIT_PCT = 0.1         # نسبة الربح الصافي المطلوب تحقيقها قبل البيع (مثال: 1.0% من إجمالي التكلفة)
 PRICE_STEP_PCT = 1.5          # مسافة التعزيز كنسبة مئوية (البوت سينتظر هبوط السعر بنسبة 1.5% من آخر شراء ليعزز)
-BUY_NEAR_24H_LOW_PCT = 0.05    # نسبة التسامح للشراء من قاع اليوم (يشتري فقط إذا كان السعر لا يرتفع بأكثر من 0.5% عن أدنى سعر في آخر 24 ساعة)
+BUY_NEAR_24H_LOW_PCT = 1.0    # نسبة التسامح للشراء من قاع اليوم (يشتري فقط إذا كان السعر لا يرتفع بأكثر من 0.5% عن أدنى سعر في آخر 24 ساعة)
 
 # ================= إعدادات النظام =================
 JSON_FILE = 'sh.json'         # اسم الملف المحلي الذي سيتم حفظ سجل العمليات (Database) فيه
@@ -663,7 +663,7 @@ def check_recent_high_target(symbol, current_price):
         target_price = current_price * (1 + required_jump_pct)
         
         # جلب شموع فريم الساعة (60 دقيقة) لآخر 4 ساعات
-        res = client.get_kline(category="spot", symbol=symbol, interval="60", limit=12)
+        res = client.get_kline(category="spot", symbol=symbol, interval="60", limit=5)
         
         recent_highest = 0
         for kline in res['result']['list']:
