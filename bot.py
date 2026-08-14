@@ -25,8 +25,7 @@ cfg = Config()
 
 API_KEY = cfg.api_key
 API_SECRET = cfg.secret
-TELEGRAM_TOKEN = cfg.telegram_token
-TELEGRAM_CHAT_ID = cfg.telegram_chat_id
+
 
 # [التحديث الجديد]: قائمة العملات التي سيتداول عليها البوت (يمكنك إضافة أو حذف أي عملة)
 SYMBOLS = ["AAVEUSDT", "SOLUSDT", "HYPEUSDT","CRCLXUSDT","BTCUSDT","ETHUSDT","BICOUSDT","WLDUSDT","INJUSDT","ENAUSDT","XRPUSDT","CCUSDT","BILLUSDT","DATAUSDT","MONUSDT","CAPUSDT","ADAUSDT","LITUSDT","LTCUSDT","BNBUSDT","XAUTUSDT","LINKUSDT","MNTUSDT","CAPUSDT","NYMUSDT"]
@@ -161,23 +160,29 @@ def init_client_with_retries():
         PROXY_LIST = []
         time.sleep(5)
 
-# ================= تليجرام وإدارة الملفات =================
+# ================= واتساب وإدارة الملفات =================
 
-def send_telegram_message(message):
-    """تقوم بإرسال رسالة نصية مدعومة بصيغة HTML إلى حسابك على التليجرام لإشعارك بالصفقات"""
-    if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
-        return False
-    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
-    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message, "parse_mode": "HTML"}
-    for attempt in range(1, 4):
-        try:
-            response = requests.post(url, json=payload, timeout=10)
-            if response.status_code == 200:
-                return True
-        except Exception:
-            pass
-        time.sleep(2)
-    return False
+import requests
+import urllib.parse
+
+def send_whatsapp_message(message):
+    """
+    دالة لإرسال إشعارات الصفقات إلى واتساب عبر CallMeBot
+    """
+    phone_number = "967772490746"
+    api_key = "9569018"
+    
+    encoded_message = urllib.parse.quote(message)
+    url = f"https://api.callmebot.com/whatsapp.php?phone={phone_number}&text={encoded_message}&apikey={api_key}"
+    
+    try:
+        response = requests.get(url)
+        if response.status_code == 200:
+            print("✅ تم إرسال إشعار الواتساب بنجاح.")
+        else:
+            print(f"⚠️ فشل إرسال الإشعار. كود الخطأ: {response.status_code}")
+    except Exception as e:
+        print(f"❌ حدث خطأ أثناء الاتصال بخدمة واتساب: {e}")
 
 def load_history():
     """تقرأ سجل الصفقات المحفوظة من ملف JSON وتسترجعها على شكل قاموس (Dictionary)"""
