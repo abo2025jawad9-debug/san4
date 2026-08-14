@@ -317,7 +317,7 @@ def execute_buy(symbol):
             print("[BUY] [%s] فَشَلَتْ المُحَاوَلَةُ %d: %s" % (symbol, attempt, e))
             time.sleep(2)
 
-    send_telegram_message(f"[ERROR] [{symbol}] فشل الشراء بعد 3 محاولات!")
+    send_whatsapp_message(f"[ERROR] [{symbol}] فشلت الشراء بعد 3 محاولات")
     return None, 0, 0, 0, 0, 0
 
 def execute_sell(symbol, qty):
