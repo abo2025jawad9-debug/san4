@@ -2,7 +2,7 @@
     "buy_abb4577c": {
         "symbol": "BICOUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-14",
         "time": "00:45:49.549211",
         "buy_time": "2026-08-14T00:45:49.549211",
@@ -15,6 +15,15 @@
         "total_cost": 13.4998,
         "break_even_price": 0.02669,
         "min_sell_price": 0.02672,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_22b85dff",
+            "sell_price": 0.03,
+            "received_usd": 13.5672,
+            "sell_fee_usd": 0.0136,
+            "profit_usd": 0.0539,
+            "profit_percent": 0.399,
+            "sell_date": "2026-08-14",
+            "sell_time": "00:49:40.296040"
+        }
     }
 }
