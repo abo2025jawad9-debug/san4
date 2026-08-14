@@ -1,1 +1,20 @@
-
+{
+    "buy_abb4577c": {
+        "symbol": "BICOUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-14",
+        "time": "00:45:49.549211",
+        "buy_time": "2026-08-14T00:45:49.549211",
+        "buy_price": 0.02664,
+        "qty": 506.75,
+        "sellable_qty": 506.24325,
+        "buy_amount_usd": 13.5,
+        "buy_fee_usd": 0.0135,
+        "buy_cost": 13.4998,
+        "total_cost": 13.4998,
+        "break_even_price": 0.02669,
+        "min_sell_price": 0.02672,
+        "sell_details": {}
+    }
+}
