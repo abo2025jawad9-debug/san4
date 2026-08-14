@@ -467,7 +467,7 @@ def create_buy_operation(symbol):
         f"سعر البيع المطلوب (مضاف إليه {TAKE_PROFIT_PCT}%): {calc['min_sell_price']:.5f}\n"
         f"💳 <b>الرصيد المتاح:</b> {balance:.5f} USDT"
     )
-    send_telegram_message(msg)
+    send_whatsapp_message(msg)
 
     print("[BUY] [%s] تَمَّ الإِنْشَاءُ: %s @ %.2f" % (symbol, op_id, actual_price))
     return op_id
@@ -523,7 +523,7 @@ def try_sell_all(history, current_price, symbol):
                     f"الربح الصافي الفعلي: {actual_profit:.4f} USDT\n"
                     f"💳 <b>الرصيد المتاح:</b> {balance:.2f} USDT"
                 )
-                send_telegram_message(msg)
+                send_whatsapp_message(msg)
                 print("[SELL] [%s] تَمَّ البَيْعُ %s بِرِبْح=%.4f" % (symbol, op_id, actual_profit))
             else:
                 print("[SELL] [%s] فَشَلَتْ عَمَلِيَّةُ بَيْعِ %s" % (symbol, op_id))
