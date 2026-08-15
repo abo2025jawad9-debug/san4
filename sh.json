@@ -1,1 +1,20 @@
-
+{
+    "buy_71232a3f": {
+        "symbol": "DATAUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-15",
+        "time": "05:15:24.629864",
+        "buy_time": "2026-08-15T05:15:24.629864",
+        "buy_price": 0.1898,
+        "qty": 73.8,
+        "sellable_qty": 73.7262,
+        "buy_amount_usd": 14.02,
+        "buy_fee_usd": 0.014,
+        "buy_cost": 14.0072,
+        "total_cost": 14.0072,
+        "break_even_price": 0.19018,
+        "min_sell_price": 0.19037,
+        "sell_details": {}
+    }
+}
