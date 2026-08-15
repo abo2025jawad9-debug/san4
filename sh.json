@@ -2,7 +2,7 @@
     "buy_de24ae55": {
         "symbol": "ARXUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-15",
         "time": "22:16:21.530543",
         "buy_time": "2026-08-15T22:16:21.530543",
@@ -15,6 +15,15 @@
         "total_cost": 14.1623,
         "break_even_price": 0.10992,
         "min_sell_price": 0.10994,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_0ab2b582",
+            "sell_price": 0.11,
+            "received_usd": 14.2048,
+            "sell_fee_usd": 0.0142,
+            "profit_usd": 0.0283,
+            "profit_percent": 0.199,
+            "sell_date": "2026-08-15",
+            "sell_time": "22:31:38.035851"
+        }
     }
 }
