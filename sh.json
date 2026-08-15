@@ -1,1 +1,18 @@
 
+{
+    "BSBUSDT": {
+        "status": "مفتوحة",
+        "symbol": "BSBUSDT",
+        "time": "2026-08-16T00:18:00",
+        "buy_price": 0.1165,
+        "qty": 120.17167382,
+        "sellable_qty": 120.05150215,
+        "buy_amount_usd": 14.0,
+        "buy_fee_usd": 0.014,
+        "buy_cost": 14.0,
+        "total_cost": 14.028,
+        "break_even_price": 0.11685,
+        "min_sell_price": 0.11860,
+        "sell_details": {}
+    }
+}
