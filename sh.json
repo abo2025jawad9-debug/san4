@@ -29,7 +29,7 @@
     "buy_d1f76812": {
         "symbol": "APEXUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-15",
         "time": "22:31:45.498082",
         "buy_time": "2026-08-15T22:31:45.498082",
@@ -42,6 +42,15 @@
         "total_cost": 14.1686,
         "break_even_price": 0.18166,
         "min_sell_price": 0.1817,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_ef05fe1f",
+            "sell_price": 0.18,
+            "received_usd": 14.1931,
+            "sell_fee_usd": 0.0142,
+            "profit_usd": 0.0103,
+            "profit_percent": 0.073,
+            "sell_date": "2026-08-16",
+            "sell_time": "00:16:07.193352"
+        }
     }
 }
