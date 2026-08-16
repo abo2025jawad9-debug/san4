@@ -609,11 +609,22 @@ def calculate_rsi(prices, period=14):
     rsi = 100 - (100 / (1 + rs))
     return round(rsi, 2)
 def is_safe_to_buy_rsi(symbol):
+# حذف من أول:
+def is_safe_to_buy_rsi(symbol):
+    ...
+# وحتى نهاية الدالة قبل def check_recent_high_target
+```[cite: 2]
+
+2. **ضع الدالة الجديدة مكانها تماماً:**
+
+```python
+def is_safe_to_buy_rsi(symbol):
     """
-    تتأكد من أن العملة في منطقة تشبع بيعي وأن الشمعة الحالية بدأت بالانعكاس للصعود.
+    تتأكد من أن العملة في منطقة تشبع بيعي (15 دقيقة) 
+    وأن شمعة الدقيقة الواحدة الأخيرة المغلقة كانت خضراء لتأكيد الارتداد الحقيقي.
     """
     try:
-        # جلب شموع 15 دقيقة (آخر 30 شمعة تكفي لحساب مؤشر 14 بدقة)
+        # 1. جلب شموع 15 دقيقة لحساب RSI
         res = client.get_kline(
             category="spot",
             symbol=symbol,
@@ -625,32 +636,43 @@ def is_safe_to_buy_rsi(symbol):
         if not klines or len(klines) < 15:
             return False
             
-        # منصة Bybit تعيد الشموع من الأحدث للأقدم، ومؤشر RSI يحتاج الترتيب من الأقدم للأحدث
         klines.reverse()
+        close_prices = [float(k[4]) for k in klines]
         
-        close_prices = []
-        for k in klines:
-            close_prices.append(float(k[4])) # الفهرس 4 هو سعر الإغلاق في Bybit
-            
-        # جلب سعر الافتتاح والإغلاق للشمعة الحالية (الأخيرة) للتحقق من الانعكاس
-        current_open = float(klines[-1][1])  # الفهرس 1 هو سعر الافتتاح
-        current_close = float(klines[-1][4]) # الفهرس 4 هو سعر الإغلاق
-        
-        # حساب قيمة RSI
+        # حساب RSI على فريم 15 دقيقة
         rsi_value = calculate_rsi(close_prices, period=14)
-        
-        # الشروط: 
-        # 1. المؤشر تحت 40 (تشبع بيعي)
-        # 2. الشمعة الحالية خضراء (السعر الحالي أعلى من افتتاح الشمعة)
         is_oversold = rsi_value <= 40.0
-        is_green_candle = current_close > current_open
         
-        if is_oversold and is_green_candle:
-            print(f"│ [مُؤَشِّرُ RSI] {symbol} أَعْطَى إِشَارَةَ ارْتِدَادٍ آَمِنَةٍ! (RSI: {rsi_value}) 🟢")
+        # إذا لم تكن العملة في منطقة تشبع بيعي، نتوقف فوراً لتوفير طلبيات API
+        if not is_oversold:
+            return False
+
+        # 2. جلب آخر شمعتين على فريم الدقيقة الواحدة (1m) للتأكد من الارتداد
+        res_1m = client.get_kline(
+            category="spot",
+            symbol=symbol,
+            interval="1",
+            limit=3
+        )
+        
+        klines_1m = res_1m.get('result', {}).get('list', [])
+        if not klines_1m or len(klines_1m) < 2:
+            return False
+
+        klines_1m.reverse() # الترتيب من الأقدم للأحدث
+        
+        # الفهرس -2 يمثل الشمعة السابقة التي أغلقت بالفعل قبل ثوانٍ على فريم 1 دقيقة
+        prev_1m_open = float(klines_1m[-2][1])
+        prev_1m_close = float(klines_1m[-2][4])
+        
+        is_1m_green = prev_1m_close > prev_1m_open
+
+        # الشروط النهائية: RSI 15m ممتاز + شمعة 1m السابقة أغلقت خضراء
+        if is_oversold and is_1m_green:
+            print(f"│ [مُؤَشِّرُ RSI + 1M] {symbol} تأكد ارتدادها بشمعة دقيقة خضراء مغلقة! (RSI: {rsi_value}) 🟢")
             return True
         else:
-            # يمكنك تفعيل السطر التالي إذا أردت رؤية سبب رفض الشراء في موجه الأوامر
-            # print(f"│ [مُؤَشِّرُ RSI] الرَّفْضُ: {symbol} لا تَزَالُ تَهْبِطُ (RSI: {rsi_value}) 🔴")
+            print(f"│ [تجاهل] {symbol} في القاع (RSI: {rsi_value}) لكن شمعة الدقيقة الأخيرة ليست خضراء 🔴")
             return False
             
     except Exception as e:
