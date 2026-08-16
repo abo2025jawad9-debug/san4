@@ -608,7 +608,6 @@ def calculate_rsi(prices, period=14):
     rs = avg_gain / avg_loss
     rsi = 100 - (100 / (1 + rs))
     return round(rsi, 2)
-def is_safe_to_buy_rsi(symbol):
 # حذف من أول:
 def is_safe_to_buy_rsi(symbol):
     ...
@@ -861,3 +860,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
