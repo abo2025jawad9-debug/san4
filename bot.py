@@ -30,7 +30,7 @@ API_SECRET = cfg.secret
 # [التحديث الجديد]: قائمة العملات التي سيتداول عليها البوت (يمكنك إضافة أو حذف أي عملة)
 SYMBOLS = ["AAVEUSDT", "SOLUSDT", "HYPEUSDT","CRCLXUSDT","BTCUSDT","ETHUSDT","BICOUSDT","WLDUSDT","INJUSDT","ENAUSDT","XRPUSDT","CCUSDT","BILLUSDT","DATAUSDT","MONUSDT","CAPUSDT","ADAUSDT","LITUSDT","LTCUSDT","BNBUSDT","XAUTUSDT","LINKUSDT","MNTUSDT","CAPUSDT","NYMUSDT"]
 
-BUY_AMOUNT_USD = 7.00         # قيمة كل صفقة شراء بالدولار
+BUY_AMOUNT_USD = 5.00         # قيمة كل صفقة شراء بالدولار
 TAKER_FEE_PERCENT = 0.002     # نسبة رسوم المنصة للطلبات المباشرة (Taker Fee)، عادة تكون 0.1%
 
 # ================= إعدادات الاستراتيجية المئوية =================
@@ -40,7 +40,7 @@ BUY_NEAR_24H_LOW_PCT = 0.1    # نسبة التسامح للشراء من قاع
 
 # ================= إعدادات النظام =================
 JSON_FILE = 'sh.json'         # اسم الملف المحلي الذي سيتم حفظ سجل العمليات (Database) فيه
-MAX_OPEN_POSITIONS = 1        # الحد الأقصى لعدد الصفقات المفتوحة (لكل عملة على حدة)
+MAX_OPEN_POSITIONS = 2        # الحد الأقصى لعدد الصفقات المفتوحة (لكل عملة على حدة)
 REBUY_WAIT_MINUTES = 1        # الحد الأدنى من الدقائق للانتظار بين صفقات الشراء لنفس العملة
 SLEEP_SECONDS = 7             # وقت الاستراحة بالثواني بين كل دورة فحص للسوق (لتخفيف الضغط على واجهة API)
 RUN_DURATION_HOURS = 5.8      # المدة الإجمالية لتشغيل السكربت بالساعات قبل الإغلاق التلقائي (يفيد في التحديثات وجدولة الخوادم)
