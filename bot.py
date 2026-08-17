@@ -30,11 +30,11 @@ API_SECRET = cfg.secret
 # [التحديث الجديد]: قائمة العملات التي سيتداول عليها البوت (يمكنك إضافة أو حذف أي عملة)
 SYMBOLS = ["AAVEUSDT", "SOLUSDT", "HYPEUSDT","CRCLXUSDT","BTCUSDT","ETHUSDT","BICOUSDT","WLDUSDT","INJUSDT","ENAUSDT","XRPUSDT","CCUSDT","BILLUSDT","DATAUSDT","MONUSDT","CAPUSDT","ADAUSDT","LITUSDT","LTCUSDT","BNBUSDT","XAUTUSDT","LINKUSDT","MNTUSDT","CAPUSDT","NYMUSDT"]
 
-BUY_AMOUNT_USD = 14.17         # قيمة كل صفقة شراء بالدولار
-TAKER_FEE_PERCENT = 0.001     # نسبة رسوم المنصة للطلبات المباشرة (Taker Fee)، عادة تكون 0.1%
+BUY_AMOUNT_USD = 7.00         # قيمة كل صفقة شراء بالدولار
+TAKER_FEE_PERCENT = 0.002     # نسبة رسوم المنصة للطلبات المباشرة (Taker Fee)، عادة تكون 0.1%
 
 # ================= إعدادات الاستراتيجية المئوية =================
-TAKE_PROFIT_PCT = 0.02         # نسبة الربح الصافي المطلوب تحقيقها قبل البيع (مثال: 1.0% من إجمالي التكلفة)
+TAKE_PROFIT_PCT = 0.00         # نسبة الربح الصافي المطلوب تحقيقها قبل البيع (مثال: 1.0% من إجمالي التكلفة)
 PRICE_STEP_PCT = 1.0          # مسافة التعزيز كنسبة مئوية (البوت سينتظر هبوط السعر بنسبة 1.5% من آخر شراء ليعزز)
 BUY_NEAR_24H_LOW_PCT = 0.1    # نسبة التسامح للشراء من قاع اليوم (يشتري فقط إذا كان السعر لا يرتفع بأكثر من 0.5% عن أدنى سعر في آخر 24 ساعة)
 
