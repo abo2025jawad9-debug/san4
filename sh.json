@@ -2,7 +2,7 @@
     "buy_b611e7c9": {
         "symbol": "GRASSUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-20",
         "time": "03:24:15.531609",
         "buy_time": "2026-08-20T03:24:15.531609",
@@ -15,6 +15,15 @@
         "total_cost": 4.9938,
         "break_even_price": 0.28815,
         "min_sell_price": 0.28815,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_890893b2",
+            "sell_price": 0.29,
+            "received_usd": 5.0032,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0044,
+            "profit_percent": 0.087,
+            "sell_date": "2026-08-20",
+            "sell_time": "04:10:51.226689"
+        }
     }
 }
