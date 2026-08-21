@@ -824,18 +824,11 @@ def main():
                                     print("│ [تَجَاوُزٌ] تَمَّ إِلْغَاءُ الشِّرَاءِ: مُؤَشِّرُ RSI يُحَذِّرُ مِنِ اسْتِمْرَارِ الْهُبُوطِ (سِكِّينٌ سَاقِطٌ) ⚠️")
                                 else:
                                     passed_recent_high, target, recent_high = check_recent_high_target(symbol, current_price)
-                                    # ───[ الفحص النهائي للشموع قبل التنفيذ ]───
-                            if wants_to_buy:
-                                # الحارس الجديد: فحص مؤشر القوة النسبية RSI أولاً
-                                if not is_safe_to_buy_rsi(symbol):
-                                    print("│ [تَجَاوُزٌ] تَمَّ إِلْغَاءُ الشِّرَاءِ: مُؤَشِّرُ RSI يُحَذِّرُ مِنِ اسْتِمْرَارِ الْهُبُوطِ (سِكِّينٌ سَاقِطٌ) ⚠️")
-                                else:
-                                    passed_recent_high, target, recent_high = check_recent_high_target(symbol, current_price)
                                     if passed_recent_high:
                                         print("│ [BUY-CHECK] مُمْتَازٌ! العُمْلَةُ حَقَّقَتْ %.5f مُؤَخَّراً، وَهِيَ قَادِرَةٌ عَلَى العَوْدَةِ لِهَدَفِنَا %.5f" % (recent_high, target))
                                         print(buy_message)
                                         create_buy_operation(symbol)
-                                        history = load_history()
+                                        history = load_history() # السطر الجديد: لتحديث الذاكرة فوراً لتجنب مسح الصفقه
                                     else:
                                         print("│ [SKIP] تَمَّ التَّجَاهُلُ: العُمْلَةُ فِي هُبُوطٍ مُسْتَمِرٍّ، لَمْ تَصِلْ لِهَدَفِ %.5f فِي آخِرِ 4 سَاعَاتٍ." % target)
                             # ──────────────────────────────────────────
@@ -858,3 +851,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
