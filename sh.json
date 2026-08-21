@@ -1,3 +1,4 @@
+{
 "buy_manual_pybobo": {
       "symbol": "PYBOBOUSDT",
       "type": "buy",
@@ -16,3 +17,4 @@
       "min_sell_price": 0.0006145,
       "sell_details": {}
 }
+} 
