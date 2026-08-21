@@ -345,7 +345,7 @@ def execute_sell(symbol, qty):
             )
             
             order_id = order['result']['orderId']
-            time.sleep(4)
+            time.sleep(1.5)
             
             exec_res = client.get_executions(category="spot", orderId=order_id)
             fills = exec_res['result']['list']
