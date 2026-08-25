@@ -47,7 +47,7 @@
     "buy_11863690": {
         "symbol": "METUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-25",
         "time": "13:53:05.850663",
         "buy_time": "2026-08-25T13:53:05.850663",
@@ -60,6 +60,15 @@
         "total_cost": 4.982,
         "break_even_price": 0.21195,
         "min_sell_price": 0.21195,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_6e07a2e4",
+            "sell_price": 0.21,
+            "received_usd": 5.0031,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0161,
+            "profit_percent": 0.324,
+            "sell_date": "2026-08-25",
+            "sell_time": "13:56:52.178871"
+        }
     }
 }
