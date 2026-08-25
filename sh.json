@@ -16,5 +16,23 @@
         "break_even_price": 0.2248,
         "min_sell_price": 0.2248,
         "sell_details": {}
+    },
+    "buy_d48541a6": {
+        "symbol": "METUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-25",
+        "time": "13:20:05.439262",
+        "buy_time": "2026-08-25T13:20:05.439262",
+        "buy_price": 0.2125,
+        "qty": 23.5,
+        "sellable_qty": 23.4765,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9937,
+        "total_cost": 4.9937,
+        "break_even_price": 0.21335,
+        "min_sell_price": 0.21335,
+        "sell_details": {}
     }
 }
