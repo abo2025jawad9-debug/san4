@@ -40,6 +40,7 @@ BUY_NEAR_24H_LOW_PCT = 0.3    # نسبة التسامح للشراء من قاع
 
 # ================= إعدادات النظام =================
 JSON_FILE = 'sh.json'         # اسم الملف المحلي الذي سيتم حفظ سجل العمليات (Database) فيه
+x = 2                         #عدد الصفقات التي يجب ان يقوم بفتحها البوت
 MAX_OPEN_POSITIONS = 2        # الحد الأقصى لعدد الصفقات المفتوحة (لكل عملة على حدة)
 REBUY_WAIT_MINUTES = 1        # الحد الأدنى من الدقائق للانتظار بين صفقات الشراء لنفس العملة
 SLEEP_SECONDS = 7             # وقت الاستراحة بالثواني بين كل دورة فحص للسوق (لتخفيف الضغط على واجهة API)
@@ -789,7 +790,7 @@ def main():
                             # تحديد هل استوفت العملة شروط الشراء الخاصة بك؟
                             if open_count == 0:
                                 total_global_positions = count_open_positions(history)
-                                if total_global_positions >= 2:
+                                if total_global_positions >= x:
                                     continue
                                 abs_last_buy_price = get_absolute_last_buy_price(history, symbol)
                                 if abs_last_buy_price is None:
