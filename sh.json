@@ -1,1 +1,20 @@
-
+{
+    "buy_218ce4de": {
+        "symbol": "KMNOUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-25",
+        "time": "23:04:40.590895",
+        "buy_time": "2026-08-25T23:04:40.590895",
+        "buy_price": 0.02448,
+        "qty": 204.24,
+        "sellable_qty": 204.03576,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9998,
+        "total_cost": 4.9998,
+        "break_even_price": 0.02458,
+        "min_sell_price": 0.02458,
+        "sell_details": {}
+    }
+}
