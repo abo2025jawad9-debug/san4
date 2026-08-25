@@ -788,6 +788,9 @@ def main():
 
                             # تحديد هل استوفت العملة شروط الشراء الخاصة بك؟
                             if open_count == 0:
+                                total_global_positions = count_open_positions(history)
+                                if total_global_positions >= 2:
+                                    continue
                                 abs_last_buy_price = get_absolute_last_buy_price(history, symbol)
                                 if abs_last_buy_price is None:
                                     if is_price_in_buy_zone:
