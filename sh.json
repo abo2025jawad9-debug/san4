@@ -1,1 +1,20 @@
-
+{
+    "buy_a4ca7339": {
+        "symbol": "TRIAUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-25",
+        "time": "02:01:28.791200",
+        "buy_time": "2026-08-25T02:01:28.791200",
+        "buy_price": 0.00685,
+        "qty": 729.3,
+        "sellable_qty": 728.5707,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9994,
+        "total_cost": 4.9994,
+        "break_even_price": 0.00688,
+        "min_sell_price": 0.00688,
+        "sell_details": {}
+    }
+}
