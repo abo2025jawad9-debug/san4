@@ -16,5 +16,23 @@
         "break_even_price": 0.02458,
         "min_sell_price": 0.02458,
         "sell_details": {}
+    },
+    "buy_47985090": {
+        "symbol": "XDCUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-25",
+        "time": "23:08:09.565464",
+        "buy_time": "2026-08-25T23:08:09.565464",
+        "buy_price": 0.02881,
+        "qty": 173.5,
+        "sellable_qty": 173.3265,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9985,
+        "total_cost": 4.9985,
+        "break_even_price": 0.02893,
+        "min_sell_price": 0.02893,
+        "sell_details": {}
     }
 }
