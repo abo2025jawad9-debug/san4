@@ -232,5 +232,23 @@
             "sell_date": "2026-08-26",
             "sell_time": "20:13:44.608917"
         }
+    },
+    "buy_618aef2d": {
+        "symbol": "CSPRUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-26",
+        "time": "20:13:54.282490",
+        "buy_time": "2026-08-26T20:13:54.282490",
+        "buy_price": 0.00276,
+        "qty": 1810.2,
+        "sellable_qty": 1808.3898,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9998,
+        "total_cost": 4.9998,
+        "break_even_price": 0.00277,
+        "min_sell_price": 0.00277,
+        "sell_details": {}
     }
 }
