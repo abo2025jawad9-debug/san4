@@ -151,5 +151,23 @@
             "sell_date": "2026-08-26",
             "sell_time": "16:48:17.250423"
         }
+    },
+    "buy_5fe71471": {
+        "symbol": "POLUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-26",
+        "time": "16:49:26.566470",
+        "buy_time": "2026-08-26T16:49:26.566470",
+        "buy_price": 0.10991,
+        "qty": 45.4,
+        "sellable_qty": 45.3546,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9899,
+        "total_cost": 4.9899,
+        "break_even_price": 0.11035,
+        "min_sell_price": 0.11035,
+        "sell_details": {}
     }
 }
