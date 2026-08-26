@@ -209,7 +209,7 @@
     "buy_51dbce39": {
         "symbol": "STABLEUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-26",
         "time": "17:20:54.924847",
         "buy_time": "2026-08-26T17:20:54.924847",
@@ -222,6 +222,15 @@
         "total_cost": 5.0,
         "break_even_price": 0.02778,
         "min_sell_price": 0.02778,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_6a40f355",
+            "sell_price": 0.03,
+            "received_usd": 5.0233,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0183,
+            "profit_percent": 0.365,
+            "sell_date": "2026-08-26",
+            "sell_time": "20:13:44.608917"
+        }
     }
 }
