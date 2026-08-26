@@ -101,7 +101,7 @@
     "buy_dd591c97": {
         "symbol": "KMNOUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-26",
         "time": "02:48:07.540801",
         "buy_time": "2026-08-26T02:48:07.540801",
@@ -114,6 +114,15 @@
         "total_cost": 4.9999,
         "break_even_price": 0.02426,
         "min_sell_price": 0.02426,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_dd0a2b1d",
+            "sell_price": 0.02,
+            "received_usd": 5.0155,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0106,
+            "profit_percent": 0.212,
+            "sell_date": "2026-08-26",
+            "sell_time": "15:19:59.230221"
+        }
     }
 }
