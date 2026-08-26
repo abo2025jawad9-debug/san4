@@ -615,7 +615,7 @@ def calculate_rsi(prices, period=14):
 def is_safe_to_buy_rsi(symbol):
     """
     تتأكد من أن العملة في منطقة تشبع بيعي (15 دقيقة) 
-    وأن شمعة الدقيقة الواحدة الأخيرة المغلقة كانت خضراء لتأكيد الارتداد الحقيقي.
+    وأن آخر شمعتين دقيقة مغلقتين كانتا خضراوين لتأكيد الارتداد الحقيقي.
     """
     try:
         # 1. جلب شموع 15 دقيقة لحساب RSI
@@ -641,32 +641,37 @@ def is_safe_to_buy_rsi(symbol):
         if not is_oversold:
             return False
 
-        # 2. جلب آخر شمعتين على فريم الدقيقة الواحدة (1m) للتأكد من الارتداد
+        # 2. جلب آخر 3 شموع على فريم الدقيقة الواحدة (1m) للتأكد من الارتداد
+        # نطلب 3 شموع: (الشمعة الحالية المفتوحة -1، الشمعة المغلقة الأخيرة -2، الشمعة المغلقة قبل الأخيرة -3)
         res_1m = client.get_kline(
             category="spot",
             symbol=symbol,
             interval="1",
-            limit=3
+            limit=4
         )
         
         klines_1m = res_1m.get('result', {}).get('list', [])
-        if not klines_1m or len(klines_1m) < 2:
+        if not klines_1m or len(klines_1m) < 3:
             return False
 
         klines_1m.reverse() # الترتيب من الأقدم للأحدث
         
-        # الفهرس -2 يمثل الشمعة السابقة التي أغلقت بالفعل قبل ثوانٍ على فريم 1 دقيقة
+        # الشمعة المغلقة الأولى (الأحدث) الفهرس -2
         prev_1m_open = float(klines_1m[-2][1])
         prev_1m_close = float(klines_1m[-2][4])
-        
-        is_1m_green = prev_1m_close > prev_1m_open
+        is_prev_green = prev_1m_close > prev_1m_open
 
-        # الشروط النهائية: RSI 15m ممتاز + شمعة 1m السابقة أغلقت خضراء
-        if is_oversold and is_1m_green:
-            print(f"│ [مُؤَشِّرُ RSI + 1M] {symbol} تأكد ارتدادها بشمعة دقيقة خضراء مغلقة! (RSI: {rsi_value}) 🟢")
+        # الشمعة المغلقة الثانية (الأقدم) الفهرس -3
+        prev2_1m_open = float(klines_1m[-3][1])
+        prev2_1m_close = float(klines_1m[-3][4])
+        is_prev2_green = prev2_1m_close > prev2_1m_open
+
+        # الشروط النهائية: RSI 15m ممتاز + آخر شمعتين 1m كانتا خضراوين
+        if is_oversold and is_prev_green and is_prev2_green:
+            print(f"│ [مُؤَشِّرُ RSI + 1M] {symbol} تأكد ارتدادها بشمعتين دقيقة خضراء متتالية! (RSI: {rsi_value}) 🟢🟢")
             return True
         else:
-            print(f"│ [تجاهل] {symbol} في القاع (RSI: {rsi_value}) لكن شمعة الدقيقة الأخيرة ليست خضراء 🔴")
+            print(f"│ [تجاهل] {symbol} في القاع (RSI: {rsi_value}) لكن لا توجد شمعتين خضراوين متتاليتين 🔴")
             return False
             
     except Exception as e:
