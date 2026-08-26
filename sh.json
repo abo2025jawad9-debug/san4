@@ -2,7 +2,7 @@
     "buy_218ce4de": {
         "symbol": "KMNOUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-25",
         "time": "23:04:40.590895",
         "buy_time": "2026-08-25T23:04:40.590895",
@@ -15,7 +15,16 @@
         "total_cost": 4.9998,
         "break_even_price": 0.02458,
         "min_sell_price": 0.02458,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_2ccd86f2",
+            "sell_price": 0.02,
+            "received_usd": 5.0151,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0102,
+            "profit_percent": 0.205,
+            "sell_date": "2026-08-26",
+            "sell_time": "00:50:35.715700"
+        }
     },
     "buy_47985090": {
         "symbol": "XDCUSDT",
