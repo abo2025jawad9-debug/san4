@@ -47,7 +47,7 @@
     "buy_b6cd345c": {
         "symbol": "DEEPUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-26",
         "time": "00:51:16.672302",
         "buy_time": "2026-08-26T00:51:16.672302",
@@ -60,6 +60,15 @@
         "total_cost": 4.9937,
         "break_even_price": 0.01397,
         "min_sell_price": 0.01397,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_e3c36ba7",
+            "sell_price": 0.01,
+            "received_usd": 4.9977,
+            "sell_fee_usd": 0.005,
+            "profit_usd": -0.001,
+            "profit_percent": -0.02,
+            "sell_date": "2026-08-26",
+            "sell_time": "01:04:16.326193"
+        }
     }
 }
