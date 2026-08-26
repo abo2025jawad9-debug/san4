@@ -155,7 +155,7 @@
     "buy_5fe71471": {
         "symbol": "POLUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-26",
         "time": "16:49:26.566470",
         "buy_time": "2026-08-26T16:49:26.566470",
@@ -168,6 +168,15 @@
         "total_cost": 4.9899,
         "break_even_price": 0.11035,
         "min_sell_price": 0.11035,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_b8173943",
+            "sell_price": 0.11,
+            "received_usd": 5.0043,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0094,
+            "profit_percent": 0.188,
+            "sell_date": "2026-08-26",
+            "sell_time": "17:03:25.270394"
+        }
     }
 }
