@@ -43,5 +43,23 @@
         "break_even_price": 0.02893,
         "min_sell_price": 0.02893,
         "sell_details": {}
+    },
+    "buy_b6cd345c": {
+        "symbol": "DEEPUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-26",
+        "time": "00:51:16.672302",
+        "buy_time": "2026-08-26T00:51:16.672302",
+        "buy_price": 0.01391,
+        "qty": 359.0,
+        "sellable_qty": 358.641,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9937,
+        "total_cost": 4.9937,
+        "break_even_price": 0.01397,
+        "min_sell_price": 0.01397,
+        "sell_details": {}
     }
 }
