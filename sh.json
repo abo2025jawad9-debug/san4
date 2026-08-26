@@ -128,7 +128,7 @@
     "buy_bcd157d4": {
         "symbol": "JTOUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-26",
         "time": "15:21:05.220252",
         "buy_time": "2026-08-26T15:21:05.220252",
@@ -141,6 +141,15 @@
         "total_cost": 4.9931,
         "break_even_price": 0.51154,
         "min_sell_price": 0.51154,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_cb0790c6",
+            "sell_price": 0.52,
+            "received_usd": 5.0071,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.009,
+            "profit_percent": 0.181,
+            "sell_date": "2026-08-26",
+            "sell_time": "16:48:17.250423"
+        }
     }
 }
