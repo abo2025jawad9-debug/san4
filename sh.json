@@ -74,7 +74,7 @@
     "buy_93ae8e2a": {
         "symbol": "AZTECUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-27",
         "time": "18:16:37.988035",
         "buy_time": "2026-08-27T18:16:37.988035",
@@ -87,6 +87,15 @@
         "total_cost": 4.9992,
         "break_even_price": 0.01417,
         "min_sell_price": 0.01417,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_fbfc1623",
+            "sell_price": 0.01,
+            "received_usd": 5.0077,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0035,
+            "profit_percent": 0.069,
+            "sell_date": "2026-08-27",
+            "sell_time": "22:12:09.622630"
+        }
     }
 }
