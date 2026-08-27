@@ -43,5 +43,23 @@
         "break_even_price": 0.04803,
         "min_sell_price": 0.04803,
         "sell_details": {}
+    },
+    "buy_cc48d09d": {
+        "symbol": "OPUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-27",
+        "time": "02:58:56.760475",
+        "buy_time": "2026-08-27T02:58:56.760475",
+        "buy_price": 0.09637,
+        "qty": 51.88,
+        "sellable_qty": 51.82812,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9997,
+        "total_cost": 4.9997,
+        "break_even_price": 0.09666,
+        "min_sell_price": 0.09666,
+        "sell_details": {}
     }
 }
