@@ -43,23 +43,5 @@
         "break_even_price": 0.02613,
         "min_sell_price": 0.02613,
         "sell_details": {}
-    },
-    "buy_6b1bf4c8": {
-        "symbol": "STXUSDT",
-        "type": "buy",
-        "status": "معلقة - جاري الانتظار",
-        "date": "2026-08-27",
-        "time": "01:03:50.234580",
-        "buy_time": "2026-08-27T01:03:50.234580",
-        "buy_price": 0.2609,
-        "qty": 19.1,
-        "sellable_qty": 19.0809,
-        "buy_amount_usd": 5.0,
-        "buy_fee_usd": 0.005,
-        "buy_cost": 4.9832,
-        "total_cost": 4.9832,
-        "break_even_price": 0.26195,
-        "min_sell_price": 0.26195,
-        "sell_details": {}
     }
 }
