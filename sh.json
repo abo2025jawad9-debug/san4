@@ -1,1 +1,20 @@
-
+{
+    "buy_72bd7446": {
+        "symbol": "POLUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-27",
+        "time": "02:12:05.038436",
+        "buy_time": "2026-08-27T02:12:05.038436",
+        "buy_price": 0.10575,
+        "qty": 47.2,
+        "sellable_qty": 47.1528,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9914,
+        "total_cost": 4.9914,
+        "break_even_price": 0.10607,
+        "min_sell_price": 0.10607,
+        "sell_details": {}
+    }
+}
