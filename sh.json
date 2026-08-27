@@ -2,7 +2,7 @@
     "buy_72bd7446": {
         "symbol": "POLUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-27",
         "time": "02:12:05.038436",
         "buy_time": "2026-08-27T02:12:05.038436",
@@ -15,7 +15,16 @@
         "total_cost": 4.9914,
         "break_even_price": 0.10607,
         "min_sell_price": 0.10607,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_1af603b0",
+            "sell_price": 0.11,
+            "received_usd": 5.0067,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0103,
+            "profit_percent": 0.207,
+            "sell_date": "2026-08-27",
+            "sell_time": "02:58:48.424605"
+        }
     },
     "buy_5b6ad42b": {
         "symbol": "PYTHUSDT",
