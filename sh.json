@@ -25,5 +25,23 @@
             "sell_date": "2026-08-27",
             "sell_time": "00:59:40.088630"
         }
+    },
+    "buy_f6a9a106": {
+        "symbol": "STABLEUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-27",
+        "time": "01:01:07.348069",
+        "buy_time": "2026-08-27T01:01:07.348069",
+        "buy_price": 0.02603,
+        "qty": 192.0,
+        "sellable_qty": 191.808,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9978,
+        "total_cost": 4.9978,
+        "break_even_price": 0.02613,
+        "min_sell_price": 0.02613,
+        "sell_details": {}
     }
 }
