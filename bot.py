@@ -635,7 +635,7 @@ def is_safe_to_buy_rsi(symbol):
         
         # حساب RSI على فريم 15 دقيقة
         rsi_value = calculate_rsi(close_prices, period=14)
-        is_oversold = rsi_value <= 40.0
+        is_oversold = rsi_value <= 37.0
         
         # إذا لم تكن العملة في منطقة تشبع بيعي، نتوقف فوراً لتوفير طلبيات API
         if not is_oversold:
