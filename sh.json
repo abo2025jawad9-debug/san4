@@ -101,7 +101,7 @@
     "buy_36b7c2f8": {
         "symbol": "OPUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-27",
         "time": "04:36:11.372080",
         "buy_time": "2026-08-27T04:36:11.372080",
@@ -114,6 +114,15 @@
         "total_cost": 4.9992,
         "break_even_price": 0.09628,
         "min_sell_price": 0.09628,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_91c8c51c",
+            "sell_price": 0.1,
+            "received_usd": 5.0074,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0032,
+            "profit_percent": 0.065,
+            "sell_date": "2026-08-27",
+            "sell_time": "04:42:23.147511"
+        }
     }
 }
