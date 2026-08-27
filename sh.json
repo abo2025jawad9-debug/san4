@@ -151,5 +151,23 @@
             "sell_date": "2026-08-27",
             "sell_time": "06:50:24.077965"
         }
+    },
+    "buy_0157d1f8": {
+        "symbol": "AZTECUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-27",
+        "time": "06:56:09.411473",
+        "buy_time": "2026-08-27T06:56:09.411473",
+        "buy_price": 0.01416,
+        "qty": 353.1,
+        "sellable_qty": 352.7469,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9999,
+        "total_cost": 4.9999,
+        "break_even_price": 0.0142,
+        "min_sell_price": 0.0142,
+        "sell_details": {}
     }
 }
