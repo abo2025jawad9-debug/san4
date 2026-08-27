@@ -2,7 +2,7 @@
     "buy_3bf67c2b": {
         "symbol": "GPSUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-27",
         "time": "00:50:22.596676",
         "buy_time": "2026-08-27T00:50:22.596676",
@@ -15,6 +15,15 @@
         "total_cost": 4.9997,
         "break_even_price": 0.0094,
         "min_sell_price": 0.0094,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_6483a4dc",
+            "sell_price": 0.01,
+            "received_usd": 5.0186,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0139,
+            "profit_percent": 0.278,
+            "sell_date": "2026-08-27",
+            "sell_time": "00:59:40.088630"
+        }
     }
 }
