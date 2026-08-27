@@ -36,7 +36,7 @@ TAKER_FEE_PERCENT = 0.002     # نسبة رسوم المنصة للطلبات ا
 # ================= إعدادات الاستراتيجية المئوية =================
 TAKE_PROFIT_PCT = 0.00         # نسبة الربح الصافي المطلوب تحقيقها قبل البيع (مثال: 1.0% من إجمالي التكلفة)
 PRICE_STEP_PCT = 90.0          # مسافة التعزيز كنسبة مئوية (البوت سينتظر هبوط السعر بنسبة 1.5% من آخر شراء ليعزز)
-BUY_NEAR_24H_LOW_PCT = 0.3    # نسبة التسامح للشراء من قاع اليوم (يشتري فقط إذا كان السعر لا يرتفع بأكثر من 0.5% عن أدنى سعر في آخر 24 ساعة)
+BUY_NEAR_24H_LOW_PCT = 0.2    # نسبة التسامح للشراء من قاع اليوم (يشتري فقط إذا كان السعر لا يرتفع بأكثر من 0.5% عن أدنى سعر في آخر 24 ساعة)
 
 # ================= إعدادات النظام =================
 JSON_FILE = 'sh.json'         # اسم الملف المحلي الذي سيتم حفظ سجل العمليات (Database) فيه
@@ -615,7 +615,7 @@ def calculate_rsi(prices, period=14):
 def is_safe_to_buy_rsi(symbol):
     """
     تتأكد من أن العملة في منطقة تشبع بيعي (15 دقيقة) 
-    وأن آخر شمعتين دقيقة مغلقتين كانتا خضراوين لتأكيد الارتداد الحقيقي.
+    وأن شمعة الدقيقة الواحدة الأخيرة المغلقة كانت خضراء لتأكيد الارتداد الحقيقي.
     """
     try:
         # 1. جلب شموع 15 دقيقة لحساب RSI
@@ -641,37 +641,32 @@ def is_safe_to_buy_rsi(symbol):
         if not is_oversold:
             return False
 
-        # 2. جلب آخر 3 شموع على فريم الدقيقة الواحدة (1m) للتأكد من الارتداد
-        # نطلب 3 شموع: (الشمعة الحالية المفتوحة -1، الشمعة المغلقة الأخيرة -2، الشمعة المغلقة قبل الأخيرة -3)
+        # 2. جلب آخر شمعتين على فريم الدقيقة الواحدة (1m) للتأكد من الارتداد
         res_1m = client.get_kline(
             category="spot",
             symbol=symbol,
             interval="1",
-            limit=4
+            limit=3
         )
         
         klines_1m = res_1m.get('result', {}).get('list', [])
-        if not klines_1m or len(klines_1m) < 3:
+        if not klines_1m or len(klines_1m) < 2:
             return False
 
         klines_1m.reverse() # الترتيب من الأقدم للأحدث
         
-        # الشمعة المغلقة الأولى (الأحدث) الفهرس -2
+        # الفهرس -2 يمثل الشمعة السابقة التي أغلقت بالفعل قبل ثوانٍ على فريم 1 دقيقة
         prev_1m_open = float(klines_1m[-2][1])
         prev_1m_close = float(klines_1m[-2][4])
-        is_prev_green = prev_1m_close > prev_1m_open
+        
+        is_1m_green = prev_1m_close > prev_1m_open
 
-        # الشمعة المغلقة الثانية (الأقدم) الفهرس -3
-        prev2_1m_open = float(klines_1m[-3][1])
-        prev2_1m_close = float(klines_1m[-3][4])
-        is_prev2_green = prev2_1m_close > prev2_1m_open
-
-        # الشروط النهائية: RSI 15m ممتاز + آخر شمعتين 1m كانتا خضراوين
-        if is_oversold and is_prev_green and is_prev2_green:
-            print(f"│ [مُؤَشِّرُ RSI + 1M] {symbol} تأكد ارتدادها بشمعتين دقيقة خضراء متتالية! (RSI: {rsi_value}) 🟢🟢")
+        # الشروط النهائية: RSI 15m ممتاز + شمعة 1m السابقة أغلقت خضراء
+        if is_oversold and is_1m_green:
+            print(f"│ [مُؤَشِّرُ RSI + 1M] {symbol} تأكد ارتدادها بشمعة دقيقة خضراء مغلقة! (RSI: {rsi_value}) 🟢")
             return True
         else:
-            print(f"│ [تجاهل] {symbol} في القاع (RSI: {rsi_value}) لكن لا توجد شمعتين خضراوين متتاليتين 🔴")
+            print(f"│ [تجاهل] {symbol} في القاع (RSI: {rsi_value}) لكن شمعة الدقيقة الأخيرة ليست خضراء 🔴")
             return False
             
     except Exception as e:
@@ -863,4 +858,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
