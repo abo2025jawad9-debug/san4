@@ -70,5 +70,23 @@
             "sell_date": "2026-08-27",
             "sell_time": "03:24:45.534242"
         }
+    },
+    "buy_a1980a00": {
+        "symbol": "BMTUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-27",
+        "time": "04:22:14.309812",
+        "buy_time": "2026-08-27T04:22:14.309812",
+        "buy_price": 0.0205,
+        "qty": 243.9,
+        "sellable_qty": 243.6561,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 5.0,
+        "total_cost": 5.0,
+        "break_even_price": 0.02056,
+        "min_sell_price": 0.02056,
+        "sell_details": {}
     }
 }
