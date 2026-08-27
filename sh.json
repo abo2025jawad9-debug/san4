@@ -124,5 +124,23 @@
             "sell_date": "2026-08-27",
             "sell_time": "04:42:23.147511"
         }
+    },
+    "buy_2d6f81ad": {
+        "symbol": "FLUIDUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-27",
+        "time": "04:42:32.087287",
+        "buy_time": "2026-08-27T04:42:32.087287",
+        "buy_price": 1.3698,
+        "qty": 3.65,
+        "sellable_qty": 3.64635,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9998,
+        "total_cost": 4.9998,
+        "break_even_price": 1.37392,
+        "min_sell_price": 1.37392,
+        "sell_details": {}
     }
 }
