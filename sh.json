@@ -74,7 +74,7 @@
     "buy_a1980a00": {
         "symbol": "BMTUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-27",
         "time": "04:22:14.309812",
         "buy_time": "2026-08-27T04:22:14.309812",
@@ -87,6 +87,15 @@
         "total_cost": 5.0,
         "break_even_price": 0.02056,
         "min_sell_price": 0.02056,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_25567011",
+            "sell_price": 0.02,
+            "received_usd": 5.0143,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0093,
+            "profit_percent": 0.186,
+            "sell_date": "2026-08-27",
+            "sell_time": "04:35:26.758396"
+        }
     }
 }
