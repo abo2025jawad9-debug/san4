@@ -106,5 +106,23 @@
             "sell_date": "2026-08-27",
             "sell_time": "22:12:09.622630"
         }
+    },
+    "buy_63c516a9": {
+        "symbol": "ZILUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-28",
+        "time": "02:14:24.901759",
+        "buy_time": "2026-08-28T02:14:24.901759",
+        "buy_price": 0.00268,
+        "qty": 1866.3,
+        "sellable_qty": 1864.4337,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9998,
+        "total_cost": 4.9998,
+        "break_even_price": 0.00269,
+        "min_sell_price": 0.00269,
+        "sell_details": {}
     }
 }
