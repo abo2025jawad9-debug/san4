@@ -56,7 +56,7 @@
     "buy_1be6a8a3": {
         "symbol": "CCUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-27",
         "time": "17:56:09.404146",
         "buy_time": "2026-08-27T17:56:09.404146",
@@ -69,7 +69,16 @@
         "total_cost": 4.9897,
         "break_even_price": 0.114,
         "min_sell_price": 0.114,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_a77845ce",
+            "sell_price": 0.11,
+            "received_usd": 5.0011,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0064,
+            "profit_percent": 0.128,
+            "sell_date": "2026-08-28",
+            "sell_time": "01:18:58.605440"
+        }
     },
     "buy_93ae8e2a": {
         "symbol": "AZTECUSDT",
