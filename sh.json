@@ -182,7 +182,7 @@
     "buy_58b68044": {
         "symbol": "VIRTUALUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-29",
         "time": "11:04:07.241475",
         "buy_time": "2026-08-29T11:04:07.241475",
@@ -195,6 +195,15 @@
         "total_cost": 5.0,
         "break_even_price": 0.67954,
         "min_sell_price": 0.67954,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_4eb46a3e",
+            "sell_price": 0.68,
+            "received_usd": 5.0079,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0029,
+            "profit_percent": 0.058,
+            "sell_date": "2026-08-29",
+            "sell_time": "11:15:49.957055"
+        }
     }
 }
