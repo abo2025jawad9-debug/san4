@@ -56,7 +56,7 @@
     "buy_0571a9b0": {
         "symbol": "ZROUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-29",
         "time": "06:05:05.115535",
         "buy_time": "2026-08-29T06:05:05.115535",
@@ -69,7 +69,16 @@
         "total_cost": 4.9954,
         "break_even_price": 1.06379,
         "min_sell_price": 1.06379,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_5d5a3c52",
+            "sell_price": 1.06,
+            "received_usd": 5.0003,
+            "sell_fee_usd": 0.005,
+            "profit_usd": -0.0001,
+            "profit_percent": -0.001,
+            "sell_date": "2026-08-29",
+            "sell_time": "06:15:50.991770"
+        }
     },
     "buy_aa12c239": {
         "symbol": "ONDOUSDT",
