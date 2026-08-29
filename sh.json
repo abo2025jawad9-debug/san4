@@ -101,7 +101,7 @@
     "buy_d5c3e87c": {
         "symbol": "AEROUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-29",
         "time": "06:16:48.949699",
         "buy_time": "2026-08-29T06:16:48.949699",
@@ -114,6 +114,15 @@
         "total_cost": 4.998,
         "break_even_price": 0.48435,
         "min_sell_price": 0.48435,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_df3600c9",
+            "sell_price": 0.48,
+            "received_usd": 5.0059,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0029,
+            "profit_percent": 0.058,
+            "sell_date": "2026-08-29",
+            "sell_time": "09:52:23.559607"
+        }
     }
 }
