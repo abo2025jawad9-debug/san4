@@ -1,1 +1,20 @@
-
+{
+    "buy_e13d7f99": {
+        "symbol": "BMTUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-29",
+        "time": "05:42:37.575541",
+        "buy_time": "2026-08-29T05:42:37.575541",
+        "buy_price": 0.02133,
+        "qty": 234.41,
+        "sellable_qty": 234.17559,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 5.0,
+        "total_cost": 5.0,
+        "break_even_price": 0.02139,
+        "min_sell_price": 0.02139,
+        "sell_details": {}
+    }
+}
