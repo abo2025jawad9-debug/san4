@@ -205,5 +205,23 @@
             "sell_date": "2026-08-29",
             "sell_time": "11:15:49.957055"
         }
+    },
+    "buy_237f10af": {
+        "symbol": "BCHUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-29",
+        "time": "11:16:05.318215",
+        "buy_time": "2026-08-29T11:16:05.318215",
+        "buy_price": 243.9,
+        "qty": 0.0205,
+        "sellable_qty": 0.0204795,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 5.0,
+        "total_cost": 5.0,
+        "break_even_price": 244.63335,
+        "min_sell_price": 244.63335,
+        "sell_details": {}
     }
 }
