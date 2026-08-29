@@ -70,5 +70,23 @@
         "break_even_price": 1.06379,
         "min_sell_price": 1.06379,
         "sell_details": {}
+    },
+    "buy_aa12c239": {
+        "symbol": "ONDOUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-29",
+        "time": "06:07:40.612543",
+        "buy_time": "2026-08-29T06:07:40.612543",
+        "buy_price": 0.3498,
+        "qty": 14.29,
+        "sellable_qty": 14.27571,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9986,
+        "total_cost": 4.9986,
+        "break_even_price": 0.35085,
+        "min_sell_price": 0.35085,
+        "sell_details": {}
     }
 }
