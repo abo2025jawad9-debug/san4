@@ -295,5 +295,23 @@
             "sell_date": "2026-08-29",
             "sell_time": "14:55:36.140463"
         }
+    },
+    "buy_984c9091": {
+        "symbol": "CAPUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-29",
+        "time": "15:27:01.745434",
+        "buy_time": "2026-08-29T15:27:01.745434",
+        "buy_price": 0.06743,
+        "qty": 74.1,
+        "sellable_qty": 74.0259,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9966,
+        "total_cost": 4.9966,
+        "break_even_price": 0.06763,
+        "min_sell_price": 0.06763,
+        "sell_details": {}
     }
 }
