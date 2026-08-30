@@ -29,7 +29,7 @@
     "buy_e08b9123": {
         "symbol": "TRIAUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-30",
         "time": "04:23:11.402132",
         "buy_time": "2026-08-30T04:23:11.402132",
@@ -42,6 +42,15 @@
         "total_cost": 4.9998,
         "break_even_price": 0.00535,
         "min_sell_price": 0.00535,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_90c8d7aa",
+            "sell_price": 0.01,
+            "received_usd": 5.016,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0112,
+            "profit_percent": 0.224,
+            "sell_date": "2026-08-30",
+            "sell_time": "04:27:17.874761"
+        }
     }
 }
