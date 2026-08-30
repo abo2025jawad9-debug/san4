@@ -137,7 +137,7 @@
     "buy_beede561": {
         "symbol": "CAPUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-30",
         "time": "09:21:08.964273",
         "buy_time": "2026-08-30T09:21:08.964273",
@@ -150,6 +150,15 @@
         "total_cost": 4.9958,
         "break_even_price": 0.06762,
         "min_sell_price": 0.06762,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_aa4799fc",
+            "sell_price": 0.07,
+            "received_usd": 5.0091,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0083,
+            "profit_percent": 0.165,
+            "sell_date": "2026-08-30",
+            "sell_time": "09:27:31.111604"
+        }
     }
 }
