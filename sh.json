@@ -218,7 +218,7 @@
     "buy_338ff5b2": {
         "symbol": "ZROUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-30",
         "time": "15:16:06.059082",
         "buy_time": "2026-08-30T15:16:06.059082",
@@ -231,6 +231,15 @@
         "total_cost": 4.9949,
         "break_even_price": 1.0682,
         "min_sell_price": 1.0682,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_41b97cef",
+            "sell_price": 1.07,
+            "received_usd": 5.0006,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0007,
+            "profit_percent": 0.014,
+            "sell_date": "2026-08-30",
+            "sell_time": "15:17:32.353289"
+        }
     }
 }
