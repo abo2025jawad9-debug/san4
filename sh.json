@@ -70,5 +70,23 @@
         "break_even_price": 0.00534,
         "min_sell_price": 0.00534,
         "sell_details": {}
+    },
+    "buy_0ac27ad9": {
+        "symbol": "TACUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-30",
+        "time": "07:48:06.682655",
+        "buy_time": "2026-08-30T07:48:06.682655",
+        "buy_price": 0.00229,
+        "qty": 2181.5,
+        "sellable_qty": 2179.3185,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 5.0,
+        "total_cost": 5.0,
+        "break_even_price": 0.0023,
+        "min_sell_price": 0.0023,
+        "sell_details": {}
     }
 }
