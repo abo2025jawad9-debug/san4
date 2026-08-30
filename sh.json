@@ -133,5 +133,23 @@
             "sell_date": "2026-08-30",
             "sell_time": "09:13:31.326968"
         }
+    },
+    "buy_beede561": {
+        "symbol": "CAPUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-30",
+        "time": "09:21:08.964273",
+        "buy_time": "2026-08-30T09:21:08.964273",
+        "buy_price": 0.06742,
+        "qty": 74.1,
+        "sellable_qty": 74.0259,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9958,
+        "total_cost": 4.9958,
+        "break_even_price": 0.06762,
+        "min_sell_price": 0.06762,
+        "sell_details": {}
     }
 }
