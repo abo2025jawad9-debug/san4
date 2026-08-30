@@ -1,1 +1,20 @@
-
+{
+    "buy_c49dc137": {
+        "symbol": "TRUMPUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-30",
+        "time": "01:31:00.434957",
+        "buy_time": "2026-08-30T01:31:00.434957",
+        "buy_price": 2.634,
+        "qty": 1.89,
+        "sellable_qty": 1.88811,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9783,
+        "total_cost": 4.9783,
+        "break_even_price": 2.64192,
+        "min_sell_price": 2.64192,
+        "sell_details": {}
+    }
+}
