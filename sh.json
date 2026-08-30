@@ -259,5 +259,23 @@
         "break_even_price": 0.10159,
         "min_sell_price": 0.10159,
         "sell_details": {}
+    },
+    "buy_792bdf2f": {
+        "symbol": "PUMPUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-08-30",
+        "time": "18:12:47.551263",
+        "buy_time": "2026-08-30T18:12:47.551263",
+        "buy_price": 0.00476,
+        "qty": 1050.4,
+        "sellable_qty": 1049.3496,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9999,
+        "total_cost": 4.9999,
+        "break_even_price": 0.00477,
+        "min_sell_price": 0.00477,
+        "sell_details": {}
     }
 }
