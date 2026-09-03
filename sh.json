@@ -421,5 +421,23 @@
             "sell_date": "2026-09-03",
             "sell_time": "14:48:18.186057"
         }
+    },
+    "buy_a43e3126": {
+        "symbol": "MORPHOUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-03",
+        "time": "15:12:29.252371",
+        "buy_time": "2026-09-03T15:12:29.252371",
+        "buy_price": 2.401,
+        "qty": 2.0,
+        "sellable_qty": 1.998,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.0048,
+        "buy_cost": 4.802,
+        "total_cost": 4.802,
+        "break_even_price": 2.40822,
+        "min_sell_price": 2.40822,
+        "sell_details": {}
     }
 }
