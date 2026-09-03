@@ -443,7 +443,7 @@
     "buy_5a1e3521": {
         "symbol": "PYTHUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-03",
         "time": "20:55:08.167973",
         "buy_time": "2026-09-03T20:55:08.167973",
@@ -456,6 +456,15 @@
         "total_cost": 4.9986,
         "break_even_price": 0.05602,
         "min_sell_price": 0.05602,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_14e04389",
+            "sell_price": 0.06,
+            "received_usd": 5.0118,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0082,
+            "profit_percent": 0.163,
+            "sell_date": "2026-09-03",
+            "sell_time": "21:07:09.817296"
+        }
     }
 }
