@@ -371,7 +371,7 @@
     "buy_c3948caa": {
         "symbol": "PEPEUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-08-30",
         "time": "22:24:55.159587",
         "buy_time": "2026-08-30T22:24:55.159587",
@@ -384,6 +384,15 @@
         "total_cost": 5.0,
         "break_even_price": 0.0,
         "min_sell_price": 0.0,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_e738d8ff",
+            "sell_price": 0.0,
+            "received_usd": 5.0033,
+            "sell_fee_usd": 0.005,
+            "profit_usd": -0.0017,
+            "profit_percent": -0.034,
+            "sell_date": "2026-09-03",
+            "sell_time": "14:43:23.763006"
+        }
     }
 }
