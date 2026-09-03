@@ -439,5 +439,23 @@
         "break_even_price": 2.40822,
         "min_sell_price": 2.40822,
         "sell_details": {}
+    },
+    "buy_5a1e3521": {
+        "symbol": "PYTHUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-03",
+        "time": "20:55:08.167973",
+        "buy_time": "2026-09-03T20:55:08.167973",
+        "buy_price": 0.05585,
+        "qty": 89.5,
+        "sellable_qty": 89.4105,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9986,
+        "total_cost": 4.9986,
+        "break_even_price": 0.05602,
+        "min_sell_price": 0.05602,
+        "sell_details": {}
     }
 }
