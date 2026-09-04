@@ -493,5 +493,23 @@
             "sell_date": "2026-09-04",
             "sell_time": "08:15:47.984268"
         }
+    },
+    "buy_4114d45f": {
+        "symbol": "PIEVERSEUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-04",
+        "time": "08:30:10.599162",
+        "buy_time": "2026-09-04T08:30:10.599162",
+        "buy_price": 1.0698,
+        "qty": 4.6,
+        "sellable_qty": 4.5954,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.0049,
+        "buy_cost": 4.9211,
+        "total_cost": 4.9211,
+        "break_even_price": 1.07302,
+        "min_sell_price": 1.07302,
+        "sell_details": {}
     }
 }
