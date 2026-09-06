@@ -515,7 +515,7 @@
     "buy_facc6b32": {
         "symbol": "TRIAUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-06",
         "time": "04:16:48.452632",
         "buy_time": "2026-09-06T04:16:48.452632",
@@ -528,7 +528,16 @@
         "total_cost": 5.0,
         "break_even_price": 0.00452,
         "min_sell_price": 0.00452,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_847bdbc5",
+            "sell_price": 0.0,
+            "received_usd": 5.0068,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0018,
+            "profit_percent": 0.035,
+            "sell_date": "2026-09-06",
+            "sell_time": "08:32:05.615648"
+        }
     },
     "buy_a65c3ea0": {
         "symbol": "HUSDT",
