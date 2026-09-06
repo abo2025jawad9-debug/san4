@@ -511,5 +511,23 @@
         "break_even_price": 1.07302,
         "min_sell_price": 1.07302,
         "sell_details": {}
+    },
+    "buy_facc6b32": {
+        "symbol": "TRIAUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-06",
+        "time": "04:16:48.452632",
+        "buy_time": "2026-09-06T04:16:48.452632",
+        "buy_price": 0.00451,
+        "qty": 1108.4,
+        "sellable_qty": 1107.2916,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 5.0,
+        "total_cost": 5.0,
+        "break_even_price": 0.00452,
+        "min_sell_price": 0.00452,
+        "sell_details": {}
     }
 }
