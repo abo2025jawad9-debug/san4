@@ -601,5 +601,23 @@
             "sell_date": "2026-09-06",
             "sell_time": "10:44:19.548415"
         }
+    },
+    "buy_5bde451a": {
+        "symbol": "TWTUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-06",
+        "time": "11:36:05.861850",
+        "buy_time": "2026-09-06T11:36:05.861850",
+        "buy_price": 0.609,
+        "qty": 8.21,
+        "sellable_qty": 8.20179,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9999,
+        "total_cost": 4.9999,
+        "break_even_price": 0.61083,
+        "min_sell_price": 0.61083,
+        "sell_details": {}
     }
 }
