@@ -542,7 +542,7 @@
     "buy_a65c3ea0": {
         "symbol": "HUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-06",
         "time": "06:29:50.709219",
         "buy_time": "2026-09-06T06:29:50.709219",
@@ -555,7 +555,16 @@
         "total_cost": 4.9984,
         "break_even_price": 0.07438,
         "min_sell_price": 0.07438,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_0f0574c9",
+            "sell_price": 0.07,
+            "received_usd": 5.0105,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0071,
+            "profit_percent": 0.141,
+            "sell_date": "2026-09-06",
+            "sell_time": "12:08:25.833866"
+        }
     },
     "buy_277f79b0": {
         "symbol": "VVVUSDT",
