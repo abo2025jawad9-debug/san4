@@ -574,5 +574,23 @@
         "break_even_price": 17.12835,
         "min_sell_price": 17.12835,
         "sell_details": {}
+    },
+    "buy_4ab91990": {
+        "symbol": "LITUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-06",
+        "time": "08:59:00.052988",
+        "buy_time": "2026-09-06T08:59:00.052988",
+        "buy_price": 4.602,
+        "qty": 1.08,
+        "sellable_qty": 1.07892,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9702,
+        "total_cost": 4.9702,
+        "break_even_price": 4.61584,
+        "min_sell_price": 4.61584,
+        "sell_details": {}
     }
 }
