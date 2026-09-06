@@ -578,7 +578,7 @@
     "buy_4ab91990": {
         "symbol": "LITUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-06",
         "time": "08:59:00.052988",
         "buy_time": "2026-09-06T08:59:00.052988",
@@ -591,6 +591,15 @@
         "total_cost": 4.9702,
         "break_even_price": 4.61584,
         "min_sell_price": 4.61584,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_72575918",
+            "sell_price": 4.67,
+            "received_usd": 4.999,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0238,
+            "profit_percent": 0.479,
+            "sell_date": "2026-09-06",
+            "sell_time": "10:44:19.548415"
+        }
     }
 }
