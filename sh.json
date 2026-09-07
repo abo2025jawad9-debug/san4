@@ -731,7 +731,7 @@
     "buy_f4daeb9d": {
         "symbol": "ARBUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-07",
         "time": "05:31:37.198697",
         "buy_time": "2026-09-07T05:31:37.198697",
@@ -744,6 +744,15 @@
         "total_cost": 4.9996,
         "break_even_price": 0.17227,
         "min_sell_price": 0.17227,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_f2a98052",
+            "sell_price": 0.17,
+            "received_usd": 5.0157,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0111,
+            "profit_percent": 0.222,
+            "sell_date": "2026-09-07",
+            "sell_time": "05:35:14.088778"
+        }
     }
 }
