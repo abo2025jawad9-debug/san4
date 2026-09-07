@@ -997,5 +997,23 @@
             "sell_date": "2026-09-07",
             "sell_time": "14:17:32.785491"
         }
+    },
+    "buy_a3da82d8": {
+        "symbol": "ZAMAUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-07",
+        "time": "14:20:47.174904",
+        "buy_time": "2026-09-07T14:20:47.174904",
+        "buy_price": 0.05257,
+        "qty": 95.1,
+        "sellable_qty": 95.0049,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9994,
+        "total_cost": 4.9994,
+        "break_even_price": 0.05273,
+        "min_sell_price": 0.05273,
+        "sell_details": {}
     }
 }
