@@ -889,5 +889,23 @@
         "break_even_price": 0.05587,
         "min_sell_price": 0.05587,
         "sell_details": {}
+    },
+    "buy_246198df": {
+        "symbol": "CCUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-07",
+        "time": "11:08:08.388876",
+        "buy_time": "2026-09-07T11:08:08.388876",
+        "buy_price": 0.10703,
+        "qty": 46.7,
+        "sellable_qty": 46.6533,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9983,
+        "total_cost": 4.9983,
+        "break_even_price": 0.10735,
+        "min_sell_price": 0.10735,
+        "sell_details": {}
     }
 }
