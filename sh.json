@@ -862,5 +862,23 @@
             "sell_date": "2026-09-07",
             "sell_time": "07:19:15.568917"
         }
+    },
+    "buy_ec60e4a5": {
+        "symbol": "CHIPUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-07",
+        "time": "07:20:39.969977",
+        "buy_time": "2026-09-07T07:20:39.969977",
+        "buy_price": 0.0557,
+        "qty": 89.7,
+        "sellable_qty": 89.6103,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9963,
+        "total_cost": 4.9963,
+        "break_even_price": 0.05587,
+        "min_sell_price": 0.05587,
+        "sell_details": {}
     }
 }
