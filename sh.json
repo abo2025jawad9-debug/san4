@@ -758,7 +758,7 @@
     "buy_590b9899": {
         "symbol": "CHIPUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-07",
         "time": "05:35:20.852313",
         "buy_time": "2026-09-07T05:35:20.852313",
@@ -771,6 +771,15 @@
         "total_cost": 4.9959,
         "break_even_price": 0.05643,
         "min_sell_price": 0.05643,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_a915e0b5",
+            "sell_price": 0.06,
+            "received_usd": 5.0045,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0035,
+            "profit_percent": 0.071,
+            "sell_date": "2026-09-07",
+            "sell_time": "06:39:58.880032"
+        }
     }
 }
