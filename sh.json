@@ -1078,5 +1078,23 @@
             "sell_date": "2026-09-07",
             "sell_time": "14:54:37.109550"
         }
+    },
+    "buy_7db0ea8f": {
+        "symbol": "BSBUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-07",
+        "time": "15:03:11.093876",
+        "buy_time": "2026-09-07T15:03:11.093876",
+        "buy_price": 0.1114,
+        "qty": 44.8,
+        "sellable_qty": 44.7552,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9907,
+        "total_cost": 4.9907,
+        "break_even_price": 0.11173,
+        "min_sell_price": 0.11173,
+        "sell_details": {}
     }
 }
