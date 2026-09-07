@@ -808,5 +808,23 @@
             "sell_date": "2026-09-07",
             "sell_time": "06:46:23.764820"
         }
+    },
+    "buy_78c3f9cc": {
+        "symbol": "KIIUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-07",
+        "time": "07:02:38.609106",
+        "buy_time": "2026-09-07T07:02:38.609106",
+        "buy_price": 0.06365,
+        "qty": 78.5,
+        "sellable_qty": 78.4215,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9965,
+        "total_cost": 4.9965,
+        "break_even_price": 0.06384,
+        "min_sell_price": 0.06384,
+        "sell_details": {}
     }
 }
