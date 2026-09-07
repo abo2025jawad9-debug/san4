@@ -1037,7 +1037,7 @@
     "buy_2f961b88": {
         "symbol": "TWTUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-07",
         "time": "14:23:22.812911",
         "buy_time": "2026-09-07T14:23:22.812911",
@@ -1050,7 +1050,16 @@
         "total_cost": 4.9944,
         "break_even_price": 0.56349,
         "min_sell_price": 0.56349,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_0b7068c0",
+            "sell_price": 0.57,
+            "received_usd": 5.0367,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0373,
+            "profit_percent": 0.746,
+            "sell_date": "2026-09-07",
+            "sell_time": "15:13:44.782994"
+        }
     },
     "buy_80c0ba06": {
         "symbol": "ZAMAUSDT",
