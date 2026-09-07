@@ -956,7 +956,7 @@
     "buy_9356b28a": {
         "symbol": "FLOCKUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-07",
         "time": "13:56:40.021085",
         "buy_time": "2026-09-07T13:56:40.021085",
@@ -969,7 +969,16 @@
         "total_cost": 4.9996,
         "break_even_price": 0.06695,
         "min_sell_price": 0.06695,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_8534bab6",
+            "sell_price": 0.07,
+            "received_usd": 5.0279,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0233,
+            "profit_percent": 0.465,
+            "sell_date": "2026-09-07",
+            "sell_time": "14:48:27.898991"
+        }
     },
     "buy_561f2a78": {
         "symbol": "ZAMAUSDT",
