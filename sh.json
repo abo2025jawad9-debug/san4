@@ -1244,7 +1244,7 @@
     "buy_99a16f12": {
         "symbol": "CRVUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-08",
         "time": "03:59:08.249979",
         "buy_time": "2026-09-08T03:59:08.249979",
@@ -1257,6 +1257,15 @@
         "total_cost": 4.9841,
         "break_even_price": 0.36489,
         "min_sell_price": 0.36489,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_86a6c7a0",
+            "sell_price": 0.37,
+            "received_usd": 5.0402,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.051,
+            "profit_percent": 1.023,
+            "sell_date": "2026-09-08",
+            "sell_time": "16:07:44.103127"
+        }
     }
 }
