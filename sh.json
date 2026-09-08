@@ -1091,7 +1091,7 @@
     "buy_7db0ea8f": {
         "symbol": "BSBUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-07",
         "time": "15:03:11.093876",
         "buy_time": "2026-09-07T15:03:11.093876",
@@ -1104,7 +1104,16 @@
         "total_cost": 4.9907,
         "break_even_price": 0.11173,
         "min_sell_price": 0.11173,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_04dce51c",
+            "sell_price": 0.11,
+            "received_usd": 4.9975,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0018,
+            "profit_percent": 0.035,
+            "sell_date": "2026-09-08",
+            "sell_time": "00:11:55.121637"
+        }
     },
     "buy_42e4d057": {
         "symbol": "CCUSDT",
