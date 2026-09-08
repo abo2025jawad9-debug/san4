@@ -1109,7 +1109,7 @@
     "buy_42e4d057": {
         "symbol": "CCUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-07",
         "time": "15:13:52.807237",
         "buy_time": "2026-09-07T15:13:52.807237",
@@ -1122,6 +1122,15 @@
         "total_cost": 4.9999,
         "break_even_price": 0.1067,
         "min_sell_price": 0.1067,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_3519c0a9",
+            "sell_price": 0.11,
+            "received_usd": 5.0042,
+            "sell_fee_usd": 0.005,
+            "profit_usd": -0.0007,
+            "profit_percent": -0.013,
+            "sell_date": "2026-09-08",
+            "sell_time": "00:07:04.336880"
+        }
     }
 }
