@@ -1172,7 +1172,7 @@
     "buy_ca41a86a": {
         "symbol": "ARXUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-08",
         "time": "01:18:10.936142",
         "buy_time": "2026-09-08T01:18:10.936142",
@@ -1185,6 +1185,15 @@
         "total_cost": 4.9905,
         "break_even_price": 0.13982,
         "min_sell_price": 0.13982,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_1361f26c",
+            "sell_price": 0.14,
+            "received_usd": 5.0051,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0096,
+            "profit_percent": 0.193,
+            "sell_date": "2026-09-08",
+            "sell_time": "01:20:23.896301"
+        }
     }
 }
