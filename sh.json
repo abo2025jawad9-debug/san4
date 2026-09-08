@@ -1213,5 +1213,23 @@
         "break_even_price": 84.39299,
         "min_sell_price": 84.39299,
         "sell_details": {}
+    },
+    "buy_43fd08d0": {
+        "symbol": "LINKUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-08",
+        "time": "03:24:15.731044",
+        "buy_time": "2026-09-08T03:24:15.731044",
+        "buy_price": 12.589,
+        "qty": 0.397,
+        "sellable_qty": 0.396603,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9978,
+        "total_cost": 4.9978,
+        "break_even_price": 12.62685,
+        "min_sell_price": 12.62685,
+        "sell_details": {}
     }
 }
