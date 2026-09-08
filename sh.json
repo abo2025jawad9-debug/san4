@@ -1217,7 +1217,7 @@
     "buy_43fd08d0": {
         "symbol": "LINKUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-08",
         "time": "03:24:15.731044",
         "buy_time": "2026-09-08T03:24:15.731044",
@@ -1230,6 +1230,15 @@
         "total_cost": 4.9978,
         "break_even_price": 12.62685,
         "min_sell_price": 12.62685,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_a9f9c784",
+            "sell_price": 12.62,
+            "received_usd": 4.9995,
+            "sell_fee_usd": 0.005,
+            "profit_usd": -0.0033,
+            "profit_percent": -0.066,
+            "sell_date": "2026-09-08",
+            "sell_time": "03:32:12.772233"
+        }
     }
 }
