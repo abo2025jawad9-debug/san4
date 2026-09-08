@@ -1298,7 +1298,7 @@
     "buy_8692a88c": {
         "symbol": "TACUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-08",
         "time": "16:33:06.188229",
         "buy_time": "2026-09-08T16:33:06.188229",
@@ -1311,6 +1311,15 @@
         "total_cost": 4.9999,
         "break_even_price": 0.00204,
         "min_sell_price": 0.00204,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_d6237c49",
+            "sell_price": 0.0,
+            "received_usd": 5.0219,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.017,
+            "profit_percent": 0.339,
+            "sell_date": "2026-09-08",
+            "sell_time": "17:44:17.649497"
+        }
     }
 }
