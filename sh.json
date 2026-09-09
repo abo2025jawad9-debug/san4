@@ -79,23 +79,5 @@
             "sell_date": "2026-09-09",
             "sell_time": "00:21:07.572585"
         }
-    },
-    "buy_351a710e": {
-        "symbol": "HBARUSDT",
-        "type": "buy",
-        "status": "معلقة - جاري الانتظار",
-        "date": "2026-09-09",
-        "time": "02:15:05.544025",
-        "buy_time": "2026-09-09T02:15:05.544025",
-        "buy_price": 0.0788,
-        "qty": 63.4,
-        "sellable_qty": 63.3366,
-        "buy_amount_usd": 5.0,
-        "buy_fee_usd": 0.005,
-        "buy_cost": 4.9959,
-        "total_cost": 4.9959,
-        "break_even_price": 0.07904,
-        "min_sell_price": 0.07904,
-        "sell_details": {}
-    }
+    
 }
