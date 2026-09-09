@@ -742,31 +742,49 @@ def main():
                 high_24h = data['highPrice24h']
                 volume_24h = data['turnover24h']
 
-                # ───[ فلترة العملات الميتة والخاملة ]───
-                if volume_24h < 500000:
-                    continue 
+                # حماية مبكرة من خطأ القسمة على صفر (لتجنب توقف البوت)
                 if low_24h == 0: 
                     continue
-                volatility_pct = ((high_24h - low_24h) / low_24h) * 100
-                if volatility_pct < 5.0:
-                    continue
-                # ─────────────────────────────────────
 
+                volatility_pct = ((high_24h - low_24h) / low_24h) * 100
+                
+                open_count = count_open_positions(history, symbol)
+
+                # ───[ فلترة الشاشة الذكية ]───
+                # تحديد ما إذا كانت العملة خاملة/ميتة
+                is_dead_coin = (volume_24h < 500000) or (volatility_pct < 5.0)
+                
+                # إذا كانت العملة ميتة "وليس" لديك صفقة مفتوحة فيها -> تجاوزها بصمت تام (حفاظاً على نظافة الشاشة)
+                if is_dead_coin and open_count == 0:
+                    continue 
+                # ─────────────────────────────
+
+                # إذا وصلنا هنا، فهذا يعني أن العملة قوية وتستحق المراقبة، أو أنها ضعيفة لكن "لديك صفقة مفتوحة فيها" ويجب مراقبة بيعها.
                 print(f"\n┌───[ جَارِي فَحْصُ {symbol} (حَيَوِيَّة: {volatility_pct:.1f}%) ]─────────────────────┐")
                 print("│ [PRICE] السِّعْرُ الحَالِيُّ: %.5f | قَاعُ 24 سَاعَة: %.5f | السِّيُولَة: %.0f$" % (current_price, low_24h, volume_24h))
 
-                open_count = count_open_positions(history, symbol)
-                
                 print("│ [خُطْوَةُ 1] فَحْصُ البَيْعِ لِلْعَمَلِيَّاتِ المَفْتُوحَةِ (%d)" % open_count)
+                
+                # إعطاء الأولوية القصوى للبيع قبل أي شيء
                 sold, history = try_sell_all(history, current_price, symbol)
 
                 if sold:
                     print("│ [النَّتِيجَةُ] يَبِيعُ! تَمَّتْ عَمَلِيَّةُ البَيْعِ بِنَجَاحٍ.")
                     save_history(history)
                     git_commit_and_push()
+                    print(f"└───[ اِنْتِهَاءُ فَحْصِ {symbol} ]─────────────────────┘")
+                    continue # تم البيع، انتقل للعملة التالية
                 else:
                     print("│ [النَّتِيجَةُ] لَمْ يَبِعْ → فَحْصُ إِعَادَةِ الشِّرَاءِ...")
                     
+                    # ───[ حماية الشراء ]───
+                    # إذا لم تبع، وكانت العملة خاملة، يجب أن نمنع البوت من شراء أي كمية جديدة منها
+                    if is_dead_coin:
+                        print("│ [تَجَاوُزٌ] تَمَّ إِيقَافُ الشِّرَاءِ: العُمْلَةُ أَصْبَحَتْ خَامِلَةً أو سِيُولَتُهَا ضَعِيفَةٌ جِدّاً.")
+                        print(f"└───[ اِنْتِهَاءُ فَحْصِ {symbol} ]─────────────────────┘")
+                        continue
+                    # ───────────────────────
+
                     if open_count < MAX_OPEN_POSITIONS:
                         limit_buy_target = low_24h * (1 + (BUY_NEAR_24H_LOW_PCT / 100))
                         is_price_in_buy_zone = (current_price <= limit_buy_target)
