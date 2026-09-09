@@ -155,7 +155,7 @@
     "buy_4bcb8883": {
         "symbol": "SKYUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-09",
         "time": "13:46:10.530454",
         "buy_time": "2026-09-09T13:46:10.530454",
@@ -168,7 +168,16 @@
         "total_cost": 4.9979,
         "break_even_price": 0.06443,
         "min_sell_price": 0.06443,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_6acdce4a",
+            "sell_price": 0.06,
+            "received_usd": 5.0101,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0072,
+            "profit_percent": 0.144,
+            "sell_date": "2026-09-09",
+            "sell_time": "14:36:04.355089"
+        }
     },
     "buy_c3d6101e": {
         "symbol": "CRCLXUSDT",
