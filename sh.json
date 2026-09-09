@@ -101,7 +101,7 @@
     "buy_144c6a0d": {
         "symbol": "SKYUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-09",
         "time": "12:31:11.116650",
         "buy_time": "2026-09-09T12:31:11.116650",
@@ -114,6 +114,15 @@
         "total_cost": 4.9977,
         "break_even_price": 0.06451,
         "min_sell_price": 0.06451,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_19a1452e",
+            "sell_price": 0.06,
+            "received_usd": 5.0106,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0079,
+            "profit_percent": 0.158,
+            "sell_date": "2026-09-09",
+            "sell_time": "12:31:51.442975"
+        }
     }
 }
