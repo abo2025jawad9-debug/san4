@@ -34,5 +34,23 @@
         "break_even_price": 0.00855,
         "min_sell_price": 0.00855,
         "sell_details": {}
+    },
+    "buy_b3d3bb3a": {
+        "symbol": "AEROUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-09",
+        "time": "09:47:07.054834",
+        "buy_time": "2026-09-09T09:47:07.054834",
+        "buy_price": 0.6005,
+        "qty": 8.32,
+        "sellable_qty": 8.31168,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9962,
+        "total_cost": 4.9962,
+        "break_even_price": 0.60231,
+        "min_sell_price": 0.60231,
+        "sell_details": {}
     }
 }
