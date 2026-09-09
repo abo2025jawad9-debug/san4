@@ -124,5 +124,23 @@
             "sell_date": "2026-09-09",
             "sell_time": "12:31:51.442975"
         }
+    },
+    "buy_bb492c97": {
+        "symbol": "LDOUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-09",
+        "time": "13:45:32.528181",
+        "buy_time": "2026-09-09T13:45:32.528181",
+        "buy_price": 0.3813,
+        "qty": 13.11,
+        "sellable_qty": 13.09689,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9988,
+        "total_cost": 4.9988,
+        "break_even_price": 0.38245,
+        "min_sell_price": 0.38245,
+        "sell_details": {}
     }
 }
