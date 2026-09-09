@@ -128,7 +128,7 @@
     "buy_bb492c97": {
         "symbol": "LDOUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-09",
         "time": "13:45:32.528181",
         "buy_time": "2026-09-09T13:45:32.528181",
@@ -141,7 +141,16 @@
         "total_cost": 4.9988,
         "break_even_price": 0.38245,
         "min_sell_price": 0.38245,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_dafc5563",
+            "sell_price": 0.38,
+            "received_usd": 5.0122,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0083,
+            "profit_percent": 0.167,
+            "sell_date": "2026-09-09",
+            "sell_time": "14:05:10.791466"
+        }
     },
     "buy_4bcb8883": {
         "symbol": "SKYUSDT",
