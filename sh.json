@@ -56,7 +56,7 @@
     "buy_75f60aea": {
         "symbol": "AVNTUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-09",
         "time": "00:20:10.127498",
         "buy_time": "2026-09-09T00:20:10.127498",
@@ -69,6 +69,15 @@
         "total_cost": 4.9911,
         "break_even_price": 0.10584,
         "min_sell_price": 0.10584,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_a596107b",
+            "sell_price": 0.11,
+            "received_usd": 4.9876,
+            "sell_fee_usd": 0.005,
+            "profit_usd": -0.0085,
+            "profit_percent": -0.169,
+            "sell_date": "2026-09-09",
+            "sell_time": "00:21:07.572585"
+        }
     }
 }
