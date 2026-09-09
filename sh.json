@@ -142,5 +142,23 @@
         "break_even_price": 0.38245,
         "min_sell_price": 0.38245,
         "sell_details": {}
+    },
+    "buy_4bcb8883": {
+        "symbol": "SKYUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-09",
+        "time": "13:46:10.530454",
+        "buy_time": "2026-09-09T13:46:10.530454",
+        "buy_price": 0.06424,
+        "qty": 77.8,
+        "sellable_qty": 77.7222,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9979,
+        "total_cost": 4.9979,
+        "break_even_price": 0.06443,
+        "min_sell_price": 0.06443,
+        "sell_details": {}
     }
 }
