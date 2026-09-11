@@ -200,7 +200,7 @@
     "buy_03c74388": {
         "symbol": "تم البيع",
         "type": "buy",
-        "status": "تم البيع", 
+        "status": "تم البيع",
         "date": "2026-09-09",
         "time": "14:46:12.973016",
         "buy_time": "2026-09-09T14:46:12.973016",
@@ -213,6 +213,24 @@
         "total_cost": 4.9949,
         "break_even_price": 0.57322,
         "min_sell_price": 0.57322,
+        "sell_details": {}
+    },
+    "buy_1f8f4175": {
+        "symbol": "DOTUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-11",
+        "time": "21:33:49.532904",
+        "buy_time": "2026-09-11T21:33:49.532904",
+        "buy_price": 1.04,
+        "qty": 4.807,
+        "sellable_qty": 4.802193,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9993,
+        "total_cost": 4.9993,
+        "break_even_price": 1.04313,
+        "min_sell_price": 1.04313,
         "sell_details": {}
     }
 }
