@@ -272,7 +272,7 @@
     "buy_45ff41d0": {
         "symbol": "NEARUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-12",
         "time": "00:58:11.623291",
         "buy_time": "2026-09-12T00:58:11.623291",
@@ -285,6 +285,15 @@
         "total_cost": 4.9926,
         "break_even_price": 2.34001,
         "min_sell_price": 2.34001,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_f4672b85",
+            "sell_price": 2.35,
+            "received_usd": 5.0012,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0036,
+            "profit_percent": 0.073,
+            "sell_date": "2026-09-12",
+            "sell_time": "01:06:30.938363"
+        }
     }
 }
