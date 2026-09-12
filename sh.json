@@ -295,5 +295,23 @@
             "sell_date": "2026-09-12",
             "sell_time": "01:06:30.938363"
         }
+    },
+    "buy_06e1aa2e": {
+        "symbol": "FFUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-12",
+        "time": "02:25:06.827747",
+        "buy_time": "2026-09-12T02:25:06.827747",
+        "buy_price": 0.15206,
+        "qty": 32.8,
+        "sellable_qty": 32.7672,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9876,
+        "total_cost": 4.9876,
+        "break_even_price": 0.15252,
+        "min_sell_price": 0.15252,
+        "sell_details": {}
     }
 }
