@@ -353,7 +353,7 @@
     "buy_cba18fe5": {
         "symbol": "MNTUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-12",
         "time": "13:52:01.016963",
         "buy_time": "2026-09-12T13:52:01.016963",
@@ -366,6 +366,15 @@
         "total_cost": 4.9997,
         "break_even_price": 0.57442,
         "min_sell_price": 0.57442,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_b1ae2104",
+            "sell_price": 0.57,
+            "received_usd": 5.0131,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0084,
+            "profit_percent": 0.168,
+            "sell_date": "2026-09-12",
+            "sell_time": "14:50:17.475962"
+        }
     }
 }
