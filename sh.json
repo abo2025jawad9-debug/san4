@@ -241,5 +241,23 @@
             "sell_date": "2026-09-12",
             "sell_time": "00:15:11.490308"
         }
+    },
+    "buy_1af45840": {
+        "symbol": "WAVESUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-12",
+        "time": "00:32:29.292431",
+        "buy_time": "2026-09-12T00:32:29.292431",
+        "buy_price": 0.2527,
+        "qty": 19.78,
+        "sellable_qty": 19.76022,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9984,
+        "total_cost": 4.9984,
+        "break_even_price": 0.25346,
+        "min_sell_price": 0.25346,
+        "sell_details": {}
     }
 }
