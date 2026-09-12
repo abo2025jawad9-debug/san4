@@ -349,5 +349,23 @@
         "break_even_price": 22.97688,
         "min_sell_price": 22.97688,
         "sell_details": {}
+    },
+    "buy_cba18fe5": {
+        "symbol": "MNTUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-12",
+        "time": "13:52:01.016963",
+        "buy_time": "2026-09-12T13:52:01.016963",
+        "buy_price": 0.5727,
+        "qty": 8.73,
+        "sellable_qty": 8.72127,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9997,
+        "total_cost": 4.9997,
+        "break_even_price": 0.57442,
+        "min_sell_price": 0.57442,
+        "sell_details": {}
     }
 }
