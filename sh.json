@@ -245,7 +245,7 @@
     "buy_1af45840": {
         "symbol": "WAVESUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-12",
         "time": "00:32:29.292431",
         "buy_time": "2026-09-12T00:32:29.292431",
@@ -258,6 +258,15 @@
         "total_cost": 4.9984,
         "break_even_price": 0.25346,
         "min_sell_price": 0.25346,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_19bbc8ae",
+            "sell_price": 0.25,
+            "received_usd": 5.021,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0176,
+            "profit_percent": 0.352,
+            "sell_date": "2026-09-12",
+            "sell_time": "00:42:31.962256"
+        }
     }
 }
