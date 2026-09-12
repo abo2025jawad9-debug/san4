@@ -2,7 +2,7 @@
     "buy_0f43dbdc": {
         "symbol": "BSBUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-09",
         "time": "07:18:05.766020",
         "buy_time": "2026-09-09T07:18:05.766020",
@@ -15,7 +15,16 @@
         "total_cost": 4.9951,
         "break_even_price": 0.10481,
         "min_sell_price": 0.10481,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_19077910",
+            "sell_price": 0.1,
+            "received_usd": 5.0037,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0036,
+            "profit_percent": 0.073,
+            "sell_date": "2026-09-12",
+            "sell_time": "13:14:42.988981"
+        }
     },
     "buy_301fea01": {
         "symbol": "ZORAUSDT",
