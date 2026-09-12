@@ -331,5 +331,23 @@
             "sell_date": "2026-09-12",
             "sell_time": "07:46:51.382456"
         }
+    },
+    "buy_40a2cbc0": {
+        "symbol": "VVVUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-12",
+        "time": "13:34:12.945839",
+        "buy_time": "2026-09-12T13:34:12.945839",
+        "buy_price": 22.908,
+        "qty": 0.21,
+        "sellable_qty": 0.20979,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.0048,
+        "buy_cost": 4.8107,
+        "total_cost": 4.8107,
+        "break_even_price": 22.97688,
+        "min_sell_price": 22.97688,
+        "sell_details": {}
     }
 }
