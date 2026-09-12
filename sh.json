@@ -403,5 +403,23 @@
             "sell_date": "2026-09-12",
             "sell_time": "15:52:38.240935"
         }
+    },
+    "buy_a761d0c2": {
+        "symbol": "MNTUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-12",
+        "time": "15:57:09.812097",
+        "buy_time": "2026-09-12T15:57:09.812097",
+        "buy_price": 0.5717,
+        "qty": 8.74,
+        "sellable_qty": 8.73126,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9967,
+        "total_cost": 4.9967,
+        "break_even_price": 0.57342,
+        "min_sell_price": 0.57342,
+        "sell_details": {}
     }
 }
