@@ -52,5 +52,23 @@
             "sell_date": "2026-09-12",
             "sell_time": "23:20:22.478549"
         }
+    },
+    "buy_34cf6060": {
+        "symbol": "EGLDUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-12",
+        "time": "23:20:31.389050",
+        "buy_time": "2026-09-12T23:20:31.389050",
+        "buy_price": 4.343,
+        "qty": 1.151,
+        "sellable_qty": 1.149849,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9988,
+        "total_cost": 4.9988,
+        "break_even_price": 4.35606,
+        "min_sell_price": 4.35606,
+        "sell_details": {}
     }
 }
