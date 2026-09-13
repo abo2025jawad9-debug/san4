@@ -34,5 +34,23 @@
         "break_even_price": 0.2677,
         "min_sell_price": 0.2677,
         "sell_details": {}
+    },
+    "buy_63f68486": {
+        "symbol": "OPNUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-13",
+        "time": "22:06:31.648961",
+        "buy_time": "2026-09-13T22:06:31.648961",
+        "buy_price": 0.04689,
+        "qty": 106.6,
+        "sellable_qty": 106.4934,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9985,
+        "total_cost": 4.9985,
+        "break_even_price": 0.04703,
+        "min_sell_price": 0.04703,
+        "sell_details": {}
     }
 }
