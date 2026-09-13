@@ -52,5 +52,23 @@
         "break_even_price": 0.04703,
         "min_sell_price": 0.04703,
         "sell_details": {}
+    },
+    "buy_71faf57a": {
+        "symbol": "EIGENUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-13",
+        "time": "22:06:38.697314",
+        "buy_time": "2026-09-13T22:06:38.697314",
+        "buy_price": 0.2038,
+        "qty": 24.5,
+        "sellable_qty": 24.4755,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9931,
+        "total_cost": 4.9931,
+        "break_even_price": 0.20441,
+        "min_sell_price": 0.20441,
+        "sell_details": {}
     }
 }
