@@ -65,7 +65,7 @@
     "buy_71faf57a": {
         "symbol": "EIGENUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-13",
         "time": "22:06:38.697314",
         "buy_time": "2026-09-13T22:06:38.697314",
@@ -78,7 +78,16 @@
         "total_cost": 4.9931,
         "break_even_price": 0.20441,
         "min_sell_price": 0.20441,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_57424d71",
+            "sell_price": 0.21,
+            "received_usd": 5.0093,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0112,
+            "profit_percent": 0.224,
+            "sell_date": "2026-09-14",
+            "sell_time": "02:54:28.896034"
+        }
     },
     "buy_81e0a927": {
         "symbol": "CATIUSDT",
