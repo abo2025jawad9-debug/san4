@@ -268,5 +268,23 @@
         "break_even_price": 0.09553,
         "min_sell_price": 0.09553,
         "sell_details": {}
+    },
+    "buy_ca4b023d": {
+        "symbol": "MEGAUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-14",
+        "time": "09:21:05.597364",
+        "buy_time": "2026-09-14T09:21:05.597364",
+        "buy_price": 0.03512,
+        "qty": 142.3,
+        "sellable_qty": 142.1577,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9976,
+        "total_cost": 4.9976,
+        "break_even_price": 0.03523,
+        "min_sell_price": 0.03523,
+        "sell_details": {}
     }
 }
