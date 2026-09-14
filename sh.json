@@ -250,5 +250,23 @@
             "sell_date": "2026-09-14",
             "sell_time": "09:15:38.496523"
         }
+    },
+    "buy_5d165be5": {
+        "symbol": "SAFEUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-14",
+        "time": "09:18:48.361072",
+        "buy_time": "2026-09-14T09:18:48.361072",
+        "buy_price": 0.09524,
+        "qty": 52.49,
+        "sellable_qty": 52.43751,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9991,
+        "total_cost": 4.9991,
+        "break_even_price": 0.09553,
+        "min_sell_price": 0.09553,
+        "sell_details": {}
     }
 }
