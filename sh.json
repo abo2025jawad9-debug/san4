@@ -196,5 +196,23 @@
         "break_even_price": 0.01753,
         "min_sell_price": 0.01753,
         "sell_details": {}
+    },
+    "buy_bd2dee6f": {
+        "symbol": "SLXUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-14",
+        "time": "08:48:25.871699",
+        "buy_time": "2026-09-14T08:48:25.871699",
+        "buy_price": 0.0631,
+        "qty": 79.2,
+        "sellable_qty": 79.1208,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9975,
+        "total_cost": 4.9975,
+        "break_even_price": 0.06329,
+        "min_sell_price": 0.06329,
+        "sell_details": {}
     }
 }
