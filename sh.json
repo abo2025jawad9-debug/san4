@@ -155,7 +155,7 @@
     "buy_fec8a2fc": {
         "symbol": "ZIGUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-14",
         "time": "07:27:42.461394",
         "buy_time": "2026-09-14T07:27:42.461394",
@@ -168,6 +168,15 @@
         "total_cost": 4.9996,
         "break_even_price": 0.04214,
         "min_sell_price": 0.04214,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_c8b3f167",
+            "sell_price": 0.04,
+            "received_usd": 5.0076,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.003,
+            "profit_percent": 0.061,
+            "sell_date": "2026-09-14",
+            "sell_time": "07:31:30.248176"
+        }
     }
 }
