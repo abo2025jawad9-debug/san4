@@ -182,7 +182,7 @@
     "buy_f5a0308c": {
         "symbol": "BLURUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-14",
         "time": "08:41:16.043697",
         "buy_time": "2026-09-14T08:41:16.043697",
@@ -195,7 +195,16 @@
         "total_cost": 5.0,
         "break_even_price": 0.01753,
         "min_sell_price": 0.01753,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_4a5fafe0",
+            "sell_price": 0.02,
+            "received_usd": 5.0521,
+            "sell_fee_usd": 0.0051,
+            "profit_usd": 0.047,
+            "profit_percent": 0.939,
+            "sell_date": "2026-09-14",
+            "sell_time": "11:59:21.327138"
+        }
     },
     "buy_bd2dee6f": {
         "symbol": "SLXUSDT",
