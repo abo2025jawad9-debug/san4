@@ -349,5 +349,23 @@
         "break_even_price": 0.00069,
         "min_sell_price": 0.00069,
         "sell_details": {}
+    },
+    "buy_77e449fa": {
+        "symbol": "PORTALUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-14",
+        "time": "12:37:21.620304",
+        "buy_time": "2026-09-14T12:37:21.620304",
+        "buy_price": 0.01778,
+        "qty": 281.13,
+        "sellable_qty": 280.84887,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9999,
+        "total_cost": 4.9999,
+        "break_even_price": 0.01784,
+        "min_sell_price": 0.01784,
+        "sell_details": {}
     }
 }
