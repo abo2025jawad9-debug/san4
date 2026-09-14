@@ -407,7 +407,7 @@
     "buy_6552be7b": {
         "symbol": "XTZUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-14",
         "time": "14:58:39.810501",
         "buy_time": "2026-09-14T14:58:39.810501",
@@ -420,6 +420,15 @@
         "total_cost": 4.9986,
         "break_even_price": 0.27382,
         "min_sell_price": 0.27382,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_6e684057",
+            "sell_price": 0.27,
+            "received_usd": 5.0023,
+            "sell_fee_usd": 0.005,
+            "profit_usd": -0.0013,
+            "profit_percent": -0.026,
+            "sell_date": "2026-09-14",
+            "sell_time": "15:05:57.013036"
+        }
     }
 }
