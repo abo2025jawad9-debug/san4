@@ -403,5 +403,23 @@
         "break_even_price": 0.00189,
         "min_sell_price": 0.00189,
         "sell_details": {}
+    },
+    "buy_6552be7b": {
+        "symbol": "XTZUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-14",
+        "time": "14:58:39.810501",
+        "buy_time": "2026-09-14T14:58:39.810501",
+        "buy_price": 0.273,
+        "qty": 18.31,
+        "sellable_qty": 18.29169,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9986,
+        "total_cost": 4.9986,
+        "break_even_price": 0.27382,
+        "min_sell_price": 0.27382,
+        "sell_details": {}
     }
 }
