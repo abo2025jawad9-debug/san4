@@ -2,7 +2,7 @@
     "buy_886713d4": {
         "symbol": "KASUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-13",
         "time": "22:04:08.185435",
         "buy_time": "2026-09-13T22:04:08.185435",
@@ -15,7 +15,16 @@
         "total_cost": 4.9997,
         "break_even_price": 0.03407,
         "min_sell_price": 0.03407,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_30fcce20",
+            "sell_price": 0.03,
+            "received_usd": 5.0078,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0031,
+            "profit_percent": 0.063,
+            "sell_date": "2026-09-14",
+            "sell_time": "06:25:43.571187"
+        }
     },
     "buy_41e532bc": {
         "symbol": "WAVESUSDT",
