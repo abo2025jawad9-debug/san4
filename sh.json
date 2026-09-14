@@ -151,5 +151,23 @@
         "break_even_price": 0.04168,
         "min_sell_price": 0.04168,
         "sell_details": {}
+    },
+    "buy_fec8a2fc": {
+        "symbol": "ZIGUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-14",
+        "time": "07:27:42.461394",
+        "buy_time": "2026-09-14T07:27:42.461394",
+        "buy_price": 0.04201,
+        "qty": 119.01,
+        "sellable_qty": 118.89099,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9996,
+        "total_cost": 4.9996,
+        "break_even_price": 0.04214,
+        "min_sell_price": 0.04214,
+        "sell_details": {}
     }
 }
