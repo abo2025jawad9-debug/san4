@@ -227,7 +227,7 @@
     "buy_d49a4df0": {
         "symbol": "MEGAUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-14",
         "time": "09:07:18.583218",
         "buy_time": "2026-09-14T09:07:18.583218",
@@ -240,6 +240,15 @@
         "total_cost": 4.9969,
         "break_even_price": 0.03525,
         "min_sell_price": 0.03525,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_35223145",
+            "sell_price": 0.04,
+            "received_usd": 5.0012,
+            "sell_fee_usd": 0.005,
+            "profit_usd": -0.0007,
+            "profit_percent": -0.013,
+            "sell_date": "2026-09-14",
+            "sell_time": "09:15:38.496523"
+        }
     }
 }
