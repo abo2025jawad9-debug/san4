@@ -353,7 +353,7 @@
     "buy_77e449fa": {
         "symbol": "PORTALUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-14",
         "time": "12:37:21.620304",
         "buy_time": "2026-09-14T12:37:21.620304",
@@ -366,6 +366,15 @@
         "total_cost": 4.9999,
         "break_even_price": 0.01784,
         "min_sell_price": 0.01784,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_ebf5fc3c",
+            "sell_price": 0.02,
+            "received_usd": 5.0591,
+            "sell_fee_usd": 0.0051,
+            "profit_usd": 0.0541,
+            "profit_percent": 1.081,
+            "sell_date": "2026-09-14",
+            "sell_time": "14:33:31.696239"
+        }
     }
 }
