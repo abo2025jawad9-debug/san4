@@ -263,7 +263,7 @@
     "buy_5d165be5": {
         "symbol": "SAFEUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-14",
         "time": "09:18:48.361072",
         "buy_time": "2026-09-14T09:18:48.361072",
@@ -276,7 +276,16 @@
         "total_cost": 4.9991,
         "break_even_price": 0.09553,
         "min_sell_price": 0.09553,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_ffb44aa7",
+            "sell_price": 0.1,
+            "received_usd": 5.0128,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0087,
+            "profit_percent": 0.174,
+            "sell_date": "2026-09-14",
+            "sell_time": "11:59:31.446171"
+        }
     },
     "buy_ca4b023d": {
         "symbol": "MEGAUSDT",
