@@ -79,5 +79,23 @@
         "break_even_price": 0.20441,
         "min_sell_price": 0.20441,
         "sell_details": {}
+    },
+    "buy_81e0a927": {
+        "symbol": "CATIUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-14",
+        "time": "02:46:09.958891",
+        "buy_time": "2026-09-14T02:46:09.958891",
+        "buy_price": 0.06457,
+        "qty": 77.43,
+        "sellable_qty": 77.35257,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9997,
+        "total_cost": 4.9997,
+        "break_even_price": 0.06476,
+        "min_sell_price": 0.06476,
+        "sell_details": {}
     }
 }
