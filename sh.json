@@ -115,5 +115,23 @@
         "break_even_price": 0.06476,
         "min_sell_price": 0.06476,
         "sell_details": {}
+    },
+    "buy_8599576c": {
+        "symbol": "CLOUDUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-14",
+        "time": "03:01:10.460219",
+        "buy_time": "2026-09-14T03:01:10.460219",
+        "buy_price": 0.04156,
+        "qty": 120.3,
+        "sellable_qty": 120.1797,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9997,
+        "total_cost": 4.9997,
+        "break_even_price": 0.04168,
+        "min_sell_price": 0.04168,
+        "sell_details": {}
     }
 }
