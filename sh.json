@@ -488,7 +488,7 @@
     "buy_f45fee12": {
         "symbol": "FETUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-15",
         "time": "04:01:54.643178",
         "buy_time": "2026-09-15T04:01:54.643178",
@@ -501,6 +501,15 @@
         "total_cost": 4.9992,
         "break_even_price": 0.16259,
         "min_sell_price": 0.16259,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_d833e8ed",
+            "sell_price": 0.16,
+            "received_usd": 5.0081,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0039,
+            "profit_percent": 0.077,
+            "sell_date": "2026-09-15",
+            "sell_time": "04:20:44.636918"
+        }
     }
 }
