@@ -6,11 +6,11 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch: # زر للتشغيل اليدوي
 
-# --- تم إضافة هذا الجزء لمنع التشغيل المزدوج (شراء نفس العملة مرتين) ---
+# --- التعديل الجديد لمنع إيقاف البوت القديم ---
 concurrency:
   group: trading-bot
-  cancel-in-progress: true
-# ------------------------------------------------------------------------
+  cancel-in-progress: false # تم تغييرها إلى false لتفعيل نظام الانتظار (الطابور)
+# ------------------------------------------------
 
 permissions:
   contents: write # صلاحية ضرورية لرفع ملف sh.json
@@ -36,7 +36,6 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Trading Bot
-        # تم تصحيح الأسماء لتتطابق تماماً مع ما هو موجود في إعدادات مستودعك
         env:
           BYBIT_API_KEY: ${{ secrets.BYBIT_API_KEY }}
           BYBIT_API_SECRET: ${{ secrets.BYBIT_API_SECRET }}
