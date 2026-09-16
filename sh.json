@@ -641,7 +641,7 @@
     "buy_e062be55": {
         "symbol": "POLUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-16",
         "time": "07:30:20.979834",
         "buy_time": "2026-09-16T07:30:20.979834",
@@ -654,6 +654,15 @@
         "total_cost": 4.9918,
         "break_even_price": 0.09103,
         "min_sell_price": 0.09103,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_ce7017ac",
+            "sell_price": 0.09,
+            "received_usd": 4.9981,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0013,
+            "profit_percent": 0.026,
+            "sell_date": "2026-09-16",
+            "sell_time": "07:34:16.496469"
+        }
     }
 }
