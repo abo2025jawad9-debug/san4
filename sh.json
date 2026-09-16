@@ -587,7 +587,7 @@
     "buy_80b66047": {
         "symbol": "BIRBUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-16",
         "time": "06:04:58.130081",
         "buy_time": "2026-09-16T06:04:58.130081",
@@ -600,6 +600,15 @@
         "total_cost": 4.9988,
         "break_even_price": 0.05976,
         "min_sell_price": 0.05976,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_5e44c2ef",
+            "sell_price": 0.06,
+            "received_usd": 5.0062,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0024,
+            "profit_percent": 0.048,
+            "sell_date": "2026-09-16",
+            "sell_time": "07:07:19.613394"
+        }
     }
 }
