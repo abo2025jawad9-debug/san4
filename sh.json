@@ -691,5 +691,23 @@
             "sell_date": "2026-09-16",
             "sell_time": "07:59:48.541986"
         }
+    },
+    "buy_1fc055a0": {
+        "symbol": "ATOMUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-16",
+        "time": "08:03:38.433013",
+        "buy_time": "2026-09-16T08:03:38.433013",
+        "buy_price": 1.487,
+        "qty": 3.36,
+        "sellable_qty": 3.35664,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9963,
+        "total_cost": 4.9963,
+        "break_even_price": 1.49147,
+        "min_sell_price": 1.49147,
+        "sell_details": {}
     }
 }
