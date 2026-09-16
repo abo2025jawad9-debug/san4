@@ -560,7 +560,7 @@
     "buy_8480f109": {
         "symbol": "HNTUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-16",
         "time": "05:42:59.309413",
         "buy_time": "2026-09-16T05:42:59.309413",
@@ -573,6 +573,15 @@
         "total_cost": 4.9998,
         "break_even_price": 0.39468,
         "min_sell_price": 0.39468,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_17282baa",
+            "sell_price": 0.4,
+            "received_usd": 5.0188,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.014,
+            "profit_percent": 0.28,
+            "sell_date": "2026-09-16",
+            "sell_time": "06:01:04.726306"
+        }
     }
 }
