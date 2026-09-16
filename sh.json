@@ -718,5 +718,23 @@
             "sell_date": "2026-09-16",
             "sell_time": "09:37:05.228225"
         }
+    },
+    "buy_cb5cbe7a": {
+        "symbol": "FLOCKUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-16",
+        "time": "09:37:24.423183",
+        "buy_time": "2026-09-16T09:37:24.423183",
+        "buy_price": 0.0643,
+        "qty": 77.76,
+        "sellable_qty": 77.68224,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 5.0,
+        "total_cost": 5.0,
+        "break_even_price": 0.06449,
+        "min_sell_price": 0.06449,
+        "sell_details": {}
     }
 }
