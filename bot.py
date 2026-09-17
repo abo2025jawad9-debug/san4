@@ -708,11 +708,10 @@ from datetime import datetime
 
 
 
-
 def sync_account_and_file():
     """
-    تقوم هذه الدالة بمزامنة الحساب مع الملف، بالإضافة إلى فحص صحة الحسابات الرياضية 
-    للصفقات المعلقة (رسوم، سعر التعادل، وسعر البيع المستهدف) وتصحيحها إن كانت خاطئة.
+    تقوم هذه الدالة بمزامنة الحساب مع الملف وتصحيح الأخطاء الحسابية،
+    مع دعم قراءة المفاتيح العربية والإنجليزية لتجنب تكرار الصفقات.
     """
     print("\n[SYNC] 🔄 بدء فحص الأخطاء الحسابية والمزامنة مع الحساب...")
     history = load_history()
@@ -747,19 +746,34 @@ def sync_account_and_file():
                         'current_price': current_price
                     }
 
-        # 2. استخراج الصفقات المعلقة من الملف
-        pending_ops = {op_id: op for op_id, op in history.items() if isinstance(op, dict) and op.get('status') == 'معلقة - جاري الانتظار'}
-        file_symbols = {op['symbol']: op_id for op_id, op in pending_ops.items()}
+        # 2. استخراج الصفقات المعلقة (بذكاء يدعم المفاتيح العربية والإنجليزية)
+        pending_ops = {}
+        for op_id, op in history.items():
+            if isinstance(op, dict):
+                status = op.get('status', '')
+                # نكتفي بالبحث عن كلمة "معلقة" لتجاوز خطأ (جاري/جارية)
+                if 'معلقة' in status:
+                    pending_ops[op_id] = op
+                    
+        file_symbols = {}
+        for op_id, op in pending_ops.items():
+            # البحث عن الرمز باللغتين
+            sym = op.get('symbol', op.get('الرمز'))
+            if sym:
+                file_symbols[sym] = op_id
+                # توحيد المفتاح للإنجليزية لكي لا تفشل التحديثات اللاحقة
+                if 'symbol' not in op:
+                    op['symbol'] = sym
 
         # 3. الحذف: العملات المباعة أو غير المتوفرة
         for op_id, op in pending_ops.items():
-            sym = op['symbol']
-            if sym not in account_balances:
+            sym = op.get('symbol')
+            if sym and sym not in account_balances:
                 print(f"[SYNC] 🗑️ العملة {sym} مسجلة كمعلقة لكنها غير متوفرة في الحساب. جاري الحذف...")
                 del history[op_id]
                 changed = True
 
-        # 4. الإضافة والتصحيح (بما في ذلك فحص العمليات الحسابية)
+        # 4. الإضافة والتصحيح
         for sym, data in account_balances.items():
             acc_qty = data['qty']
             current_price = data['current_price']
@@ -803,17 +817,19 @@ def sync_account_and_file():
                 changed = True
                 
             else:
-                # [فحص الأخطاء الحسابية وتصحيحها للعملات الموجودة]
+                # [فحص الأخطاء الحسابية وتصحيحها]
                 op_id = file_symbols[sym]
                 op = history[op_id]
                 
-                saved_qty = op.get('sellable_qty', op.get('qty', 0))
-                buy_price = op.get('buy_price')
+                # جلب البيانات ودعم المفاتيح العربية إن وجدت
+                saved_qty = op.get('sellable_qty', op.get('الكمية', op.get('qty', 0)))
+                buy_price = op.get('buy_price', op.get('سعر الشراء'))
                 
-                # استخدام الرصيد الفعلي كمعيار أساسي
+                if buy_price is None:
+                    continue # تخطي إذا كانت البيانات تالفة تماماً
+                    
                 actual_qty = acc_qty
                 
-                # إعادة الحساب الصحيح 100% بناءً على معادلات البوت
                 correct_fee_usd = actual_qty * buy_price * TAKER_FEE_PERCENT
                 correct_calc = calculate_sell_thresholds(buy_price, actual_qty, correct_fee_usd)
                 
@@ -821,11 +837,9 @@ def sync_account_and_file():
                 correct_break_even = round(correct_calc['break_even_price'], 5)
                 
                 saved_min_sell = op.get('min_sell_price', 0)
-                saved_break_even = op.get('break_even_price', 0)
+                saved_break_even = op.get('break_even_price', op.get('سعر التعادل', 0))
                 
-                # السماح بنسبة تفاوت حسابية طفيفة جداً (مثل 0.00001) لتجنب التحديث بسبب الكسور العشرية الطويلة
                 tolerance = 0.00002
-                
                 needs_correction = False
                 diff_reason = []
 
@@ -841,9 +855,14 @@ def sync_account_and_file():
                     needs_correction = True
                     diff_reason.append("سعر التعادل")
 
+                # تصحيح الخطأ وتحويل كافة المفاتيح للإنجليزية لضمان عمل البوت
                 if needs_correction:
-                    print(f"[SYNC] ⚙️ تم رصد خطأ في ({', '.join(diff_reason)}) لعملة {sym}. جاري التصحيح لإعادة تفعيل البيع...")
+                    print(f"[SYNC] ⚙️ تم رصد خطأ أو اختلاف لغة في ({', '.join(diff_reason)}) لعملة {sym}. جاري التصحيح...")
                     
+                    history[op_id]['symbol'] = sym
+                    history[op_id]['type'] = 'buy'
+                    history[op_id]['status'] = 'معلقة - جاري الانتظار'
+                    history[op_id]['buy_price'] = buy_price
                     history[op_id]['qty'] = round(actual_qty, 8)
                     history[op_id]['sellable_qty'] = round(actual_qty, 8)
                     history[op_id]['buy_amount_usd'] = round(actual_qty * buy_price, 4)
@@ -853,20 +872,22 @@ def sync_account_and_file():
                     history[op_id]['break_even_price'] = correct_break_even
                     history[op_id]['min_sell_price'] = correct_min_sell
                     
+                    # تنظيف المفاتيح العربية إن وجدت حتى لا يتضخم الملف
+                    for arabic_key in ["الرمز", "النوع", "سعر الشراء", "الكمية", "تكلفة_الشراء", "التكلفة الإجمالية", "سعر التعادل"]:
+                        if arabic_key in history[op_id]:
+                            del history[op_id][arabic_key]
+                    
                     changed = True
 
         if changed:
             save_history(history)
             git_commit_and_push()
-            print("[SYNC] ✅ تمت عملية المزامنة وتصحيح الأخطاء الحسابية بنجاح.")
+            print("[SYNC] ✅ تمت عملية المزامنة وتصحيح الأخطاء بنجاح.")
         else:
             print("[SYNC] 🆗 جميع الحسابات الرياضية للملف مطابقة للواقع. لا يوجد أخطاء.")
             
     except Exception as e:
         print(f"[SYNC] ❌ حدث خطأ أثناء المزامنة والتصحيح: {e}")
-
-
-
 
 def main():
     """الدالة الرئيسية التي تقوم ببدء تشغيل الماسح الذكي للسوق لتنفيذ المنطق"""
