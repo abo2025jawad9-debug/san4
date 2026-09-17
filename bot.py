@@ -705,6 +705,169 @@ def check_recent_high_target(symbol, current_price):
 import time
 from datetime import datetime
 
+
+
+
+
+def sync_account_and_file():
+    """
+    تقوم هذه الدالة بمزامنة الحساب مع الملف، بالإضافة إلى فحص صحة الحسابات الرياضية 
+    للصفقات المعلقة (رسوم، سعر التعادل، وسعر البيع المستهدف) وتصحيحها إن كانت خاطئة.
+    """
+    print("\n[SYNC] 🔄 بدء فحص الأخطاء الحسابية والمزامنة مع الحساب...")
+    history = load_history()
+    changed = False
+    
+    try:
+        # 1. جلب أرصدة الحساب
+        res = client.get_wallet_balance(accountType="UNIFIED")
+        coins = res['result']['list'][0]['coin']
+        
+        tickers = get_all_tickers_data()
+        if tickers is None:
+            print("[SYNC] ⚠️ فشل جلب أسعار السوق، سيتم تأجيل المزامنة.")
+            return
+
+        account_balances = {}
+        for c in coins:
+            coin_name = c['coin']
+            if coin_name in ['USDT', 'USDC']: 
+                continue
+            
+            balance = float(c['walletBalance'])
+            symbol = f"{coin_name}USDT"
+            
+            if symbol in tickers:
+                current_price = tickers[symbol]['lastPrice']
+                usd_value = balance * current_price
+                if usd_value >= 3.0:
+                    account_balances[symbol] = {
+                        'qty': balance,
+                        'usd_value': usd_value,
+                        'current_price': current_price
+                    }
+
+        # 2. استخراج الصفقات المعلقة من الملف
+        pending_ops = {op_id: op for op_id, op in history.items() if isinstance(op, dict) and op.get('status') == 'معلقة - جاري الانتظار'}
+        file_symbols = {op['symbol']: op_id for op_id, op in pending_ops.items()}
+
+        # 3. الحذف: العملات المباعة أو غير المتوفرة
+        for op_id, op in pending_ops.items():
+            sym = op['symbol']
+            if sym not in account_balances:
+                print(f"[SYNC] 🗑️ العملة {sym} مسجلة كمعلقة لكنها غير متوفرة في الحساب. جاري الحذف...")
+                del history[op_id]
+                changed = True
+
+        # 4. الإضافة والتصحيح (بما في ذلك فحص العمليات الحسابية)
+        for sym, data in account_balances.items():
+            acc_qty = data['qty']
+            current_price = data['current_price']
+            
+            if sym not in file_symbols:
+                # [إضافة جديدة]
+                print(f"[SYNC] ➕ العملة {sym} موجودة في الحساب وليست في الملف. جاري الإضافة...")
+                buy_price = current_price
+                try:
+                    exec_res = client.get_executions(category="spot", symbol=sym, limit=10)
+                    buy_fills = [f for f in exec_res['result']['list'] if f['side'] == 'Buy']
+                    if buy_fills:
+                        buy_price = float(buy_fills[0]['execPrice'])
+                except Exception:
+                    pass
+                
+                fee_usd = acc_qty * buy_price * TAKER_FEE_PERCENT
+                calc = calculate_sell_thresholds(buy_price, acc_qty, fee_usd)
+                
+                op_id = f"buy_sync_{uuid.uuid4().hex[:8]}"
+                now = datetime.utcnow()
+                
+                history[op_id] = {
+                    "symbol": sym,
+                    "type": "buy",
+                    "status": "معلقة - جاري الانتظار",
+                    "date": now.date().isoformat(),
+                    "time": now.time().isoformat(),
+                    "buy_time": now.isoformat(),
+                    "buy_price": round(buy_price, 5),
+                    "qty": round(acc_qty, 8),
+                    "sellable_qty": round(acc_qty, 8),
+                    "buy_amount_usd": round(acc_qty * buy_price, 4),
+                    "buy_fee_usd": round(fee_usd, 4),
+                    "buy_cost": round(calc['buy_cost'], 4),
+                    "total_cost": round(calc['total_cost'], 4),
+                    "break_even_price": round(calc['break_even_price'], 5),
+                    "min_sell_price": round(calc['min_sell_price'], 5),
+                    "sell_details": {}
+                }
+                changed = True
+                
+            else:
+                # [فحص الأخطاء الحسابية وتصحيحها للعملات الموجودة]
+                op_id = file_symbols[sym]
+                op = history[op_id]
+                
+                saved_qty = op.get('sellable_qty', op.get('qty', 0))
+                buy_price = op.get('buy_price')
+                
+                # استخدام الرصيد الفعلي كمعيار أساسي
+                actual_qty = acc_qty
+                
+                # إعادة الحساب الصحيح 100% بناءً على معادلات البوت
+                correct_fee_usd = actual_qty * buy_price * TAKER_FEE_PERCENT
+                correct_calc = calculate_sell_thresholds(buy_price, actual_qty, correct_fee_usd)
+                
+                correct_min_sell = round(correct_calc['min_sell_price'], 5)
+                correct_break_even = round(correct_calc['break_even_price'], 5)
+                
+                saved_min_sell = op.get('min_sell_price', 0)
+                saved_break_even = op.get('break_even_price', 0)
+                
+                # السماح بنسبة تفاوت حسابية طفيفة جداً (مثل 0.00001) لتجنب التحديث بسبب الكسور العشرية الطويلة
+                tolerance = 0.00002
+                
+                needs_correction = False
+                diff_reason = []
+
+                if abs(saved_qty - actual_qty) > (actual_qty * 0.005):
+                    needs_correction = True
+                    diff_reason.append("الكمية")
+                
+                if abs(saved_min_sell - correct_min_sell) > tolerance:
+                    needs_correction = True
+                    diff_reason.append("سعر البيع المستهدف")
+                    
+                if abs(saved_break_even - correct_break_even) > tolerance:
+                    needs_correction = True
+                    diff_reason.append("سعر التعادل")
+
+                if needs_correction:
+                    print(f"[SYNC] ⚙️ تم رصد خطأ في ({', '.join(diff_reason)}) لعملة {sym}. جاري التصحيح لإعادة تفعيل البيع...")
+                    
+                    history[op_id]['qty'] = round(actual_qty, 8)
+                    history[op_id]['sellable_qty'] = round(actual_qty, 8)
+                    history[op_id]['buy_amount_usd'] = round(actual_qty * buy_price, 4)
+                    history[op_id]['buy_fee_usd'] = round(correct_fee_usd, 4)
+                    history[op_id]['buy_cost'] = round(correct_calc['buy_cost'], 4)
+                    history[op_id]['total_cost'] = round(correct_calc['total_cost'], 4)
+                    history[op_id]['break_even_price'] = correct_break_even
+                    history[op_id]['min_sell_price'] = correct_min_sell
+                    
+                    changed = True
+
+        if changed:
+            save_history(history)
+            git_commit_and_push()
+            print("[SYNC] ✅ تمت عملية المزامنة وتصحيح الأخطاء الحسابية بنجاح.")
+        else:
+            print("[SYNC] 🆗 جميع الحسابات الرياضية للملف مطابقة للواقع. لا يوجد أخطاء.")
+            
+    except Exception as e:
+        print(f"[SYNC] ❌ حدث خطأ أثناء المزامنة والتصحيح: {e}")
+
+
+
+
 def main():
     """الدالة الرئيسية التي تقوم ببدء تشغيل الماسح الذكي للسوق لتنفيذ المنطق"""
     if not API_KEY or not API_SECRET:
