@@ -879,9 +879,15 @@ def main():
 
     start_time = time.time()
     end_time = start_time + (RUN_DURATION_HOURS * 3600)
+    last_sync_time = 0
 
     while time.time() < end_time:
         loop_start = time.time()
+        # ⬇️ الإضافة الثانية: أضف هذا الشرط هنا (في بداية الحلقة وقبل قراءة الملف) ⬇️
+        if time.time() - last_sync_time >= (20 * 60):
+            sync_account_and_file()
+            last_sync_time = time.time()
+        # ------------------
 
         try:
             history = load_history()
