@@ -133,5 +133,23 @@
         "break_even_price": 0.00065,
         "min_sell_price": 0.00065,
         "sell_details": {}
+    },
+    "buy_b33d0b04": {
+        "symbol": "GROVEUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-18",
+        "time": "01:57:05.320705",
+        "buy_time": "2026-09-18T01:57:05.320705",
+        "buy_price": 0.00754,
+        "qty": 662.7,
+        "sellable_qty": 662.0373,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9994,
+        "total_cost": 4.9994,
+        "break_even_price": 0.00757,
+        "min_sell_price": 0.00757,
+        "sell_details": {}
     }
 }
