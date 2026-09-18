@@ -932,21 +932,26 @@ def main():
                 high_24h = data['highPrice24h']
                 volume_24h = data['turnover24h']
 
-                # ───[ فلترة العملات الميتة والخاملة ]───
-                if volume_24h < 300000:
-                    continue 
-                if low_24h == 0: 
-                    continue
-                volatility_pct = ((high_24h - low_24h) / low_24h) * 100
-                if volatility_pct < 5.0:
-                    continue
-                # ─────────────────────────────────────
+                # حساب نسبة التذبذب أولاً
+                volatility_pct = 0
+                if low_24h > 0:
+                    volatility_pct = ((high_24h - low_24h) / low_24h) * 100
+
+                open_count = count_open_positions(history, symbol)
+
+                # ───[ فلترة العملات (نتجاهل العملة الخاملة فقط إذا لم تكن لدينا صفقة مفتوحة فيها) ]───
+                if open_count == 0:
+                    if volume_24h < 300000:
+                        continue 
+                    if low_24h == 0: 
+                        continue
+                    if volatility_pct < 5.0:
+                        continue
+                # ─────────────────────────────────────────────────────────────────────────────────────
 
                 print(f"\n┌───[ جَارِي فَحْصُ {symbol} (حَيَوِيَّة: {volatility_pct:.1f}%) ]─────────────────────┐")
                 print("│ [PRICE] السِّعْرُ الحَالِيُّ: %.5f | قَاعُ 24 سَاعَة: %.5f | السِّيُولَة: %.0f$" % (current_price, low_24h, volume_24h))
 
-                open_count = count_open_positions(history, symbol)
-                
                 print("│ [خُطْوَةُ 1] فَحْصُ البَيْعِ لِلْعَمَلِيَّاتِ المَفْتُوحَةِ (%d)" % open_count)
                 sold, history = try_sell_all(history, current_price, symbol)
 
