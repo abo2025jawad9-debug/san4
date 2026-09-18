@@ -2,7 +2,7 @@
     "buy_sync_aafb33d1": {
         "symbol": "CAPUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-17",
         "time": "23:29:30.862935",
         "buy_time": "2026-09-17T23:29:30.862935",
@@ -15,7 +15,16 @@
         "total_cost": 4.9965,
         "break_even_price": 0.0556,
         "min_sell_price": 0.0556,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_70e0612b",
+            "sell_price": 0.06,
+            "received_usd": 5.0141,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0126,
+            "profit_percent": 0.251,
+            "sell_date": "2026-09-18",
+            "sell_time": "00:27:19.645028"
+        }
     },
     "buy_sync_aeec9a82": {
         "symbol": "LDOUSDT",
