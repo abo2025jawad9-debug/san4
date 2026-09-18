@@ -326,7 +326,7 @@
     "buy_sync_56ef37e0": {
         "symbol": "HUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-18",
         "time": "13:05:42.145655",
         "buy_time": "2026-09-18T13:05:42.145655",
@@ -339,6 +339,15 @@
         "total_cost": 4.9978,
         "break_even_price": 0.08181,
         "min_sell_price": 0.08181,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_e79faf04",
+            "sell_price": 0.08,
+            "received_usd": 5.0074,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0046,
+            "profit_percent": 0.091,
+            "sell_date": "2026-09-18",
+            "sell_time": "13:33:10.737263"
+        }
     }
 }
