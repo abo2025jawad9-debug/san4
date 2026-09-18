@@ -353,7 +353,7 @@
     "buy_85248948": {
         "symbol": "SOSOUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-18",
         "time": "13:34:09.348852",
         "buy_time": "2026-09-18T13:34:09.348852",
@@ -366,6 +366,15 @@
         "total_cost": 4.9995,
         "break_even_price": 0.28395,
         "min_sell_price": 0.28395,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_3a199a09",
+            "sell_price": 0.29,
+            "received_usd": 5.0345,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0299,
+            "profit_percent": 0.598,
+            "sell_date": "2026-09-18",
+            "sell_time": "13:36:52.325223"
+        }
     }
 }
