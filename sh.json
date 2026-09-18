@@ -92,7 +92,7 @@
     "buy_sync_81b35fbb": {
         "symbol": "VTHOUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-18",
         "time": "01:28:55.792905",
         "buy_time": "2026-09-18T01:28:55.792905",
@@ -105,6 +105,15 @@
         "total_cost": 4.9945,
         "break_even_price": 0.00066,
         "min_sell_price": 0.00066,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_f96f22df",
+            "sell_price": 0.0,
+            "received_usd": 5.0423,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0427,
+            "profit_percent": 0.854,
+            "sell_date": "2026-09-18",
+            "sell_time": "01:33:17.808321"
+        }
     }
 }
