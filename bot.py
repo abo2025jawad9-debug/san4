@@ -905,7 +905,7 @@ def main():
     while time.time() < end_time:
         loop_start = time.time()
         # ⬇️ الإضافة الثانية: أضف هذا الشرط هنا (في بداية الحلقة وقبل قراءة الملف) ⬇️
-        if time.time() - last_sync_time >= (2 * 60):
+        if time.time() - last_sync_time >= (1 * 60):
             sync_account_and_file()
             last_sync_time = time.time()
         # ------------------
