@@ -119,7 +119,7 @@
     "buy_eba10014": {
         "symbol": "VTHOUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-18",
         "time": "01:51:51.715280",
         "buy_time": "2026-09-18T01:51:51.715280",
@@ -132,7 +132,16 @@
         "total_cost": 4.9996,
         "break_even_price": 0.00065,
         "min_sell_price": 0.00065,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_8a160b3b",
+            "sell_price": 0.0,
+            "received_usd": 5.0215,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0169,
+            "profit_percent": 0.338,
+            "sell_date": "2026-09-18",
+            "sell_time": "03:17:25.364575"
+        }
     },
     "buy_b33d0b04": {
         "symbol": "GROVEUSDT",
