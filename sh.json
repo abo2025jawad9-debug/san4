@@ -200,7 +200,7 @@
     "buy_e961c392": {
         "symbol": "GROVEUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-18",
         "time": "03:50:16.201532",
         "buy_time": "2026-09-18T03:50:16.201532",
@@ -213,6 +213,15 @@
         "total_cost": 4.9996,
         "break_even_price": 0.00749,
         "min_sell_price": 0.00749,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_09e959af",
+            "sell_price": 0.01,
+            "received_usd": 4.989,
+            "sell_fee_usd": 0.005,
+            "profit_usd": -0.0156,
+            "profit_percent": -0.311,
+            "sell_date": "2026-09-18",
+            "sell_time": "03:54:02.589060"
+        }
     }
 }
