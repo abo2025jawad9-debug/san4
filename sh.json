@@ -227,7 +227,7 @@
     "buy_34cbabf7": {
         "symbol": "PORTALUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-18",
         "time": "04:15:34.845155",
         "buy_time": "2026-09-18T04:15:34.845155",
@@ -240,7 +240,16 @@
         "total_cost": 4.9999,
         "break_even_price": 0.01763,
         "min_sell_price": 0.01763,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_f208446b",
+            "sell_price": 0.02,
+            "received_usd": 5.0053,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0004,
+            "profit_percent": 0.009,
+            "sell_date": "2026-09-18",
+            "sell_time": "04:21:26.873376"
+        }
     },
     "buy_9f0ae872": {
         "symbol": "HUSDT",
