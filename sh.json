@@ -115,5 +115,23 @@
             "sell_date": "2026-09-18",
             "sell_time": "01:33:17.808321"
         }
+    },
+    "buy_eba10014": {
+        "symbol": "VTHOUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-18",
+        "time": "01:51:51.715280",
+        "buy_time": "2026-09-18T01:51:51.715280",
+        "buy_price": 0.00065,
+        "qty": 7737.0,
+        "sellable_qty": 7729.263,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9996,
+        "total_cost": 4.9996,
+        "break_even_price": 0.00065,
+        "min_sell_price": 0.00065,
+        "sell_details": {}
     }
 }
