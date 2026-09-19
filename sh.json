@@ -511,5 +511,23 @@
             "sell_date": "2026-09-19",
             "sell_time": "05:38:47.769443"
         }
+    },
+    "buy_1783587b": {
+        "symbol": "ARBUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-19",
+        "time": "18:21:10.651875",
+        "buy_time": "2026-09-19T18:21:10.651875",
+        "buy_price": 0.20536,
+        "qty": 24.34,
+        "sellable_qty": 24.31566,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9985,
+        "total_cost": 4.9985,
+        "break_even_price": 0.20598,
+        "min_sell_price": 0.20598,
+        "sell_details": {}
     }
 }
