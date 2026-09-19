@@ -457,5 +457,23 @@
         "break_even_price": 0.24172,
         "min_sell_price": 0.24172,
         "sell_details": {}
+    },
+    "buy_b5a17f56": {
+        "symbol": "EDGEUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-19",
+        "time": "01:36:34.351679",
+        "buy_time": "2026-09-19T01:36:34.351679",
+        "buy_price": 0.572,
+        "qty": 8.7,
+        "sellable_qty": 8.6913,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9764,
+        "total_cost": 4.9764,
+        "break_even_price": 0.57372,
+        "min_sell_price": 0.57372,
+        "sell_details": {}
     }
 }
