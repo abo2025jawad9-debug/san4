@@ -461,7 +461,7 @@
     "buy_b5a17f56": {
         "symbol": "EDGEUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-19",
         "time": "01:36:34.351679",
         "buy_time": "2026-09-19T01:36:34.351679",
@@ -474,6 +474,15 @@
         "total_cost": 4.9764,
         "break_even_price": 0.57372,
         "min_sell_price": 0.57372,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_a6df0a42",
+            "sell_price": 0.58,
+            "received_usd": 4.9992,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0178,
+            "profit_percent": 0.357,
+            "sell_date": "2026-09-19",
+            "sell_time": "02:04:48.249949"
+        }
     }
 }
