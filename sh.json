@@ -596,7 +596,7 @@
     "buy_05b65ec9": {
         "symbol": "FUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-20",
         "time": "01:31:37.464668",
         "buy_time": "2026-09-20T01:31:37.464668",
@@ -609,6 +609,15 @@
         "total_cost": 4.9999,
         "break_even_price": 0.00393,
         "min_sell_price": 0.00393,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_cbaa535f",
+            "sell_price": 0.0,
+            "received_usd": 5.0101,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0051,
+            "profit_percent": 0.103,
+            "sell_date": "2026-09-20",
+            "sell_time": "02:02:47.615193"
+        }
     }
 }
