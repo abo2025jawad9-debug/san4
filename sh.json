@@ -686,7 +686,7 @@
     "buy_f72ec8f2": {
         "symbol": "VTHOUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-20",
         "time": "12:51:14.920674",
         "buy_time": "2026-09-20T12:51:14.920674",
@@ -699,7 +699,16 @@
         "total_cost": 5.0,
         "break_even_price": 0.00067,
         "min_sell_price": 0.00067,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_1b7b3784",
+            "sell_price": 0.0,
+            "received_usd": 5.0209,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0158,
+            "profit_percent": 0.316,
+            "sell_date": "2026-09-20",
+            "sell_time": "22:13:56.244492"
+        }
     },
     "buy_7ed84e7c": {
         "symbol": "AAVEUSDT",
