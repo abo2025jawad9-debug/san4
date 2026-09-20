@@ -569,7 +569,7 @@
     "buy_696bd7c2": {
         "symbol": "FETUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-20",
         "time": "01:14:59.047233",
         "buy_time": "2026-09-20T01:14:59.047233",
@@ -582,6 +582,15 @@
         "total_cost": 4.9994,
         "break_even_price": 0.17502,
         "min_sell_price": 0.17502,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_bb40a7dc",
+            "sell_price": 0.18,
+            "received_usd": 5.0114,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.007,
+            "profit_percent": 0.139,
+            "sell_date": "2026-09-20",
+            "sell_time": "01:19:18.933817"
+        }
     }
 }
