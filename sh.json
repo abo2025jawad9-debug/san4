@@ -781,5 +781,23 @@
             "sell_date": "2026-09-20",
             "sell_time": "15:01:30.166831"
         }
+    },
+    "buy_d7dddfde": {
+        "symbol": "ZENUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-20",
+        "time": "15:36:07.308209",
+        "buy_time": "2026-09-20T15:36:07.308209",
+        "buy_price": 7.35,
+        "qty": 0.68,
+        "sellable_qty": 0.67932,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.998,
+        "total_cost": 4.998,
+        "break_even_price": 7.3721,
+        "min_sell_price": 7.3721,
+        "sell_details": {}
     }
 }
