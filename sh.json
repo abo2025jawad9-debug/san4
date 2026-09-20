@@ -659,7 +659,7 @@
     "buy_e3f15aa2": {
         "symbol": "LITUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-20",
         "time": "02:33:35.407289",
         "buy_time": "2026-09-20T02:33:35.407289",
@@ -672,7 +672,16 @@
         "total_cost": 4.9778,
         "break_even_price": 4.71012,
         "min_sell_price": 4.71012,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_c7d6660c",
+            "sell_price": 4.76,
+            "received_usd": 5.0032,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0204,
+            "profit_percent": 0.41,
+            "sell_date": "2026-09-20",
+            "sell_time": "12:54:19.326220"
+        }
     },
     "buy_f72ec8f2": {
         "symbol": "VTHOUSDT",
