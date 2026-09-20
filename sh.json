@@ -704,7 +704,7 @@
     "buy_7ed84e7c": {
         "symbol": "AAVEUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-20",
         "time": "13:13:02.343934",
         "buy_time": "2026-09-20T13:13:02.343934",
@@ -717,6 +717,15 @@
         "total_cost": 4.9997,
         "break_even_price": 134.80411,
         "min_sell_price": 134.80411,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_5f497057",
+            "sell_price": 134.76,
+            "received_usd": 4.9996,
+            "sell_fee_usd": 0.005,
+            "profit_usd": -0.0051,
+            "profit_percent": -0.102,
+            "sell_date": "2026-09-20",
+            "sell_time": "14:32:56.945546"
+        }
     }
 }
