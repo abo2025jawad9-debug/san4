@@ -1,1 +1,38 @@
-
+{
+    "buy_sync_4663b7b9": {
+        "symbol": "LAVAUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-20",
+        "time": "23:11:50.910218",
+        "buy_time": "2026-09-20T23:11:50.910218",
+        "buy_price": 0.01502,
+        "qty": 332.4672,
+        "sellable_qty": 332.4672,
+        "buy_amount_usd": 4.9937,
+        "buy_fee_usd": 0.0075,
+        "buy_cost": 4.9937,
+        "total_cost": 4.9937,
+        "break_even_price": 0.01507,
+        "min_sell_price": 0.01507,
+        "sell_details": {}
+    },
+    "buy_sync_00a497aa": {
+        "symbol": "CLOUDUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-20",
+        "time": "23:11:52.550623",
+        "buy_time": "2026-09-20T23:11:52.550623",
+        "buy_price": 0.04156,
+        "qty": 120.1797,
+        "sellable_qty": 120.1797,
+        "buy_amount_usd": 4.9947,
+        "buy_fee_usd": 0.0075,
+        "buy_cost": 4.9947,
+        "total_cost": 4.9947,
+        "break_even_price": 0.04168,
+        "min_sell_price": 0.04168,
+        "sell_details": {}
+    }
+}
