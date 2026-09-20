@@ -758,7 +758,7 @@
     "buy_d3d139f0": {
         "symbol": "ZETAUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-20",
         "time": "14:59:16.508588",
         "buy_time": "2026-09-20T14:59:16.508588",
@@ -771,6 +771,15 @@
         "total_cost": 4.9999,
         "break_even_price": 0.03776,
         "min_sell_price": 0.03776,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_c3a5fff0",
+            "sell_price": 0.04,
+            "received_usd": 5.0039,
+            "sell_fee_usd": 0.005,
+            "profit_usd": -0.001,
+            "profit_percent": -0.019,
+            "sell_date": "2026-09-20",
+            "sell_time": "15:01:30.166831"
+        }
     }
 }
