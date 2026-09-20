@@ -623,7 +623,7 @@
     "buy_bf5e749e": {
         "symbol": "FUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-20",
         "time": "02:09:56.193303",
         "buy_time": "2026-09-20T02:09:56.193303",
@@ -636,6 +636,15 @@
         "total_cost": 4.9996,
         "break_even_price": 0.00389,
         "min_sell_price": 0.00389,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_9c59f457",
+            "sell_price": 0.0,
+            "received_usd": 5.0023,
+            "sell_fee_usd": 0.005,
+            "profit_usd": -0.0023,
+            "profit_percent": -0.046,
+            "sell_date": "2026-09-20",
+            "sell_time": "02:11:03.432661"
+        }
     }
 }
