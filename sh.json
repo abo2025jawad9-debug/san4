@@ -731,7 +731,7 @@
     "buy_7c726715": {
         "symbol": "APEXUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-20",
         "time": "14:40:00.148089",
         "buy_time": "2026-09-20T14:40:00.148089",
@@ -744,6 +744,15 @@
         "total_cost": 4.999,
         "break_even_price": 0.21886,
         "min_sell_price": 0.21886,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_e426ef6d",
+            "sell_price": 0.22,
+            "received_usd": 5.0084,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0044,
+            "profit_percent": 0.088,
+            "sell_date": "2026-09-20",
+            "sell_time": "14:48:27.635902"
+        }
     }
 }
