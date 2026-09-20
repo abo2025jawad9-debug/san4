@@ -551,7 +551,7 @@
     "buy_sync_56f224bc": {
         "symbol": "VVVUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-19",
         "time": "23:56:58.303712",
         "buy_time": "2026-09-19T23:56:58.303712",
@@ -564,7 +564,16 @@
         "total_cost": 4.7969,
         "break_even_price": 26.75621,
         "min_sell_price": 26.75621,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_aece82b1",
+            "sell_price": 29.4,
+            "received_usd": 4.9975,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.1956,
+            "profit_percent": 4.071,
+            "sell_date": "2026-09-20",
+            "sell_time": "12:49:23.804527"
+        }
     },
     "buy_696bd7c2": {
         "symbol": "FETUSDT",
