@@ -155,7 +155,7 @@
     "buy_a0ead4a4": {
         "symbol": "SKRUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-21",
         "time": "06:29:16.007338",
         "buy_time": "2026-09-21T06:29:16.007338",
@@ -168,7 +168,16 @@
         "total_cost": 4.9986,
         "break_even_price": 0.01841,
         "min_sell_price": 0.01841,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_78f0aeca",
+            "sell_price": 0.02,
+            "received_usd": 5.0377,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0341,
+            "profit_percent": 0.681,
+            "sell_date": "2026-09-21",
+            "sell_time": "08:44:59.893458"
+        }
     },
     "buy_8e14cd41": {
         "symbol": "NIGHTUSDT",
