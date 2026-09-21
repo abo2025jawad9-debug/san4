@@ -380,7 +380,7 @@
     "buy_fc94a944": {
         "symbol": "ETHFIUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-21",
         "time": "21:30:20.617574",
         "buy_time": "2026-09-21T21:30:20.617574",
@@ -393,6 +393,15 @@
         "total_cost": 4.997,
         "break_even_price": 0.71093,
         "min_sell_price": 0.71093,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_cb53be96",
+            "sell_price": 0.71,
+            "received_usd": 5.0125,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0105,
+            "profit_percent": 0.209,
+            "sell_date": "2026-09-21",
+            "sell_time": "21:31:50.304741"
+        }
     }
 }
