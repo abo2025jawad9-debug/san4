@@ -65,7 +65,7 @@
     "buy_ca96804c": {
         "symbol": "GUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-21",
         "time": "00:38:10.220918",
         "buy_time": "2026-09-21T00:38:10.220918",
@@ -78,6 +78,15 @@
         "total_cost": 4.9993,
         "break_even_price": 0.00631,
         "min_sell_price": 0.00631,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_c2cd1245",
+            "sell_price": 0.01,
+            "received_usd": 4.9974,
+            "sell_fee_usd": 0.005,
+            "profit_usd": -0.0069,
+            "profit_percent": -0.137,
+            "sell_date": "2026-09-21",
+            "sell_time": "00:53:10.323585"
+        }
     }
 }
