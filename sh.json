@@ -376,5 +376,23 @@
         "break_even_price": 2.52758,
         "min_sell_price": 2.52758,
         "sell_details": {}
+    },
+    "buy_fc94a944": {
+        "symbol": "ETHFIUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-21",
+        "time": "21:30:20.617574",
+        "buy_time": "2026-09-21T21:30:20.617574",
+        "buy_price": 0.7088,
+        "qty": 7.05,
+        "sellable_qty": 7.04295,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.997,
+        "total_cost": 4.997,
+        "break_even_price": 0.71093,
+        "min_sell_price": 0.71093,
+        "sell_details": {}
     }
 }
