@@ -259,5 +259,23 @@
             "sell_date": "2026-09-21",
             "sell_time": "15:40:11.706581"
         }
+    },
+    "buy_9db975fd": {
+        "symbol": "ARUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-21",
+        "time": "16:46:36.198815",
+        "buy_time": "2026-09-21T16:46:36.198815",
+        "buy_price": 4.484,
+        "qty": 1.11,
+        "sellable_qty": 1.10889,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9772,
+        "total_cost": 4.9772,
+        "break_even_price": 4.49748,
+        "min_sell_price": 4.49748,
+        "sell_details": {}
     }
 }
