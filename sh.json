@@ -34,5 +34,23 @@
         "break_even_price": 0.04168,
         "min_sell_price": 0.04168,
         "sell_details": {}
+    },
+    "buy_753f907b": {
+        "symbol": "GUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-21",
+        "time": "00:28:45.468304",
+        "buy_time": "2026-09-21T00:28:45.468304",
+        "buy_price": 0.00626,
+        "qty": 798.0,
+        "sellable_qty": 797.202,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9947,
+        "total_cost": 4.9947,
+        "break_even_price": 0.00628,
+        "min_sell_price": 0.00628,
+        "sell_details": {}
     }
 }
