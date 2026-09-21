@@ -358,5 +358,23 @@
             "sell_date": "2026-09-21",
             "sell_time": "20:46:02.105580"
         }
+    },
+    "buy_eabb66fc": {
+        "symbol": "PENDLEUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-21",
+        "time": "20:49:51.087534",
+        "buy_time": "2026-09-21T20:49:51.087534",
+        "buy_price": 2.52,
+        "qty": 1.98,
+        "sellable_qty": 1.97802,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9896,
+        "total_cost": 4.9896,
+        "break_even_price": 2.52758,
+        "min_sell_price": 2.52758,
+        "sell_details": {}
     }
 }
