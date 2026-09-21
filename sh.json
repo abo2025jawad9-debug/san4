@@ -281,7 +281,7 @@
     "buy_b9b2c76c": {
         "symbol": "PENDLEUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-21",
         "time": "17:18:33.243179",
         "buy_time": "2026-09-21T17:18:33.243179",
@@ -294,7 +294,16 @@
         "total_cost": 4.9902,
         "break_even_price": 2.55366,
         "min_sell_price": 2.55366,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_0db8ddf2",
+            "sell_price": 2.56,
+            "received_usd": 4.9979,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0027,
+            "profit_percent": 0.053,
+            "sell_date": "2026-09-21",
+            "sell_time": "17:44:04.319447"
+        }
     },
     "buy_e621ee7f": {
         "symbol": "ENAUSDT",
