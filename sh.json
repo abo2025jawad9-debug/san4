@@ -92,7 +92,7 @@
     "buy_7f45a300": {
         "symbol": "SKRUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-21",
         "time": "05:00:10.492996",
         "buy_time": "2026-09-21T05:00:10.492996",
@@ -105,6 +105,15 @@
         "total_cost": 4.9998,
         "break_even_price": 0.01848,
         "min_sell_price": 0.01848,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_0e369628",
+            "sell_price": 0.02,
+            "received_usd": 5.0018,
+            "sell_fee_usd": 0.005,
+            "profit_usd": -0.003,
+            "profit_percent": -0.059,
+            "sell_date": "2026-09-21",
+            "sell_time": "05:03:27.075025"
+        }
     }
 }
