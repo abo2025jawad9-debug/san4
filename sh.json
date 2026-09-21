@@ -349,5 +349,23 @@
         "break_even_price": 0.20846,
         "min_sell_price": 0.20846,
         "sell_details": {}
+    },
+    "buy_3a3bf87e": {
+        "symbol": "ASTERUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-21",
+        "time": "17:53:50.854792",
+        "buy_time": "2026-09-21T17:53:50.854792",
+        "buy_price": 0.7295,
+        "qty": 6.85,
+        "sellable_qty": 6.84315,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9971,
+        "total_cost": 4.9971,
+        "break_even_price": 0.73169,
+        "min_sell_price": 0.73169,
+        "sell_details": {}
     }
 }
