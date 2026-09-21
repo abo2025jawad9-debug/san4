@@ -169,5 +169,23 @@
         "break_even_price": 0.01841,
         "min_sell_price": 0.01841,
         "sell_details": {}
+    },
+    "buy_8e14cd41": {
+        "symbol": "NIGHTUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-21",
+        "time": "07:46:29.270830",
+        "buy_time": "2026-09-21T07:46:29.270830",
+        "buy_price": 0.02294,
+        "qty": 217.9,
+        "sellable_qty": 217.6821,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9986,
+        "total_cost": 4.9986,
+        "break_even_price": 0.02301,
+        "min_sell_price": 0.02301,
+        "sell_details": {}
     }
 }
