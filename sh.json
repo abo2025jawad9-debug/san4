@@ -232,5 +232,23 @@
             "sell_date": "2026-09-21",
             "sell_time": "14:23:22.101471"
         }
+    },
+    "buy_41e09179": {
+        "symbol": "STRKUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-21",
+        "time": "15:37:24.844137",
+        "buy_time": "2026-09-21T15:37:24.844137",
+        "buy_price": 0.04284,
+        "qty": 116.71,
+        "sellable_qty": 116.59329,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9999,
+        "total_cost": 4.9999,
+        "break_even_price": 0.04297,
+        "min_sell_price": 0.04297,
+        "sell_details": {}
     }
 }
