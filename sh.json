@@ -38,7 +38,7 @@
     "buy_753f907b": {
         "symbol": "GUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-21",
         "time": "00:28:45.468304",
         "buy_time": "2026-09-21T00:28:45.468304",
@@ -51,6 +51,15 @@
         "total_cost": 4.9947,
         "break_even_price": 0.00628,
         "min_sell_price": 0.00628,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_cbf20d70",
+            "sell_price": 0.01,
+            "received_usd": 4.9637,
+            "sell_fee_usd": 0.005,
+            "profit_usd": -0.0359,
+            "profit_percent": -0.719,
+            "sell_date": "2026-09-21",
+            "sell_time": "00:31:51.920594"
+        }
     }
 }
