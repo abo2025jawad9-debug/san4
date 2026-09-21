@@ -236,7 +236,7 @@
     "buy_41e09179": {
         "symbol": "STRKUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-21",
         "time": "15:37:24.844137",
         "buy_time": "2026-09-21T15:37:24.844137",
@@ -249,6 +249,15 @@
         "total_cost": 4.9999,
         "break_even_price": 0.04297,
         "min_sell_price": 0.04297,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_ac201bfb",
+            "sell_price": 0.04,
+            "received_usd": 5.011,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0061,
+            "profit_percent": 0.122,
+            "sell_date": "2026-09-21",
+            "sell_time": "15:40:11.706581"
+        }
     }
 }
