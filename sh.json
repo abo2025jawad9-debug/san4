@@ -133,5 +133,23 @@
         "break_even_price": 0.50481,
         "min_sell_price": 0.50481,
         "sell_details": {}
+    },
+    "buy_856954d7": {
+        "symbol": "SOSOUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-09-24",
+        "time": "19:52:07.677752",
+        "buy_time": "2026-09-24T19:52:07.677752",
+        "buy_price": 0.3185,
+        "qty": 15.69,
+        "sellable_qty": 15.67431,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9973,
+        "total_cost": 4.9973,
+        "break_even_price": 0.31946,
+        "min_sell_price": 0.31946,
+        "sell_details": {}
     }
 }
