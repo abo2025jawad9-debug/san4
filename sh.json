@@ -146,7 +146,7 @@
     "buy_856954d7": {
         "symbol": "SOSOUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-09-24",
         "time": "19:52:07.677752",
         "buy_time": "2026-09-24T19:52:07.677752",
@@ -159,7 +159,16 @@
         "total_cost": 4.9973,
         "break_even_price": 0.31946,
         "min_sell_price": 0.31946,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_4599186e",
+            "sell_price": 0.32,
+            "received_usd": 5.005,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0027,
+            "profit_percent": 0.054,
+            "sell_date": "2026-09-27",
+            "sell_time": "18:33:44.803922"
+        }
     },
     "buy_674d1a42": {
         "symbol": "CRCLXUSDT",
