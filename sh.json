@@ -187,23 +187,5 @@
         "break_even_price": 90.15025,
         "min_sell_price": 90.15025,
         "sell_details": {}
-    },
-    "buy_4dc25daa": {
-        "symbol": "BRUSDT",
-        "type": "buy",
-        "status": "معلقة - جاري الانتظار",
-        "date": "2026-09-27",
-        "time": "19:38:27.693041",
-        "buy_time": "2026-09-27T19:38:27.693041",
-        "buy_price": 0.88543,
-        "qty": 5.0,
-        "sellable_qty": 4.995,
-        "buy_amount_usd": 5.0,
-        "buy_fee_usd": 0.0044,
-        "buy_cost": 4.4272,
-        "total_cost": 4.4272,
-        "break_even_price": 0.88809,
-        "min_sell_price": 0.88809,
-        "sell_details": {}
     }
 }
