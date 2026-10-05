@@ -182,7 +182,7 @@
     "buy_e21ee160": {
         "symbol": "MONUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-05",
         "time": "05:19:04.904521",
         "buy_time": "2026-10-05T05:19:04.904521",
@@ -195,6 +195,15 @@
         "total_cost": 4.9984,
         "break_even_price": 0.03241,
         "min_sell_price": 0.03241,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_36d4332b",
+            "sell_price": 0.03,
+            "received_usd": 5.012,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0086,
+            "profit_percent": 0.171,
+            "sell_date": "2026-10-05",
+            "sell_time": "05:37:30.158572"
+        }
     }
 }
