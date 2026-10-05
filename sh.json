@@ -88,5 +88,23 @@
         "break_even_price": 3.27081,
         "min_sell_price": 3.27081,
         "sell_details": {}
+    },
+    "buy_fba45017": {
+        "symbol": "CHZUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-05",
+        "time": "04:32:53.046342",
+        "buy_time": "2026-10-05T04:32:53.046342",
+        "buy_price": 0.01663,
+        "qty": 300.66,
+        "sellable_qty": 300.35934,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 5.0,
+        "total_cost": 5.0,
+        "break_even_price": 0.01668,
+        "min_sell_price": 0.01668,
+        "sell_details": {}
     }
 }
