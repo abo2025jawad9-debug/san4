@@ -272,7 +272,7 @@
     "buy_03425009": {
         "symbol": "ATHUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-05",
         "time": "09:14:16.428607",
         "buy_time": "2026-10-05T09:14:16.428607",
@@ -285,6 +285,15 @@
         "total_cost": 4.9999,
         "break_even_price": 0.00745,
         "min_sell_price": 0.00745,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_3f92f50c",
+            "sell_price": 0.01,
+            "received_usd": 5.0068,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0019,
+            "profit_percent": 0.037,
+            "sell_date": "2026-10-05",
+            "sell_time": "09:20:07.878992"
+        }
     }
 }
