@@ -232,5 +232,23 @@
         "break_even_price": 0.08265,
         "min_sell_price": 0.08265,
         "sell_details": {}
+    },
+    "buy_e6704ea6": {
+        "symbol": "ATHUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-05",
+        "time": "06:38:19.377969",
+        "buy_time": "2026-10-05T06:38:19.377969",
+        "buy_price": 0.00748,
+        "qty": 668.0,
+        "sellable_qty": 667.332,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 5.0,
+        "total_cost": 5.0,
+        "break_even_price": 0.00751,
+        "min_sell_price": 0.00751,
+        "sell_details": {}
     }
 }
