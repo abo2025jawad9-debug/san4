@@ -322,5 +322,23 @@
             "sell_date": "2026-10-05",
             "sell_time": "09:38:46.313309"
         }
+    },
+    "buy_c6175610": {
+        "symbol": "GROVEUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-05",
+        "time": "10:06:07.976048",
+        "buy_time": "2026-10-05T10:06:07.976048",
+        "buy_price": 0.00767,
+        "qty": 652.2,
+        "sellable_qty": 651.5478,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9998,
+        "total_cost": 4.9998,
+        "break_even_price": 0.00769,
+        "min_sell_price": 0.00769,
+        "sell_details": {}
     }
 }
