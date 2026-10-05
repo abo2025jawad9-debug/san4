@@ -29,7 +29,7 @@
     "buy_f8dbdec6": {
         "symbol": "ARXUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-05",
         "time": "02:03:05.702500",
         "buy_time": "2026-10-05T02:03:05.702500",
@@ -42,7 +42,16 @@
         "total_cost": 4.9746,
         "break_even_price": 0.26971,
         "min_sell_price": 0.26971,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_c858aaec",
+            "sell_price": 0.27,
+            "received_usd": 5.0342,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0546,
+            "profit_percent": 1.097,
+            "sell_date": "2026-10-05",
+            "sell_time": "04:25:23.064477"
+        }
     },
     "buy_1f3270eb": {
         "symbol": "ZROUSDT",
