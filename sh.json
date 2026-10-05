@@ -43,5 +43,23 @@
         "break_even_price": 0.26971,
         "min_sell_price": 0.26971,
         "sell_details": {}
+    },
+    "buy_1f3270eb": {
+        "symbol": "ZROUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-05",
+        "time": "03:03:10.177779",
+        "buy_time": "2026-10-05T03:03:10.177779",
+        "buy_price": 1.9101,
+        "qty": 2.61,
+        "sellable_qty": 2.60739,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9854,
+        "total_cost": 4.9854,
+        "break_even_price": 1.91584,
+        "min_sell_price": 1.91584,
+        "sell_details": {}
     }
 }
