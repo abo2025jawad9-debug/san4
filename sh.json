@@ -341,24 +341,6 @@
         "min_sell_price": 0.21545,
         "sell_details": {}
     },
-    "buy_sync_74add1b9": {
-        "symbol": "BRUSDT",
-        "type": "buy",
-        "status": "معلقة - جاري الانتظار",
-        "date": "2026-10-05",
-        "time": "20:49:19.153632",
-        "buy_time": "2026-10-05T20:49:19.153632",
-        "buy_price": 0.39619,
-        "qty": 11.988,
-        "sellable_qty": 11.988,
-        "buy_amount_usd": 4.7495,
-        "buy_fee_usd": 0.0071,
-        "buy_cost": 4.7495,
-        "total_cost": 4.7495,
-        "break_even_price": 0.39738,
-        "min_sell_price": 0.39738,
-        "sell_details": {}
-    },
     "buy_sync_df468d9d": {
         "symbol": "DEEPUSDT",
         "type": "buy",
