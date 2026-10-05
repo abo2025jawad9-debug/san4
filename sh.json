@@ -2,7 +2,7 @@
     "buy_sync_d5ba1e20": {
         "symbol": "XLMUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-05",
         "time": "21:52:27.276312",
         "buy_time": "2026-10-05T21:52:27.276312",
@@ -15,6 +15,15 @@
         "total_cost": 4.9784,
         "break_even_price": 0.21545,
         "min_sell_price": 0.21545,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_18c7e596",
+            "sell_price": 0.22,
+            "received_usd": 5.0011,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0177,
+            "profit_percent": 0.356,
+            "sell_date": "2026-10-05",
+            "sell_time": "22:19:21.293499"
+        }
     }
 }
