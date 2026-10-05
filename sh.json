@@ -16,5 +16,23 @@
         "break_even_price": 1.92437,
         "min_sell_price": 1.92437,
         "sell_details": {}
+    },
+    "buy_f8dbdec6": {
+        "symbol": "ARXUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-05",
+        "time": "02:03:05.702500",
+        "buy_time": "2026-10-05T02:03:05.702500",
+        "buy_price": 0.2689,
+        "qty": 18.5,
+        "sellable_qty": 18.4815,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9746,
+        "total_cost": 4.9746,
+        "break_even_price": 0.26971,
+        "min_sell_price": 0.26971,
+        "sell_details": {}
     }
 }
