@@ -146,7 +146,7 @@
     "buy_e0b527ac": {
         "symbol": "CAPUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-05",
         "time": "04:51:07.543498",
         "buy_time": "2026-10-05T04:51:07.543498",
@@ -159,6 +159,15 @@
         "total_cost": 4.9966,
         "break_even_price": 0.06376,
         "min_sell_price": 0.06376,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_ea9a795b",
+            "sell_price": 0.06,
+            "received_usd": 5.0169,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0153,
+            "profit_percent": 0.306,
+            "sell_date": "2026-10-05",
+            "sell_time": "04:57:33.030356"
+        }
     }
 }
