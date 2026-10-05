@@ -70,5 +70,23 @@
         "break_even_price": 1.91584,
         "min_sell_price": 1.91584,
         "sell_details": {}
+    },
+    "buy_0fa4c1ee": {
+        "symbol": "ICPUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-05",
+        "time": "04:32:28.963297",
+        "buy_time": "2026-10-05T04:32:28.963297",
+        "buy_price": 3.261,
+        "qty": 1.53,
+        "sellable_qty": 1.52847,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9893,
+        "total_cost": 4.9893,
+        "break_even_price": 3.27081,
+        "min_sell_price": 3.27081,
+        "sell_details": {}
     }
 }
