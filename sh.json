@@ -83,7 +83,7 @@
     "buy_0fa4c1ee": {
         "symbol": "ICPUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-05",
         "time": "04:32:28.963297",
         "buy_time": "2026-10-05T04:32:28.963297",
@@ -96,7 +96,16 @@
         "total_cost": 4.9893,
         "break_even_price": 3.27081,
         "min_sell_price": 3.27081,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_80796159",
+            "sell_price": 3.29,
+            "received_usd": 4.9993,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.005,
+            "profit_percent": 0.1,
+            "sell_date": "2026-10-05",
+            "sell_time": "06:02:04.561438"
+        }
     },
     "buy_fba45017": {
         "symbol": "CHZUSDT",
