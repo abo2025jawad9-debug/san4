@@ -218,7 +218,7 @@
     "buy_f7433ff1": {
         "symbol": "ETHFIUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-06",
         "time": "01:42:00.941311",
         "buy_time": "2026-10-06T01:42:00.941311",
@@ -231,6 +231,15 @@
         "total_cost": 4.9928,
         "break_even_price": 0.73861,
         "min_sell_price": 0.73861,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_78584a55",
+            "sell_price": 0.74,
+            "received_usd": 5.001,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0032,
+            "profit_percent": 0.064,
+            "sell_date": "2026-10-06",
+            "sell_time": "11:03:15.713426"
+        }
     }
 }
