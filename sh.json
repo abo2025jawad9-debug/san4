@@ -169,5 +169,23 @@
         "break_even_price": 0.11502,
         "min_sell_price": 0.11502,
         "sell_details": {}
+    },
+    "buy_5607b10e": {
+        "symbol": "B3USDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-06",
+        "time": "01:02:07.871218",
+        "buy_time": "2026-10-06T01:02:07.871218",
+        "buy_price": 0.00082,
+        "qty": 6072.0,
+        "sellable_qty": 6065.928,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9997,
+        "total_cost": 4.9997,
+        "break_even_price": 0.00083,
+        "min_sell_price": 0.00083,
+        "sell_details": {}
     }
 }
