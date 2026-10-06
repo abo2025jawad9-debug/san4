@@ -272,7 +272,7 @@
     "buy_653497a1": {
         "symbol": "DATAUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-06",
         "time": "11:46:35.215483",
         "buy_time": "2026-10-06T11:46:35.215483",
@@ -285,6 +285,15 @@
         "total_cost": 4.9839,
         "break_even_price": 0.20572,
         "min_sell_price": 0.20572,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_da233ff4",
+            "sell_price": 0.21,
+            "received_usd": 5.0021,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0132,
+            "profit_percent": 0.265,
+            "sell_date": "2026-10-06",
+            "sell_time": "18:09:09.028059"
+        }
     }
 }
