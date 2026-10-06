@@ -295,5 +295,23 @@
             "sell_date": "2026-10-06",
             "sell_time": "18:09:09.028059"
         }
+    },
+    "buy_d75b5dbc": {
+        "symbol": "VIRTUALUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-06",
+        "time": "18:22:35.747831",
+        "buy_time": "2026-10-06T18:22:35.747831",
+        "buy_price": 0.8123,
+        "qty": 6.15,
+        "sellable_qty": 6.14385,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9956,
+        "total_cost": 4.9956,
+        "break_even_price": 0.81474,
+        "min_sell_price": 0.81474,
+        "sell_details": {}
     }
 }
