@@ -349,5 +349,23 @@
             "sell_date": "2026-10-06",
             "sell_time": "19:20:14.672562"
         }
+    },
+    "buy_sync_66e9ef62": {
+        "symbol": "REDUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-06",
+        "time": "21:19:18.206309",
+        "buy_time": "2026-10-06T21:19:18.206309",
+        "buy_price": 0.16212,
+        "qty": 30.80916,
+        "sellable_qty": 30.80916,
+        "buy_amount_usd": 4.9948,
+        "buy_fee_usd": 0.0075,
+        "buy_cost": 4.9948,
+        "total_cost": 4.9948,
+        "break_even_price": 0.16261,
+        "min_sell_price": 0.16261,
+        "sell_details": {}
     }
 }
