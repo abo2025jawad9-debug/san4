@@ -200,7 +200,7 @@
     "buy_64411fbe": {
         "symbol": "HNTUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-06",
         "time": "01:19:08.358960",
         "buy_time": "2026-10-06T01:19:08.358960",
@@ -213,7 +213,16 @@
         "total_cost": 4.9996,
         "break_even_price": 0.52367,
         "min_sell_price": 0.52367,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_521c7d08",
+            "sell_price": 0.52,
+            "received_usd": 5.0078,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0032,
+            "profit_percent": 0.064,
+            "sell_date": "2026-10-06",
+            "sell_time": "19:09:23.568049"
+        }
     },
     "buy_f7433ff1": {
         "symbol": "ETHFIUSDT",
