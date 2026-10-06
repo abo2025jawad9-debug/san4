@@ -106,5 +106,23 @@
             "sell_date": "2026-10-06",
             "sell_time": "00:10:26.869814"
         }
+    },
+    "buy_d650046b": {
+        "symbol": "SCRUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-06",
+        "time": "00:46:20.285288",
+        "buy_time": "2026-10-06T00:46:20.285288",
+        "buy_price": 0.02737,
+        "qty": 182.6,
+        "sellable_qty": 182.4174,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9978,
+        "total_cost": 4.9978,
+        "break_even_price": 0.02745,
+        "min_sell_price": 0.02745,
+        "sell_details": {}
     }
 }
