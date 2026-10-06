@@ -110,7 +110,7 @@
     "buy_d650046b": {
         "symbol": "SCRUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-06",
         "time": "00:46:20.285288",
         "buy_time": "2026-10-06T00:46:20.285288",
@@ -123,7 +123,16 @@
         "total_cost": 4.9978,
         "break_even_price": 0.02745,
         "min_sell_price": 0.02745,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_6bc13d24",
+            "sell_price": 0.03,
+            "received_usd": 5.0087,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0059,
+            "profit_percent": 0.118,
+            "sell_date": "2026-10-06",
+            "sell_time": "00:58:54.042093"
+        }
     },
     "buy_3fccc2d0": {
         "symbol": "MINAUSDT",
