@@ -56,7 +56,7 @@
     "buy_b85d9160": {
         "symbol": "SKYUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-06",
         "time": "00:06:47.518994",
         "buy_time": "2026-10-06T00:06:47.518994",
@@ -69,7 +69,16 @@
         "total_cost": 4.996,
         "break_even_price": 0.08745,
         "min_sell_price": 0.08745,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_5264c681",
+            "sell_price": 0.09,
+            "received_usd": 5.017,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.016,
+            "profit_percent": 0.32,
+            "sell_date": "2026-10-06",
+            "sell_time": "00:07:31.020279"
+        }
     },
     "buy_4fbc32a3": {
         "symbol": "BLASTUSDT",
