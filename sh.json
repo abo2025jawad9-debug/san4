@@ -155,7 +155,7 @@
     "buy_ff97b2c4": {
         "symbol": "SAFEUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-06",
         "time": "01:01:01.476212",
         "buy_time": "2026-10-06T01:01:01.476212",
@@ -168,7 +168,16 @@
         "total_cost": 4.9989,
         "break_even_price": 0.11502,
         "min_sell_price": 0.11502,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_53b51c8f",
+            "sell_price": 0.12,
+            "received_usd": 5.0071,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0032,
+            "profit_percent": 0.064,
+            "sell_date": "2026-10-06",
+            "sell_time": "01:39:27.771284"
+        }
     },
     "buy_5607b10e": {
         "symbol": "B3USDT",
