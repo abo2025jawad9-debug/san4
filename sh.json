@@ -380,7 +380,7 @@
     "buy_a2e71ad3": {
         "symbol": "AVAXUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-07",
         "time": "03:15:28.921369",
         "buy_time": "2026-10-07T03:15:28.921369",
@@ -393,6 +393,15 @@
         "total_cost": 4.9914,
         "break_even_price": 10.97891,
         "min_sell_price": 10.97891,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_44f65386",
+            "sell_price": 10.99,
+            "received_usd": 5.0,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0036,
+            "profit_percent": 0.072,
+            "sell_date": "2026-10-07",
+            "sell_time": "03:18:23.529258"
+        }
     }
 }
