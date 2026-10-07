@@ -403,5 +403,23 @@
             "sell_date": "2026-10-07",
             "sell_time": "03:18:23.529258"
         }
+    },
+    "buy_269da39e": {
+        "symbol": "CPOOLUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-07",
+        "time": "03:22:33.734224",
+        "buy_time": "2026-10-07T03:22:33.734224",
+        "buy_price": 0.03205,
+        "qty": 156.0,
+        "sellable_qty": 155.844,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9998,
+        "total_cost": 4.9998,
+        "break_even_price": 0.03215,
+        "min_sell_price": 0.03215,
+        "sell_details": {}
     }
 }
