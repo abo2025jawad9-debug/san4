@@ -134,24 +134,6 @@
             "sell_time": "00:58:54.042093"
         }
     },
-    "buy_3fccc2d0": {
-        "symbol": "MINAUSDT",
-        "type": "buy",
-        "status": "معلقة - جاري الانتظار",
-        "date": "2026-10-06",
-        "time": "00:50:00.106578",
-        "buy_time": "2026-10-06T00:50:00.106578",
-        "buy_price": 0.14801,
-        "qty": 33.78,
-        "sellable_qty": 33.74622,
-        "buy_amount_usd": 5.0,
-        "buy_fee_usd": 0.005,
-        "buy_cost": 4.9998,
-        "total_cost": 4.9998,
-        "break_even_price": 0.14846,
-        "min_sell_price": 0.14846,
-        "sell_details": {}
-    },
     "buy_ff97b2c4": {
         "symbol": "SAFEUSDT",
         "type": "buy",
