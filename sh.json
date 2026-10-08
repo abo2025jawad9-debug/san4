@@ -430,23 +430,5 @@
         "break_even_price": 0.15358,
         "min_sell_price": 0.15358,
         "sell_details": {}
-    },
-    "buy_sync_91831755": {
-        "symbol": "MINAUSDT",
-        "type": "buy",
-        "status": "معلقة - جاري الانتظار",
-        "date": "2026-10-08",
-        "time": "06:58:50.613939",
-        "buy_time": "2026-10-08T06:58:50.613939",
-        "buy_price": 0.14801,
-        "qty": 33.74622,
-        "sellable_qty": 33.74622,
-        "buy_amount_usd": 4.9948,
-        "buy_fee_usd": 0.0075,
-        "buy_cost": 4.9948,
-        "total_cost": 4.9948,
-        "break_even_price": 0.14846,
-        "min_sell_price": 0.14846,
-        "sell_details": {}
     }
 }
