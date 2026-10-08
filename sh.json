@@ -443,7 +443,7 @@
     "buy_b3a6d155": {
         "symbol": "MINAUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-08",
         "time": "10:26:09.175354",
         "buy_time": "2026-10-08T10:26:09.175354",
@@ -456,6 +456,15 @@
         "total_cost": 7.8836,
         "break_even_price": 0.08587,
         "min_sell_price": 0.08587,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_9b7d0d8d",
+            "sell_price": 0.09,
+            "received_usd": 7.9069,
+            "sell_fee_usd": 0.0079,
+            "profit_usd": 0.0154,
+            "profit_percent": 0.195,
+            "sell_date": "2026-10-08",
+            "sell_time": "10:31:46.678385"
+        }
     }
 }
