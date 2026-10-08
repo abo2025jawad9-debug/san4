@@ -416,7 +416,7 @@
     "buy_1ff7bedc": {
         "symbol": "REDUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-07",
         "time": "03:36:27.313780",
         "buy_time": "2026-10-07T03:36:27.313780",
@@ -429,6 +429,15 @@
         "total_cost": 4.9994,
         "break_even_price": 0.15358,
         "min_sell_price": 0.15358,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_5bbd29f7",
+            "sell_price": 0.15,
+            "received_usd": 5.005,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0006,
+            "profit_percent": 0.012,
+            "sell_date": "2026-10-08",
+            "sell_time": "09:58:24.923938"
+        }
     }
 }
