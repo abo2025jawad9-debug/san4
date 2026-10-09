@@ -574,5 +574,23 @@
             "sell_date": "2026-10-09",
             "sell_time": "15:33:25.005816"
         }
+    },
+    "buy_f0cbbe64": {
+        "symbol": "0GUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-09",
+        "time": "15:47:02.847362",
+        "buy_time": "2026-10-09T15:47:02.847362",
+        "buy_price": 0.2736,
+        "qty": 18.27,
+        "sellable_qty": 18.25173,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9987,
+        "total_cost": 4.9987,
+        "break_even_price": 0.27442,
+        "min_sell_price": 0.27442,
+        "sell_details": {}
     }
 }
