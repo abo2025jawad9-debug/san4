@@ -493,5 +493,23 @@
             "sell_date": "2026-10-08",
             "sell_time": "12:55:36.311951"
         }
+    },
+    "buy_23bd7867": {
+        "symbol": "SENTUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-09",
+        "time": "12:53:23.632820",
+        "buy_time": "2026-10-09T12:53:23.632820",
+        "buy_price": 0.02251,
+        "qty": 222.1,
+        "sellable_qty": 221.8779,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9999,
+        "total_cost": 4.9999,
+        "break_even_price": 0.02258,
+        "min_sell_price": 0.02258,
+        "sell_details": {}
     }
 }
