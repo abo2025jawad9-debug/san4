@@ -1,1 +1,38 @@
-
+{
+    "buy_sync_9df6b84f": {
+        "symbol": "B3USDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-14",
+        "time": "23:40:49.577707",
+        "buy_time": "2026-10-14T23:40:49.577707",
+        "buy_price": 0.00063,
+        "qty": 6065.928,
+        "sellable_qty": 6065.928,
+        "buy_amount_usd": 3.8046,
+        "buy_fee_usd": 0.0057,
+        "buy_cost": 3.8046,
+        "total_cost": 3.8046,
+        "break_even_price": 0.00063,
+        "min_sell_price": 0.00063,
+        "sell_details": {}
+    },
+    "buy_sync_a425a7b2": {
+        "symbol": "BRUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-14",
+        "time": "23:40:49.805459",
+        "buy_time": "2026-10-14T23:40:49.805459",
+        "buy_price": 0.47151,
+        "qty": 9.99,
+        "sellable_qty": 9.99,
+        "buy_amount_usd": 4.7104,
+        "buy_fee_usd": 0.0071,
+        "buy_cost": 4.7104,
+        "total_cost": 4.7104,
+        "break_even_price": 0.47293,
+        "min_sell_price": 0.47293,
+        "sell_details": {}
+    }
+}
