@@ -1,1 +1,20 @@
-{}
+{
+    "buy_060b165e": {
+        "symbol": "ZEREBROUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-16",
+        "time": "21:29:46.039906",
+        "buy_time": "2026-10-16T21:29:46.039906",
+        "buy_price": 0.0335,
+        "qty": 149.2,
+        "sellable_qty": 149.0508,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9982,
+        "total_cost": 4.9982,
+        "break_even_price": 0.0336,
+        "min_sell_price": 0.0336,
+        "sell_details": {}
+    }
+}
