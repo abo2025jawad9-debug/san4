@@ -115,5 +115,23 @@
         "break_even_price": 0.00074,
         "min_sell_price": 0.00074,
         "sell_details": {}
+    },
+    "buy_4c8eaff6": {
+        "symbol": "PONSUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-16",
+        "time": "21:58:11.708977",
+        "buy_time": "2026-10-16T21:58:11.708977",
+        "buy_price": 0.3126,
+        "qty": 15.9,
+        "sellable_qty": 15.8841,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9703,
+        "total_cost": 4.9703,
+        "break_even_price": 0.31354,
+        "min_sell_price": 0.31354,
+        "sell_details": {}
     }
 }
