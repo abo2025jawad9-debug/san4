@@ -119,7 +119,7 @@
     "buy_4c8eaff6": {
         "symbol": "PONSUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-16",
         "time": "21:58:11.708977",
         "buy_time": "2026-10-16T21:58:11.708977",
@@ -132,6 +132,15 @@
         "total_cost": 4.9703,
         "break_even_price": 0.31354,
         "min_sell_price": 0.31354,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_677eb354",
+            "sell_price": 0.32,
+            "received_usd": 4.9975,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0222,
+            "profit_percent": 0.447,
+            "sell_date": "2026-10-16",
+            "sell_time": "22:40:06.343654"
+        }
     }
 }
