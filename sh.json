@@ -56,7 +56,7 @@
     "buy_1297a75c": {
         "symbol": "BERAUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-16",
         "time": "21:39:09.804016",
         "buy_time": "2026-10-16T21:39:09.804016",
@@ -69,7 +69,16 @@
         "total_cost": 4.9996,
         "break_even_price": 0.18566,
         "min_sell_price": 0.18566,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_85d181a8",
+            "sell_price": 0.19,
+            "received_usd": 5.0102,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0056,
+            "profit_percent": 0.111,
+            "sell_date": "2026-10-16",
+            "sell_time": "21:46:06.955876"
+        }
     },
     "buy_a87a7b48": {
         "symbol": "ZEREBROUSDT",
