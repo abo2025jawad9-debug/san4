@@ -97,5 +97,23 @@
         "break_even_price": 0.03357,
         "min_sell_price": 0.03357,
         "sell_details": {}
+    },
+    "buy_24a077a9": {
+        "symbol": "PYBOBOUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-16",
+        "time": "21:46:38.054692",
+        "buy_time": "2026-10-16T21:46:38.054692",
+        "buy_price": 0.00074,
+        "qty": 6784.0,
+        "sellable_qty": 6777.216,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9998,
+        "total_cost": 4.9998,
+        "break_even_price": 0.00074,
+        "min_sell_price": 0.00074,
+        "sell_details": {}
     }
 }
