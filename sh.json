@@ -52,5 +52,23 @@
             "sell_date": "2026-10-16",
             "sell_time": "21:32:19.136333"
         }
+    },
+    "buy_1297a75c": {
+        "symbol": "BERAUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-16",
+        "time": "21:39:09.804016",
+        "buy_time": "2026-10-16T21:39:09.804016",
+        "buy_price": 0.1851,
+        "qty": 27.01,
+        "sellable_qty": 26.98299,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9996,
+        "total_cost": 4.9996,
+        "break_even_price": 0.18566,
+        "min_sell_price": 0.18566,
+        "sell_details": {}
     }
 }
