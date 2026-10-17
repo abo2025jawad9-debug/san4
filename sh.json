@@ -358,5 +358,23 @@
             "sell_date": "2026-10-17",
             "sell_time": "14:38:24.368879"
         }
+    },
+    "buy_f2b51d43": {
+        "symbol": "OPUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-17",
+        "time": "15:07:43.173331",
+        "buy_time": "2026-10-17T15:07:43.173331",
+        "buy_price": 0.13,
+        "qty": 38.46,
+        "sellable_qty": 38.42154,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9998,
+        "total_cost": 4.9998,
+        "break_even_price": 0.13039,
+        "min_sell_price": 0.13039,
+        "sell_details": {}
     }
 }
