@@ -439,5 +439,23 @@
             "sell_date": "2026-10-17",
             "sell_time": "19:56:56.385031"
         }
+    },
+    "buy_f6362a35": {
+        "symbol": "WALUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-17",
+        "time": "20:23:28.351292",
+        "buy_time": "2026-10-17T20:23:28.351292",
+        "buy_price": 0.04114,
+        "qty": 121.5,
+        "sellable_qty": 121.3785,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9985,
+        "total_cost": 4.9985,
+        "break_even_price": 0.04126,
+        "min_sell_price": 0.04126,
+        "sell_details": {}
     }
 }
