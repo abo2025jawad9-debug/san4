@@ -250,5 +250,23 @@
             "sell_date": "2026-10-17",
             "sell_time": "06:29:18.668602"
         }
+    },
+    "buy_b08035be": {
+        "symbol": "WALUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-17",
+        "time": "06:30:18.353971",
+        "buy_time": "2026-10-17T06:30:18.353971",
+        "buy_price": 0.04236,
+        "qty": 118.0,
+        "sellable_qty": 117.882,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9985,
+        "total_cost": 4.9985,
+        "break_even_price": 0.04249,
+        "min_sell_price": 0.04249,
+        "sell_details": {}
     }
 }
