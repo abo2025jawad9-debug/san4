@@ -128,7 +128,7 @@
     "buy_sync_d02a0b3d": {
         "symbol": "WALUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-17",
         "time": "04:34:18.450772",
         "buy_time": "2026-10-17T04:34:18.450772",
@@ -141,6 +141,15 @@
         "total_cost": 4.995,
         "break_even_price": 0.04342,
         "min_sell_price": 0.04342,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_1d4123ed",
+            "sell_price": 0.04,
+            "received_usd": 5.0075,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0075,
+            "profit_percent": 0.149,
+            "sell_date": "2026-10-17",
+            "sell_time": "04:34:42.193104"
+        }
     }
 }
