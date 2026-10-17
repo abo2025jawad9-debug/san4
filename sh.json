@@ -331,5 +331,23 @@
         "break_even_price": 0.01619,
         "min_sell_price": 0.01619,
         "sell_details": {}
+    },
+    "buy_4fcda82f": {
+        "symbol": "KASUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-17",
+        "time": "07:00:12.271314",
+        "buy_time": "2026-10-17T07:00:12.271314",
+        "buy_price": 0.03545,
+        "qty": 141.04,
+        "sellable_qty": 140.89896,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9999,
+        "total_cost": 4.9999,
+        "break_even_price": 0.03556,
+        "min_sell_price": 0.03556,
+        "sell_details": {}
     }
 }
