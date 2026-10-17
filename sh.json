@@ -313,5 +313,23 @@
             "sell_date": "2026-10-17",
             "sell_time": "06:49:43.469551"
         }
+    },
+    "buy_c8ccd2f6": {
+        "symbol": "ZKUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-17",
+        "time": "06:53:07.469469",
+        "buy_time": "2026-10-17T06:53:07.469469",
+        "buy_price": 0.01615,
+        "qty": 309.67,
+        "sellable_qty": 309.36033,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9999,
+        "total_cost": 4.9999,
+        "break_even_price": 0.01619,
+        "min_sell_price": 0.01619,
+        "sell_details": {}
     }
 }
