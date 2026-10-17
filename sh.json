@@ -416,7 +416,7 @@
     "buy_582da8cd": {
         "symbol": "ZEREBROUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-17",
         "time": "19:32:41.321863",
         "buy_time": "2026-10-17T19:32:41.321863",
@@ -429,6 +429,15 @@
         "total_cost": 4.9974,
         "break_even_price": 0.02679,
         "min_sell_price": 0.02679,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_97297dba",
+            "sell_price": 0.03,
+            "received_usd": 5.0127,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0102,
+            "profit_percent": 0.205,
+            "sell_date": "2026-10-17",
+            "sell_time": "19:56:56.385031"
+        }
     }
 }
