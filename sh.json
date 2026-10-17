@@ -155,7 +155,7 @@
     "buy_7e7c1c68": {
         "symbol": "PUFFERUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-17",
         "time": "04:40:12.844412",
         "buy_time": "2026-10-17T04:40:12.844412",
@@ -168,7 +168,16 @@
         "total_cost": 4.9968,
         "break_even_price": 0.03928,
         "min_sell_price": 0.03928,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_7c8234fa",
+            "sell_price": 0.04,
+            "received_usd": 5.0145,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0126,
+            "profit_percent": 0.253,
+            "sell_date": "2026-10-17",
+            "sell_time": "06:49:59.392573"
+        }
     },
     "buy_41c269ed": {
         "symbol": "WALUSDT",
