@@ -80,24 +80,6 @@
             "sell_time": "21:46:06.955876"
         }
     },
-    "buy_a87a7b48": {
-        "symbol": "ZEREBROUSDT",
-        "type": "buy",
-        "status": "معلقة - جاري الانتظار",
-        "date": "2026-10-16",
-        "time": "21:40:27.204602",
-        "buy_time": "2026-10-16T21:40:27.204602",
-        "buy_price": 0.03347,
-        "qty": 149.3,
-        "sellable_qty": 149.1507,
-        "buy_amount_usd": 5.0,
-        "buy_fee_usd": 0.005,
-        "buy_cost": 4.9971,
-        "total_cost": 4.9971,
-        "break_even_price": 0.03357,
-        "min_sell_price": 0.03357,
-        "sell_details": {}
-    },
     "buy_24a077a9": {
         "symbol": "PYBOBOUSDT",
         "type": "buy",
@@ -142,5 +124,23 @@
             "sell_date": "2026-10-16",
             "sell_time": "22:40:06.343654"
         }
+    },
+    "buy_sync_d02a0b3d": {
+        "symbol": "WALUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-17",
+        "time": "04:34:18.450772",
+        "buy_time": "2026-10-17T04:34:18.450772",
+        "buy_price": 0.04329,
+        "qty": 115.3845,
+        "sellable_qty": 115.3845,
+        "buy_amount_usd": 4.995,
+        "buy_fee_usd": 0.0075,
+        "buy_cost": 4.995,
+        "total_cost": 4.995,
+        "break_even_price": 0.04342,
+        "min_sell_price": 0.04342,
+        "sell_details": {}
     }
 }
