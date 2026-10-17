@@ -277,5 +277,23 @@
             "sell_date": "2026-10-17",
             "sell_time": "06:31:22.192145"
         }
+    },
+    "buy_a60d98f3": {
+        "symbol": "FETUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-17",
+        "time": "06:34:19.073095",
+        "buy_time": "2026-10-17T06:34:19.073095",
+        "buy_price": 0.1944,
+        "qty": 25.72,
+        "sellable_qty": 25.69428,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 5.0,
+        "total_cost": 5.0,
+        "break_even_price": 0.19498,
+        "min_sell_price": 0.19498,
+        "sell_details": {}
     }
 }
