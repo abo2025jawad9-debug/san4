@@ -467,22 +467,22 @@
             "sell_time": "21:06:59.522229"
         }
     },
-    "buy_0746312b": {
-        "symbol": "WALUSDT",
+    "buy_sync_2927f64d": {
+        "symbol": "NIGHTUSDT",
         "type": "buy",
         "status": "معلقة - جاري الانتظار",
-        "date": "2026-10-17",
-        "time": "21:11:08.786816",
-        "buy_time": "2026-10-17T21:11:08.786816",
-        "buy_price": 0.04083,
-        "qty": 122.4,
-        "sellable_qty": 122.2776,
-        "buy_amount_usd": 5.0,
-        "buy_fee_usd": 0.005,
-        "buy_cost": 4.9976,
-        "total_cost": 4.9976,
-        "break_even_price": 0.04095,
-        "min_sell_price": 0.04095,
+        "date": "2026-10-18",
+        "time": "04:04:23.618319",
+        "buy_time": "2026-10-18T04:04:23.618319",
+        "buy_price": 0.04046,
+        "qty": 123.3765,
+        "sellable_qty": 123.3765,
+        "buy_amount_usd": 4.9918,
+        "buy_fee_usd": 0.0075,
+        "buy_cost": 4.9918,
+        "total_cost": 4.9918,
+        "break_even_price": 0.04058,
+        "min_sell_price": 0.04058,
         "sell_details": {}
     }
 }
