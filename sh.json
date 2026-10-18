@@ -686,7 +686,7 @@
     "buy_0f1e624d": {
         "symbol": "INJUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-18",
         "time": "12:20:16.886905",
         "buy_time": "2026-10-18T12:20:16.886905",
@@ -699,6 +699,15 @@
         "total_cost": 4.9401,
         "break_even_price": 8.39818,
         "min_sell_price": 8.39818,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_805a6e57",
+            "sell_price": 8.63,
+            "received_usd": 5.0077,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0626,
+            "profit_percent": 1.266,
+            "sell_date": "2026-10-18",
+            "sell_time": "23:24:13.454498"
+        }
     }
 }
