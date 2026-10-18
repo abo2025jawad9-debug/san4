@@ -574,5 +574,23 @@
             "sell_date": "2026-10-18",
             "sell_time": "09:46:31.656405"
         }
+    },
+    "buy_5a1309c6": {
+        "symbol": "MANAUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-18",
+        "time": "10:49:11.600843",
+        "buy_time": "2026-10-18T10:49:11.600843",
+        "buy_price": 0.08476,
+        "qty": 58.99,
+        "sellable_qty": 58.93101,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 5.0,
+        "total_cost": 5.0,
+        "break_even_price": 0.08501,
+        "min_sell_price": 0.08501,
+        "sell_details": {}
     }
 }
