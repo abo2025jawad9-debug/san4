@@ -470,7 +470,7 @@
     "buy_sync_2927f64d": {
         "symbol": "NIGHTUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-18",
         "time": "04:04:23.618319",
         "buy_time": "2026-10-18T04:04:23.618319",
@@ -483,6 +483,15 @@
         "total_cost": 4.9918,
         "break_even_price": 0.04058,
         "min_sell_price": 0.04058,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_41a8165f",
+            "sell_price": 0.04,
+            "received_usd": 5.0023,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0055,
+            "profit_percent": 0.11,
+            "sell_date": "2026-10-18",
+            "sell_time": "06:33:13.740102"
+        }
     }
 }
