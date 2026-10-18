@@ -493,5 +493,23 @@
             "sell_date": "2026-10-18",
             "sell_time": "06:33:13.740102"
         }
+    },
+    "buy_e26b7720": {
+        "symbol": "AUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-18",
+        "time": "06:37:54.933839",
+        "buy_time": "2026-10-18T06:37:54.933839",
+        "buy_price": 0.10287,
+        "qty": 48.6,
+        "sellable_qty": 48.5514,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9995,
+        "total_cost": 4.9995,
+        "break_even_price": 0.10318,
+        "min_sell_price": 0.10318,
+        "sell_details": {}
     }
 }
