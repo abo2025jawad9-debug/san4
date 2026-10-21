@@ -88,5 +88,23 @@
             "sell_date": "2026-10-21",
             "sell_time": "05:10:22.805812"
         }
+    },
+    "buy_42556109": {
+        "symbol": "PUFFERUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-21",
+        "time": "05:16:08.835664",
+        "buy_time": "2026-10-21T05:16:08.835664",
+        "buy_price": 0.03937,
+        "qty": 127.0,
+        "sellable_qty": 126.873,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 5.0,
+        "total_cost": 5.0,
+        "break_even_price": 0.03949,
+        "min_sell_price": 0.03949,
+        "sell_details": {}
     }
 }
