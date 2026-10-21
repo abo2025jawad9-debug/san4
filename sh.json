@@ -2,7 +2,7 @@
     "buy_sync_1e460da9": {
         "symbol": "DATAUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-21",
         "time": "02:37:17.049740",
         "buy_time": "2026-10-21T02:37:17.049740",
@@ -15,7 +15,16 @@
         "total_cost": 4.994,
         "break_even_price": 0.15767,
         "min_sell_price": 0.15767,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_8e47defa",
+            "sell_price": 0.16,
+            "received_usd": 4.9991,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0001,
+            "profit_percent": 0.002,
+            "sell_date": "2026-10-21",
+            "sell_time": "14:43:45.033595"
+        }
     },
     "buy_sync_f5bb89cf": {
         "symbol": "ZKUSDT",
