@@ -92,7 +92,7 @@
     "buy_42556109": {
         "symbol": "PUFFERUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-21",
         "time": "05:16:08.835664",
         "buy_time": "2026-10-21T05:16:08.835664",
@@ -105,6 +105,15 @@
         "total_cost": 5.0,
         "break_even_price": 0.03949,
         "min_sell_price": 0.03949,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_be4a19df",
+            "sell_price": 0.04,
+            "received_usd": 5.0073,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0023,
+            "profit_percent": 0.046,
+            "sell_date": "2026-10-21",
+            "sell_time": "05:48:20.146525"
+        }
     }
 }
