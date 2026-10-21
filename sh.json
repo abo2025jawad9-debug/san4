@@ -196,5 +196,23 @@
             "sell_date": "2026-10-21",
             "sell_time": "06:51:10.961873"
         }
+    },
+    "buy_68b56d7f": {
+        "symbol": "BRUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-21",
+        "time": "07:41:33.601675",
+        "buy_time": "2026-10-21T07:41:33.601675",
+        "buy_price": 0.5782,
+        "qty": 8.0,
+        "sellable_qty": 7.992,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.0046,
+        "buy_cost": 4.6256,
+        "total_cost": 4.6256,
+        "break_even_price": 0.57994,
+        "min_sell_price": 0.57994,
+        "sell_details": {}
     }
 }
