@@ -65,7 +65,7 @@
     "buy_543c4aa4": {
         "symbol": "BATUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-21",
         "time": "04:29:08.045554",
         "buy_time": "2026-10-21T04:29:08.045554",
@@ -78,6 +78,15 @@
         "total_cost": 4.9999,
         "break_even_price": 0.18657,
         "min_sell_price": 0.18657,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_76d39c17",
+            "sell_price": 0.19,
+            "received_usd": 5.0091,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0042,
+            "profit_percent": 0.084,
+            "sell_date": "2026-10-21",
+            "sell_time": "05:10:22.805812"
+        }
     }
 }
