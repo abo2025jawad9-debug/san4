@@ -331,5 +331,23 @@
             "sell_date": "2026-10-22",
             "sell_time": "00:48:55.386404"
         }
+    },
+    "buy_sync_4b88a021": {
+        "symbol": "AAVEUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-22",
+        "time": "07:40:11.436786",
+        "buy_time": "2026-10-22T07:40:11.436786",
+        "buy_price": 153.07,
+        "qty": 0.0325674,
+        "sellable_qty": 0.0325674,
+        "buy_amount_usd": 4.9851,
+        "buy_fee_usd": 0.0075,
+        "buy_cost": 4.9851,
+        "total_cost": 4.9851,
+        "break_even_price": 153.53025,
+        "min_sell_price": 153.53025,
+        "sell_details": {}
     }
 }
