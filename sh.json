@@ -281,7 +281,7 @@
     "buy_51574265": {
         "symbol": "MPLXUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-21",
         "time": "16:12:33.138127",
         "buy_time": "2026-10-21T16:12:33.138127",
@@ -294,6 +294,15 @@
         "total_cost": 5.0,
         "break_even_price": 0.06421,
         "min_sell_price": 0.06421,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_627370c6",
+            "sell_price": 0.06,
+            "received_usd": 5.0175,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0124,
+            "profit_percent": 0.249,
+            "sell_date": "2026-10-22",
+            "sell_time": "00:06:24.900786"
+        }
     }
 }
