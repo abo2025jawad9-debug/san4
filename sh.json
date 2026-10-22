@@ -304,5 +304,23 @@
             "sell_date": "2026-10-22",
             "sell_time": "00:06:24.900786"
         }
+    },
+    "buy_f0da65d7": {
+        "symbol": "ZROUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-22",
+        "time": "00:24:11.680696",
+        "buy_time": "2026-10-22T00:24:11.680696",
+        "buy_price": 1.9394,
+        "qty": 2.57,
+        "sellable_qty": 2.56743,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9843,
+        "total_cost": 4.9843,
+        "break_even_price": 1.94523,
+        "min_sell_price": 1.94523,
+        "sell_details": {}
     }
 }
