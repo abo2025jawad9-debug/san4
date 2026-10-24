@@ -1,1 +1,56 @@
-
+{
+    "buy_sync_02eda3ef": {
+        "symbol": "AAVEUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-24",
+        "time": "22:54:12.546424",
+        "buy_time": "2026-10-24T22:54:12.546424",
+        "buy_price": 153.07,
+        "qty": 0.0325674,
+        "sellable_qty": 0.0325674,
+        "buy_amount_usd": 4.9851,
+        "buy_fee_usd": 0.0075,
+        "buy_cost": 4.9851,
+        "total_cost": 4.9851,
+        "break_even_price": 153.53025,
+        "min_sell_price": 153.53025,
+        "sell_details": {}
+    },
+    "buy_sync_6247a990": {
+        "symbol": "SPCXXUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-24",
+        "time": "22:54:12.831319",
+        "buy_time": "2026-10-24T22:54:12.831319",
+        "buy_price": 148.04,
+        "qty": 0.02994,
+        "sellable_qty": 0.02994,
+        "buy_amount_usd": 4.4323,
+        "buy_fee_usd": 0.0066,
+        "buy_cost": 4.4323,
+        "total_cost": 4.4323,
+        "break_even_price": 148.48512,
+        "min_sell_price": 148.48512,
+        "sell_details": {}
+    },
+    "buy_sync_72c329b5": {
+        "symbol": "ZKUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-24",
+        "time": "22:54:13.116824",
+        "buy_time": "2026-10-24T22:54:13.116824",
+        "buy_price": 0.01214,
+        "qty": 309.36033,
+        "sellable_qty": 309.36033,
+        "buy_amount_usd": 3.755,
+        "buy_fee_usd": 0.0056,
+        "buy_cost": 3.755,
+        "total_cost": 3.755,
+        "break_even_price": 0.01217,
+        "min_sell_price": 0.01217,
+        "sell_details": {}
+    }
+}
