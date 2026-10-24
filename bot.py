@@ -31,7 +31,7 @@ API_SECRET = cfg.secret
 SYMBOLS = ["AAVEUSDT", "SOLUSDT", "HYPEUSDT","CRCLXUSDT","BTCUSDT","ETHUSDT","BICOUSDT","WLDUSDT","INJUSDT","ENAUSDT","XRPUSDT","CCUSDT","BILLUSDT","DATAUSDT","MONUSDT","CAPUSDT","ADAUSDT","LITUSDT","LTCUSDT","BNBUSDT","XAUTUSDT","LINKUSDT","MNTUSDT","CAPUSDT","NYMUSDT"]
 
 BUY_AMOUNT_USD = 5.00         # قيمة كل صفقة شراء بالدولار
-TAKER_FEE_PERCENT = 0.0015     # نسبة رسوم المنصة للطلبات المباشرة (Taker Fee)، عادة تكون 0.1%
+TAKER_FEE_PERCENT = 0.0016     # نسبة رسوم المنصة للطلبات المباشرة (Taker Fee)، عادة تكون 0.1%
 
 # ================= إعدادات الاستراتيجية المئوية =================
 TAKE_PROFIT_PCT = 0.00         # نسبة الربح الصافي المطلوب تحقيقها قبل البيع (مثال: 1.0% من إجمالي التكلفة)
@@ -941,7 +941,7 @@ def main():
 
                 # ───[ فلترة العملات (نتجاهل العملة الخاملة فقط إذا لم تكن لدينا صفقة مفتوحة فيها) ]───
                 if open_count == 0:
-                    if volume_24h < 500000:
+                    if volume_24h < 600000:
                         continue 
                     if low_24h == 0: 
                         continue
