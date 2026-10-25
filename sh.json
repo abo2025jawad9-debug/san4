@@ -110,7 +110,7 @@
     "buy_b5c59dc1": {
         "symbol": "DATAUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-25",
         "time": "12:20:10.034076",
         "buy_time": "2026-10-25T12:20:10.034076",
@@ -123,6 +123,15 @@
         "total_cost": 4.9903,
         "break_even_price": 0.14386,
         "min_sell_price": 0.14386,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_c4fcd3de",
+            "sell_price": 0.14,
+            "received_usd": 4.9968,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0015,
+            "profit_percent": 0.03,
+            "sell_date": "2026-10-25",
+            "sell_time": "13:40:48.578168"
+        }
     }
 }
