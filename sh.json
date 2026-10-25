@@ -83,7 +83,7 @@
     "buy_89a26841": {
         "symbol": "SLXUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-25",
         "time": "04:24:29.367112",
         "buy_time": "2026-10-25T04:24:29.367112",
@@ -96,6 +96,15 @@
         "total_cost": 4.9981,
         "break_even_price": 0.04897,
         "min_sell_price": 0.04897,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_2b529870",
+            "sell_price": 0.05,
+            "received_usd": 5.0139,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0108,
+            "profit_percent": 0.216,
+            "sell_date": "2026-10-25",
+            "sell_time": "12:19:52.168798"
+        }
     }
 }
