@@ -52,5 +52,23 @@
         "break_even_price": 0.01217,
         "min_sell_price": 0.01217,
         "sell_details": {}
+    },
+    "buy_a948b438": {
+        "symbol": "ERAUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-25",
+        "time": "00:16:42.668827",
+        "buy_time": "2026-10-25T00:16:42.668827",
+        "buy_price": 0.0779,
+        "qty": 64.1,
+        "sellable_qty": 64.0359,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9934,
+        "total_cost": 4.9934,
+        "break_even_price": 0.07815,
+        "min_sell_price": 0.07815,
+        "sell_details": {}
     }
 }
