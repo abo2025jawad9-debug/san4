@@ -160,5 +160,23 @@
             "sell_date": "2026-10-25",
             "sell_time": "16:55:25.857200"
         }
+    },
+    "buy_sync_9c5a1eb5": {
+        "symbol": "ZORAUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-25",
+        "time": "22:45:20.501086",
+        "buy_time": "2026-10-25T22:45:20.501086",
+        "buy_price": 0.00629,
+        "qty": 793.42,
+        "sellable_qty": 793.42,
+        "buy_amount_usd": 4.9914,
+        "buy_fee_usd": 0.008,
+        "buy_cost": 4.9914,
+        "total_cost": 4.9914,
+        "break_even_price": 0.00631,
+        "min_sell_price": 0.00631,
+        "sell_details": {}
     }
 }
