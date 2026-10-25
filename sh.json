@@ -56,7 +56,7 @@
     "buy_a948b438": {
         "symbol": "ERAUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-25",
         "time": "00:16:42.668827",
         "buy_time": "2026-10-25T00:16:42.668827",
@@ -69,6 +69,15 @@
         "total_cost": 4.9934,
         "break_even_price": 0.07815,
         "min_sell_price": 0.07815,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_484703ca",
+            "sell_price": 0.08,
+            "received_usd": 5.0445,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.046,
+            "profit_percent": 0.921,
+            "sell_date": "2026-10-25",
+            "sell_time": "04:16:06.123668"
+        }
     }
 }
