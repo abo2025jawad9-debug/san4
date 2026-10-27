@@ -214,5 +214,23 @@
             "sell_date": "2026-10-27",
             "sell_time": "01:28:14.275557"
         }
+    },
+    "buy_0cf36789": {
+        "symbol": "ERAUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-27",
+        "time": "01:35:33.793303",
+        "buy_time": "2026-10-27T01:35:33.793303",
+        "buy_price": 0.08191,
+        "qty": 61.0,
+        "sellable_qty": 60.939,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9965,
+        "total_cost": 4.9965,
+        "break_even_price": 0.08217,
+        "min_sell_price": 0.08217,
+        "sell_details": {}
     }
 }
