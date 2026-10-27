@@ -272,7 +272,7 @@
     "buy_3653c044": {
         "symbol": "PYBOBOUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-27",
         "time": "08:05:29.787041",
         "buy_time": "2026-10-27T08:05:29.787041",
@@ -285,6 +285,15 @@
         "total_cost": 4.9997,
         "break_even_price": 0.00049,
         "min_sell_price": 0.00049,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_22b0fc5c",
+            "sell_price": 0.0,
+            "received_usd": 4.9803,
+            "sell_fee_usd": 0.005,
+            "profit_usd": -0.0244,
+            "profit_percent": -0.487,
+            "sell_date": "2026-10-27",
+            "sell_time": "08:23:18.242826"
+        }
     }
 }
