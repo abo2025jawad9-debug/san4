@@ -322,5 +322,23 @@
             "sell_date": "2026-10-27",
             "sell_time": "09:21:11.750454"
         }
+    },
+    "buy_4fd50143": {
+        "symbol": "ENAUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-27",
+        "time": "09:27:13.347775",
+        "buy_time": "2026-10-27T09:27:13.347775",
+        "buy_price": 0.20226,
+        "qty": 24.7,
+        "sellable_qty": 24.6753,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9958,
+        "total_cost": 4.9958,
+        "break_even_price": 0.20291,
+        "min_sell_price": 0.20291,
+        "sell_details": {}
     }
 }
