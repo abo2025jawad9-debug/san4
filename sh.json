@@ -326,7 +326,7 @@
     "buy_4fd50143": {
         "symbol": "ENAUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-10-27",
         "time": "09:27:13.347775",
         "buy_time": "2026-10-27T09:27:13.347775",
@@ -339,6 +339,15 @@
         "total_cost": 4.9958,
         "break_even_price": 0.20291,
         "min_sell_price": 0.20291,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_282c967f",
+            "sell_price": 0.0,
+            "received_usd": 0.0,
+            "sell_fee_usd": 0.0,
+            "profit_usd": -4.9958,
+            "profit_percent": -99.9,
+            "sell_date": "2026-10-27",
+            "sell_time": "09:32:26.484002"
+        }
     }
 }
