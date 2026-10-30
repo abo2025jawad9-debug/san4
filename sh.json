@@ -1,22 +1,4 @@
 {
-    "buy_sync_02eda3ef": {
-        "symbol": "AAVEUSDT",
-        "type": "buy",
-        "status": "معلقة - جاري الانتظار",
-        "date": "2026-10-24",
-        "time": "22:54:12.546424",
-        "buy_time": "2026-10-24T22:54:12.546424",
-        "buy_price": 153.07,
-        "qty": 0.0325674,
-        "sellable_qty": 0.0325674,
-        "buy_amount_usd": 4.9851,
-        "buy_fee_usd": 0.008,
-        "buy_cost": 4.9851,
-        "total_cost": 4.9851,
-        "break_even_price": 153.561,
-        "min_sell_price": 153.561,
-        "sell_details": {}
-    },
     "buy_sync_6247a990": {
         "symbol": "SPCXXUSDT",
         "type": "buy",
