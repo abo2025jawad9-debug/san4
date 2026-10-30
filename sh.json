@@ -538,5 +538,23 @@
             "sell_date": "2026-10-30",
             "sell_time": "06:42:15.225211"
         }
+    },
+    "buy_41b5acbd": {
+        "symbol": "COINXUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-30",
+        "time": "12:42:08.348266",
+        "buy_time": "2026-10-30T12:42:08.348266",
+        "buy_price": 150.27,
+        "qty": 0.033,
+        "sellable_qty": 0.032934,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.0099,
+        "buy_cost": 4.9589,
+        "total_cost": 4.9589,
+        "break_even_price": 150.75202,
+        "min_sell_price": 150.75202,
+        "sell_details": {}
     }
 }
