@@ -538,5 +538,23 @@
             "sell_date": "2026-10-30",
             "sell_time": "06:42:15.225211"
         }
+    },
+    "buy_eda88c91": {
+        "symbol": "CAKEUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-10-30",
+        "time": "09:39:24.315282",
+        "buy_time": "2026-10-30T09:39:24.315282",
+        "buy_price": 1.8431,
+        "qty": 2.712,
+        "sellable_qty": 2.709288,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9985,
+        "total_cost": 4.9985,
+        "break_even_price": 1.84901,
+        "min_sell_price": 1.84901,
+        "sell_details": {}
     }
 }
