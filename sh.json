@@ -17,24 +17,6 @@
         "min_sell_price": 148.51487,
         "sell_details": {}
     },
-    "buy_sync_72c329b5": {
-        "symbol": "ZKUSDT",
-        "type": "buy",
-        "status": "معلقة - جاري الانتظار",
-        "date": "2026-10-24",
-        "time": "22:54:13.116824",
-        "buy_time": "2026-10-24T22:54:13.116824",
-        "buy_price": 0.01214,
-        "qty": 309.36033,
-        "sellable_qty": 309.36033,
-        "buy_amount_usd": 3.755,
-        "buy_fee_usd": 0.0056,
-        "buy_cost": 3.755,
-        "total_cost": 3.755,
-        "break_even_price": 0.01217,
-        "min_sell_price": 0.01217,
-        "sell_details": {}
-    },
     "buy_a948b438": {
         "symbol": "ERAUSDT",
         "type": "buy",
