@@ -538,23 +538,5 @@
         "break_even_price": 150.75202,
         "min_sell_price": 150.75202,
         "sell_details": {}
-    },
-    "buy_sync_cc70c5cd": {
-        "symbol": "ZKUSDT",
-        "type": "buy",
-        "status": "معلقة - جاري الانتظار",
-        "date": "2026-11-06",
-        "time": "11:35:49.141427",
-        "buy_time": "2026-11-06T11:35:49.141427",
-        "buy_price": 0.0097,
-        "qty": 309.36033,
-        "sellable_qty": 309.36033,
-        "buy_amount_usd": 3.0008,
-        "buy_fee_usd": 0.0048,
-        "buy_cost": 3.0008,
-        "total_cost": 3.0008,
-        "break_even_price": 0.00973,
-        "min_sell_price": 0.00973,
-        "sell_details": {}
     }
 }
