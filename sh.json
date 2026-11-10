@@ -1,1 +1,38 @@
-
+{
+    "buy_sync_f4ff26e0": {
+        "symbol": "SPCXXUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-11-10",
+        "time": "21:29:59.796037",
+        "buy_time": "2026-11-10T21:29:59.796037",
+        "buy_price": 142.82,
+        "qty": 0.02994,
+        "sellable_qty": 0.02994,
+        "buy_amount_usd": 4.276,
+        "buy_fee_usd": 0.0073,
+        "buy_cost": 4.276,
+        "total_cost": 4.276,
+        "break_even_price": 143.30683,
+        "min_sell_price": 143.30683,
+        "sell_details": {}
+    },
+    "buy_sync_ff9e076c": {
+        "symbol": "DBRUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-11-10",
+        "time": "21:30:00.133215",
+        "buy_time": "2026-11-10T21:30:00.133215",
+        "buy_price": 0.01303,
+        "qty": 328.671,
+        "sellable_qty": 328.671,
+        "buy_amount_usd": 4.2826,
+        "buy_fee_usd": 0.0073,
+        "buy_cost": 4.2826,
+        "total_cost": 4.2826,
+        "break_even_price": 0.01307,
+        "min_sell_price": 0.01307,
+        "sell_details": {}
+    }
+}
