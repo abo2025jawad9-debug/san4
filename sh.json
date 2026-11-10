@@ -88,5 +88,23 @@
             "sell_date": "2026-11-10",
             "sell_time": "21:50:53.398325"
         }
+    },
+    "buy_1c1475ee": {
+        "symbol": "UNIUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-11-10",
+        "time": "23:00:57.299790",
+        "buy_time": "2026-11-10T23:00:57.299790",
+        "buy_price": 6.632,
+        "qty": 0.9,
+        "sellable_qty": 0.8991,
+        "buy_amount_usd": 6.0,
+        "buy_fee_usd": 0.006,
+        "buy_cost": 5.9688,
+        "total_cost": 5.9688,
+        "break_even_price": 6.65727,
+        "min_sell_price": 6.65727,
+        "sell_details": {}
     }
 }
