@@ -92,7 +92,7 @@
     "buy_1c1475ee": {
         "symbol": "UNIUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-11-10",
         "time": "23:00:57.299790",
         "buy_time": "2026-11-10T23:00:57.299790",
@@ -105,6 +105,15 @@
         "total_cost": 5.9688,
         "break_even_price": 6.65727,
         "min_sell_price": 6.65727,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_27778ba8",
+            "sell_price": 6.66,
+            "received_usd": 5.9283,
+            "sell_fee_usd": 0.0059,
+            "profit_usd": -0.0464,
+            "profit_percent": -0.777,
+            "sell_date": "2026-11-10",
+            "sell_time": "23:02:24.961301"
+        }
     }
 }
