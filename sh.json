@@ -65,7 +65,7 @@
     "buy_a717efb2": {
         "symbol": "ICNTUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-11-10",
         "time": "21:46:18.923361",
         "buy_time": "2026-11-10T21:46:18.923361",
@@ -78,6 +78,15 @@
         "total_cost": 5.497,
         "break_even_price": 0.28286,
         "min_sell_price": 0.28286,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_b12e354c",
+            "sell_price": 0.28,
+            "received_usd": 5.4999,
+            "sell_fee_usd": 0.0055,
+            "profit_usd": -0.0026,
+            "profit_percent": -0.047,
+            "sell_date": "2026-11-10",
+            "sell_time": "21:50:53.398325"
+        }
     }
 }
