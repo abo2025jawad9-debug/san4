@@ -10,11 +10,11 @@
         "qty": 0.02994,
         "sellable_qty": 0.02994,
         "buy_amount_usd": 4.276,
-        "buy_fee_usd": 0.0073,
+        "buy_fee_usd": 0.0081,
         "buy_cost": 4.276,
         "total_cost": 4.276,
-        "break_even_price": 143.30683,
-        "min_sell_price": 143.30683,
+        "break_even_price": 143.36427,
+        "min_sell_price": 143.36427,
         "sell_details": {}
     },
     "buy_sync_ff9e076c": {
