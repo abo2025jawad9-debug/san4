@@ -115,5 +115,23 @@
             "sell_date": "2026-11-10",
             "sell_time": "23:02:24.961301"
         }
+    },
+    "buy_a04d863f": {
+        "symbol": "GRASSUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-11-10",
+        "time": "23:06:54.543070",
+        "buy_time": "2026-11-10T23:06:54.543070",
+        "buy_price": 0.4635,
+        "qty": 12.9,
+        "sellable_qty": 12.8871,
+        "buy_amount_usd": 6.0,
+        "buy_fee_usd": 0.006,
+        "buy_cost": 5.9792,
+        "total_cost": 5.9792,
+        "break_even_price": 0.46527,
+        "min_sell_price": 0.46527,
+        "sell_details": {}
     }
 }
