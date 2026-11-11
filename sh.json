@@ -10,11 +10,11 @@
         "qty": 0.02994,
         "sellable_qty": 0.02994,
         "buy_amount_usd": 4.2883,
-        "buy_fee_usd": 0.0064,
+        "buy_fee_usd": 0.0086,
         "buy_cost": 4.2883,
         "total_cost": 4.2883,
-        "break_even_price": 143.66066,
-        "min_sell_price": 143.66066,
+        "break_even_price": 143.80464,
+        "min_sell_price": 143.80464,
         "sell_details": {}
     },
     "buy_sync_d546a562": {
@@ -116,22 +116,22 @@
             "sell_time": "02:07:33.416872"
         }
     },
-    "buy_5fa62e64": {
-        "symbol": "PIEVERSEUSDT",
+    "buy_sync_a323231c": {
+        "symbol": "EDGEUSDT",
         "type": "buy",
         "status": "معلقة - جاري الانتظار",
         "date": "2026-11-11",
-        "time": "02:11:08.509175",
-        "buy_time": "2026-11-11T02:11:08.509175",
-        "buy_price": 1.7463,
-        "qty": 2.8,
-        "sellable_qty": 2.7972,
-        "buy_amount_usd": 5.0,
-        "buy_fee_usd": 0.0049,
-        "buy_cost": 4.8896,
-        "total_cost": 4.8896,
-        "break_even_price": 1.75155,
-        "min_sell_price": 1.75155,
+        "time": "06:07:55.603586",
+        "buy_time": "2026-11-11T06:07:55.603586",
+        "buy_price": 0.3788,
+        "qty": 13.0869,
+        "sellable_qty": 13.0869,
+        "buy_amount_usd": 4.9573,
+        "buy_fee_usd": 0.0099,
+        "buy_cost": 4.9573,
+        "total_cost": 4.9573,
+        "break_even_price": 0.38032,
+        "min_sell_price": 0.38032,
         "sell_details": {}
     }
 }
