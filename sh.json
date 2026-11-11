@@ -38,7 +38,7 @@
     "buy_853ff5d0": {
         "symbol": "NXPCUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-11-11",
         "time": "00:22:04.650811",
         "buy_time": "2026-11-11T00:22:04.650811",
@@ -51,6 +51,15 @@
         "total_cost": 4.9868,
         "break_even_price": 0.14373,
         "min_sell_price": 0.14373,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_9613b1d5",
+            "sell_price": 0.14,
+            "received_usd": 5.0003,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0085,
+            "profit_percent": 0.17,
+            "sell_date": "2026-11-11",
+            "sell_time": "00:34:14.590266"
+        }
     }
 }
