@@ -115,5 +115,23 @@
             "sell_date": "2026-11-11",
             "sell_time": "02:07:33.416872"
         }
+    },
+    "buy_sync_914ee549": {
+        "symbol": "EDGEUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-11-21",
+        "time": "08:06:11.369860",
+        "buy_time": "2026-11-21T08:06:11.369860",
+        "buy_price": 0.2296,
+        "qty": 13.0869,
+        "sellable_qty": 13.0869,
+        "buy_amount_usd": 3.0048,
+        "buy_fee_usd": 0.006,
+        "buy_cost": 3.0048,
+        "total_cost": 3.0048,
+        "break_even_price": 0.23052,
+        "min_sell_price": 0.23052,
+        "sell_details": {}
     }
 }
