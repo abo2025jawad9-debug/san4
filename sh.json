@@ -20,7 +20,7 @@
     "buy_sync_d546a562": {
         "symbol": "DBRUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-11-11",
         "time": "00:19:26.763227",
         "buy_time": "2026-11-11T00:19:26.763227",
@@ -33,7 +33,16 @@
         "total_cost": 4.253,
         "break_even_price": 0.01298,
         "min_sell_price": 0.01298,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_fc1e2ac5",
+            "sell_price": 0.02,
+            "received_usd": 5.0217,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.7637,
+            "profit_percent": 17.929,
+            "sell_date": "2026-11-24",
+            "sell_time": "03:18:29.490636"
+        }
     },
     "buy_853ff5d0": {
         "symbol": "NXPCUSDT",
