@@ -196,5 +196,23 @@
             "sell_date": "2026-11-24",
             "sell_time": "03:30:19.777508"
         }
+    },
+    "buy_cdff4ee2": {
+        "symbol": "ELSAUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-11-24",
+        "time": "03:44:22.262761",
+        "buy_time": "2026-11-24T03:44:22.262761",
+        "buy_price": 0.08743,
+        "qty": 57.1,
+        "sellable_qty": 57.0429,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 4.9923,
+        "total_cost": 4.9923,
+        "break_even_price": 0.08778,
+        "min_sell_price": 0.08778,
+        "sell_details": {}
     }
 }
