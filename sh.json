@@ -173,7 +173,7 @@
     "buy_f0d2b945": {
         "symbol": "MNTUSDT",
         "type": "buy",
-        "status": "معلقة - جاري الانتظار",
+        "status": "تم البيع",
         "date": "2026-11-24",
         "time": "03:25:05.079960",
         "buy_time": "2026-11-24T03:25:05.079960",
@@ -186,6 +186,15 @@
         "total_cost": 4.9961,
         "break_even_price": 0.38976,
         "min_sell_price": 0.38976,
-        "sell_details": {}
+        "sell_details": {
+            "sell_id": "sell_519dd217",
+            "sell_price": 0.39,
+            "received_usd": 5.0089,
+            "sell_fee_usd": 0.005,
+            "profit_usd": 0.0078,
+            "profit_percent": 0.156,
+            "sell_date": "2026-11-24",
+            "sell_time": "03:30:19.777508"
+        }
     }
 }
