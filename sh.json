@@ -142,5 +142,23 @@
         "break_even_price": 0.23082,
         "min_sell_price": 0.23082,
         "sell_details": {}
+    },
+    "buy_7544c47f": {
+        "symbol": "ENSOUSDT",
+        "type": "buy",
+        "status": "معلقة - جاري الانتظار",
+        "date": "2026-11-24",
+        "time": "03:18:37.556272",
+        "buy_time": "2026-11-24T03:18:37.556272",
+        "buy_price": 0.4029,
+        "qty": 12.41,
+        "sellable_qty": 12.39759,
+        "buy_amount_usd": 5.0,
+        "buy_fee_usd": 0.005,
+        "buy_cost": 5.0,
+        "total_cost": 5.0,
+        "break_even_price": 0.40452,
+        "min_sell_price": 0.40452,
+        "sell_details": {}
     }
 }
